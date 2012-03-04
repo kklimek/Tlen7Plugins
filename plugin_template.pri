@@ -28,8 +28,12 @@ unix:!macx {
 }
 
 macx {
+	isEmpty(TLEN_LIBS_PATH) {
+		TLEN_LIBS_PATH=/Applications/Tlen.app/Contents/Frameworks/
+	}
+
 	CONFIG += x86
 	CONFIG -= x86_64
-	LIBS += -L ../Frameworks/ -ltlen_plugin -ltlen_core -ltlen_data
+	LIBS += -L$${TLEN_LIBS_PATH} -ltlen_plugin -ltlen_core -ltlen_data
 }
 

@@ -11,8 +11,10 @@ Simply open Tlen7Plugins.pro with Qt Creator and compile plugins. If you don't w
 Windows:
 Launch Qt Command promt, go to Tlen7Plugins directory. Run qmake then nmake
 Mac OS X:
-Launch Terminal, go to Tlen7Plugins directory. Run qmake then make
+Launch Terminal, go to Tlen7Plugins directory. Run qmake -spec macx-g++ then make
 Linux:
 Launch your favorite console application, go to Tlen7Plugins directory. Run qmake and make
+
+Optionaly you can pass "TLEN_LIBS_PATH=/path/to/tlen/libs"
 
 Plugins will be in bin directory
