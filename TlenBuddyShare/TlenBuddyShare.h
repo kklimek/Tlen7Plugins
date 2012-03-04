@@ -14,7 +14,7 @@ public:
 
 	QString icon(int) const { return QString(); }
 
-	QString description() const { QObject::tr("Easily export and import buddies"); }
+	QString description() const { return QObject::tr("Easily export and import buddies. Uses Tlen 6 contact list xml format."); }
 
 	int version() const { return TLEN_PLUGIN_VERSION(0,0,1); }
 
