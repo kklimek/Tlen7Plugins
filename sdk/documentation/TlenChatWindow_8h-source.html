@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Plik źródłowy include/gui/TlenChatWindow.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li><a href="classes.html"><span>Klasy</span></a></li>
+    <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<h1>include/gui/TlenChatWindow.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef __TLEN_CHAT_WINDOW_H__</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define __TLEN_CHAT_WINDOW_H__</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;QString&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;QDateTime&gt;</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;core/export.h&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;plugin/TlenProtocol.h&gt;</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="keyword">class </span>TlenChatWindowPrivate;
+<a name="l00011"></a>00011 <span class="keyword">class </span>TlenTabChatWindowPrivate;
+<a name="l00012"></a>00012 <span class="keyword">class </span><a class="code" href="classTlenAction.html" title="Akcja dodawana do menu kontekstowego.">TlenAction</a>;
+<a name="l00013"></a>00013 <span class="keyword">class </span>TlenGuiPluginHelper;
+<a name="l00014"></a>00014 <span class="keyword">class </span>TlenGuiPlugin;
+<a name="l00015"></a>00015 <span class="keyword">class </span>TlenConferenceChatManagerPrivate;
+<a name="l00016"></a>00016 
+<a name="l00020"></a><a class="code" href="classTlenChatWindow.html">00020</a> <span class="keyword">class </span>__tlen_gui_chat_window__ <a class="code" href="classTlenChatWindow.html" title="Reprezentuje okno rozmowy.">TlenChatWindow</a>
+<a name="l00021"></a>00021 {
+<a name="l00022"></a>00022         <span class="keyword">public</span>:         
+<a name="l00026"></a><a class="code" href="classTlenChatWindow.html#5ef1763f08a9cff5f058cb1eab214426">00026</a>                 <span class="keyword">enum</span> <a class="code" href="classTlenChatWindow.html#5ef1763f08a9cff5f058cb1eab214426" title="Określa rodzaj dodawanego tekstu do okna rozmowy.">TextStyle</a> {
+<a name="l00027"></a><a class="code" href="classTlenChatWindow.html#5ef1763f08a9cff5f058cb1eab214426aa8e7a7d96f7a1d14a8c087b5c2fde22">00027</a>                         BuddyTextStyle=1, 
+<a name="l00028"></a><a class="code" href="classTlenChatWindow.html#5ef1763f08a9cff5f058cb1eab2144268585e54e1ea9d9149004d27dda8f72f6">00028</a>                         OwnerTextStyle=2, 
+<a name="l00029"></a><a class="code" href="classTlenChatWindow.html#5ef1763f08a9cff5f058cb1eab214426c0c32199774d67fee68204a887b0be41">00029</a>                         InfoTextStyle=4,  
+<a name="l00030"></a><a class="code" href="classTlenChatWindow.html#5ef1763f08a9cff5f058cb1eab214426803f9fd50400c452e3cff80fc847fe97">00030</a>                         ErrorTextStyle=8, 
+<a name="l00031"></a><a class="code" href="classTlenChatWindow.html#5ef1763f08a9cff5f058cb1eab214426222a2c5cc83f426a61c2c993a3e141bc">00031</a>                         HistoryTextStyle=16, 
+<a name="l00032"></a><a class="code" href="classTlenChatWindow.html#5ef1763f08a9cff5f058cb1eab21442613aefab9f33b3ae461ec3dcb5d84c557">00032</a>                         HistoryBorderStyle=32, 
+<a name="l00033"></a><a class="code" href="classTlenChatWindow.html#5ef1763f08a9cff5f058cb1eab21442630c913cd23e527bf2a72186847f80072">00033</a>                         PubdirTextStyle=64  
+<a name="l00034"></a>00034                 };
+<a name="l00035"></a>00035                 
+<a name="l00036"></a>00036                 <span class="keyword">static</span> QString formatWindowTitle(<span class="keyword">const</span> <a class="code" href="classTlenBuddy.html" title="Reprezentuje kontakt.">TlenBuddy</a> &amp;buddy);
+<a name="l00037"></a>00037 
+<a name="l00041"></a>00041                 <span class="keywordtype">void</span> show();            
+<a name="l00045"></a>00045                 <span class="keywordtype">void</span> showMinimized();
+<a name="l00049"></a>00049                 <span class="keywordtype">void</span> switchTab();
+<a name="l00053"></a>00053                 <span class="keywordtype">void</span> bringToFront();
+<a name="l00057"></a>00057                 <span class="keywordtype">void</span> hide();
+<a name="l00058"></a>00058                 
+<a name="l00062"></a>00062                 <span class="keywordtype">void</span> reload();
+<a name="l00066"></a>00066                 <span class="keywordtype">bool</span> isVisible() <span class="keyword">const</span>;
+<a name="l00070"></a>00070                 <span class="keywordtype">bool</span> isClosed() <span class="keyword">const</span>;
+<a name="l00074"></a>00074                 <span class="keywordtype">bool</span> hasFocus() <span class="keyword">const</span>;
+<a name="l00081"></a>00081                 <span class="keywordtype">void</span> addToolbarAction(<span class="keyword">const</span> <a class="code" href="classTlenAction.html" title="Akcja dodawana do menu kontekstowego.">TlenAction</a> &amp;act, QString groupName, <span class="keyword">const</span> QString &amp;actionId);
+<a name="l00086"></a>00086                 <span class="keywordtype">void</span> removeToolbarAction(<span class="keyword">const</span> QString &amp;actionId);
+<a name="l00092"></a>00092                 <span class="keywordtype">void</span> updateToolbarAction(<span class="keyword">const</span> QString &amp;actionId, <span class="keyword">const</span> <a class="code" href="classTlenAction.html" title="Akcja dodawana do menu kontekstowego.">TlenAction</a> &amp;act);               
+<a name="l00099"></a>00099                 <span class="keywordtype">void</span> appendText(<span class="keyword">const</span> QString &amp;text, <a class="code" href="classTlenChatWindow.html#5ef1763f08a9cff5f058cb1eab214426" title="Określa rodzaj dodawanego tekstu do okna rozmowy.">TlenChatWindow::TextStyle</a> style, <span class="keyword">const</span> QString &amp;timestamp=QString());
+<a name="l00104"></a>00104                 <span class="keywordtype">void</span> typingNotify(<a class="code" href="classTlenProtocol.html#72007f4640b08775b6048c1efb9fa3de" title="enum ten opisuje czy użytkownik zaczął pisać do innego użytkownika">TlenProtocol::TypingNotify</a> type);
+<a name="l00109"></a>00109                 <span class="keywordtype">void</span> notifyMessage(<span class="keyword">const</span> QString &amp;msg);
+<a name="l00114"></a>00114                 <span class="keywordtype">void</span> flashTaskbar(<span class="keywordtype">int</span> msec);            
+<a name="l00119"></a>00119                 <a class="code" href="classTlenBuddy.html" title="Reprezentuje kontakt.">TlenBuddy</a> getBuddy() <span class="keyword">const</span>;             
+<a name="l00124"></a>00124                 QDateTime getLastActivity() <span class="keyword">const</span>;
+<a name="l00128"></a>00128                 <span class="keyword">static</span> <span class="keywordtype">void</span> openLastClosed();           
+<a name="l00129"></a>00129                 
+<a name="l00130"></a>00130         <span class="keyword">private</span>:
+<a name="l00131"></a>00131                 <a class="code" href="classTlenChatWindow.html" title="Reprezentuje okno rozmowy.">TlenChatWindow</a>(<span class="keyword">const</span> <a class="code" href="classTlenBuddy.html" title="Reprezentuje kontakt.">TlenBuddy</a> &amp;receipent);
+<a name="l00132"></a>00132                 <a class="code" href="classTlenChatWindow.html" title="Reprezentuje okno rozmowy.">TlenChatWindow</a>();
+<a name="l00133"></a>00133                 <a class="code" href="classTlenChatWindow.html" title="Reprezentuje okno rozmowy.">TlenChatWindow</a>(<span class="keyword">const</span> <a class="code" href="classTlenChatWindow.html" title="Reprezentuje okno rozmowy.">TlenChatWindow</a> &amp;);
+<a name="l00134"></a>00134                 <span class="keywordtype">void</span> operator=(<span class="keyword">const</span> <a class="code" href="classTlenChatWindow.html" title="Reprezentuje okno rozmowy.">TlenChatWindow</a> &amp;);
+<a name="l00135"></a>00135                 ~<a class="code" href="classTlenChatWindow.html" title="Reprezentuje okno rozmowy.">TlenChatWindow</a>();
+<a name="l00136"></a>00136                         
+<a name="l00137"></a>00137 
+<a name="l00138"></a>00138                 <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classTlenChatManager.html" title="Zarządza oknami rozmów.">TlenChatManager</a>;
+<a name="l00139"></a>00139                 <span class="keyword">friend</span> <span class="keyword">class </span>TlenChatManagerPrivate;
+<a name="l00140"></a>00140                 <span class="keyword">friend</span> <span class="keyword">class </span>TlenChatWindowPrivate;
+<a name="l00141"></a>00141                 <span class="keyword">friend</span> <span class="keyword">class </span>TlenTabChatWindowPrivate;
+<a name="l00142"></a>00142                 <span class="keyword">friend</span> <span class="keyword">class </span>TlenGuiPluginHelper;
+<a name="l00143"></a>00143                 <span class="keyword">friend</span> <span class="keyword">class </span>TlenSettingsManagerWindow;
+<a name="l00144"></a>00144                 <span class="keyword">friend</span> <span class="keyword">class </span>TlenConferenceChatManagerPrivate;
+<a name="l00145"></a>00145                 <span class="keyword">friend</span> <span class="keyword">class </span>TlenGuiPlugin;
+<a name="l00146"></a>00146                 TlenChatWindowPrivate *cwp;
+<a name="l00147"></a>00147 };
+<a name="l00148"></a>00148 
+<a name="l00149"></a>00149 <span class="preprocessor">#endif</span>
+<a name="l00150"></a>00150 <span class="preprocessor"></span>
+</pre></div><hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

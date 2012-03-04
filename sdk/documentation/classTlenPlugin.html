@@ -1,0 +1,930 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Dokumentacja klasy TlenPlugin</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li class="current"><a href="classes.html"><span>Klasy</span></a></li>
+    <li><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabetyczna</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;klas</span></a></li>
+    <li><a href="hierarchy.html"><span>Hierarchia&nbsp;klas</span></a></li>
+    <li><a href="functions.html"><span>Składowe&nbsp;klas</span></a></li>
+  </ul>
+</div>
+<h1>Dokumentacja klasy TlenPlugin</h1><!-- doxytag: class="TlenPlugin" -->Klasa bazowa wszystkich wtyczek w Tlenie.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="TlenPlugin_8h-source.html">TlenPlugin.h</a>&gt;</code>
+<p>
+Dziedziczona przez TlenPluginLoader, <a class="el" href="classTlenProtocol.html">TlenProtocol</a>, <a class="el" href="classTlenRoster.html">TlenRoster</a> i <a class="el" href="classTlenSpellCheckerPlugin.html">TlenSpellCheckerPlugin</a>.
+<p>
+<a href="classTlenPlugin-members.html">Lista wszystkich składowych.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Typy publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <b>Standard</b> =  0, 
+<b>Protocol</b>, 
+<b>PluginLoader</b>
+ }</td></tr>
+
+<tr><td colspan="2"><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">TlenPlugin::Type&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#f2d1bc39a38537d7311d8a04b3a206e1">getType</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca typ wtyczki.  <a href="#f2d1bc39a38537d7311d8a04b3a206e1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#dabcac9bf30840db69551e8ab6eb1522">name</a> () const=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Nazwa wtyczki nie powinna byc nigdy tlumaczona (nie powinna byc zawarta w tlen_tr).  <a href="#dabcac9bf30840db69551e8ab6eb1522"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#ec30ea9fb4027e3ad4557e6a615afe25">friendlyName</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Nazwa wtyczki, ktora powinna byc tlumaczona.  <a href="#ec30ea9fb4027e3ad4557e6a615afe25"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#d31878e50c7496c2ada824c6b23961be">getPluginId</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Id wtyczki.  <a href="#d31878e50c7496c2ada824c6b23961be"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e1475ca47bb8cbee1ab797172f4881a7"></a><!-- doxytag: member="TlenPlugin::icon" ref="e1475ca47bb8cbee1ab797172f4881a7" args="(int size=0) const=0" -->
+virtual QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#e1475ca47bb8cbee1ab797172f4881a7">icon</a> (int size=0) const=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>nazwa pliku z ikonką wtyczki </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="bba023647f72c4bffcf0cea8e1cec7f2"></a><!-- doxytag: member="TlenPlugin::author" ref="bba023647f72c4bffcf0cea8e1cec7f2" args="() const=0" -->
+virtual QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#bba023647f72c4bffcf0cea8e1cec7f2">author</a> () const=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>autor wtyczki </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="da891b7b80416b5be87f7aea14adf701"></a><!-- doxytag: member="TlenPlugin::description" ref="da891b7b80416b5be87f7aea14adf701" args="() const=0" -->
+virtual QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#da891b7b80416b5be87f7aea14adf701">description</a> () const=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>opis wtyczki </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#77b29c5f1f380a8d8e810b80633b89f8">version</a> () const=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wersja wtyczki. </dd></dl>
+ <a href="#77b29c5f1f380a8d8e810b80633b89f8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="aeb4e9653315d34707b30d6714568d06"></a><!-- doxytag: member="TlenPlugin::web" ref="aeb4e9653315d34707b30d6714568d06" args="() const=0" -->
+virtual QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#aeb4e9653315d34707b30d6714568d06">web</a> () const=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>strona domowa </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b5127a4c92584c94fa6dccc5bffc5581"></a><!-- doxytag: member="TlenPlugin::email" ref="b5127a4c92584c94fa6dccc5bffc5581" args="() const=0" -->
+virtual QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#b5127a4c92584c94fa6dccc5bffc5581">email</a> () const=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>adres kontaktowy </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="937d7208443a9dc2d6a798d14cc0d430"></a><!-- doxytag: member="TlenPlugin::getProvidedServices" ref="937d7208443a9dc2d6a798d14cc0d430" args="() const" -->
+virtual QList&lt; <a class="el" href="classTlenService.html">TlenService</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#937d7208443a9dc2d6a798d14cc0d430">getProvidedServices</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca zbior obslugiwanych uslug, usluga - zbior sygnalow wysylanych przez wtyczke. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e3be6e626b546f82d82baf2c94cdb7aa"></a><!-- doxytag: member="TlenPlugin::getSettingsTags" ref="e3be6e626b546f82d82baf2c94cdb7aa" args="() const" -->
+virtual QStringList&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#e3be6e626b546f82d82baf2c94cdb7aa">getSettingsTags</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca z jakimi ustawieniami jest powiazana wtyczka w celu umieszczania odpowiednich powiazan miedzy wtyczkami w oknie ustawien programu. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="2cc5c1087d3dffd9e2fc88c9a739e98e"></a><!-- doxytag: member="TlenPlugin::getSettingsLinks" ref="2cc5c1087d3dffd9e2fc88c9a739e98e" args="() const" -->
+virtual QList&lt; QPair&lt; QString,<br>
+ QString &gt; &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#2cc5c1087d3dffd9e2fc88c9a739e98e">getSettingsLinks</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca linki powiazane z wtyczka wyswietlane w oknie ustawien wtyczki. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="6c7a2013de9efcc589340974adff84db"></a><!-- doxytag: member="TlenPlugin::getSearchPhrases" ref="6c7a2013de9efcc589340974adff84db" args="() const" -->
+virtual QStringList&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#6c7a2013de9efcc589340974adff84db">getSearchPhrases</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca frazy dla wyszukiwarki w ustawieniach. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="467b578509171607305fe3697a765efb"></a><!-- doxytag: member="TlenPlugin::getLicenseName" ref="467b578509171607305fe3697a765efb" args="()" -->
+virtual QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#467b578509171607305fe3697a765efb">getLicenseName</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>nazwa licencji </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="62e3acf3369cf9cbd1a9b0d5ea4abd06"></a><!-- doxytag: member="TlenPlugin::getPluginPrefs" ref="62e3acf3369cf9cbd1a9b0d5ea4abd06" args="() const" -->
+QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#62e3acf3369cf9cbd1a9b0d5ea4abd06">getPluginPrefs</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wektor zawierajacy <a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a> opisujace ustawienia wtyczki </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#f7afb5434c0422258a81de07634a60d9">getPluginSettingsUi</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wtyczki, ktore chca same obslugiwac swoja strone ustwien musza zwracac sciezke do swojego pliku UI.  <a href="#f7afb5434c0422258a81de07634a60d9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#77a37290fe1f67f0d89ba8bbdf9efb33">setSttingsUi</a> (QWidget *widget)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wtyczka dostaje wskaznik do utworzonej strony ustawien po przejsciu na nia przez uzytkownika.  <a href="#77a37290fe1f67f0d89ba8bbdf9efb33"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenField.html">TlenField</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#f38b0bdd0111b41cfdc455275607de56">getPluginPref</a> (const QString &amp;id) const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>- id ustawienia </td></tr>
+  </table>
+</dl>
+ <a href="#f38b0bdd0111b41cfdc455275607de56"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#c91f40bfc6d75702650778915a5e605f">setPluginPref</a> (const QString &amp;id, const <a class="el" href="classTlenArg.html">TlenArg</a> &amp;value, bool update=true)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda zmienia wartosc ustawienia.  <a href="#c91f40bfc6d75702650778915a5e605f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#27dc22e218c8e999a9d340f701542963">setPluginPref</a> (const QString &amp;id, const QString &amp;selected_id, const QStringList &amp;idList, const QStringList &amp;labelList=QStringList())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda zmienia wartosc ustawienia.  <a href="#27dc22e218c8e999a9d340f701542963"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#26c7920c094044c5ccc25a709587de0f">setPluginPrefs</a> (const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;fields)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmeinia ustawienia wtyczki na podstawie wektoru <a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a>.  <a href="#26c7920c094044c5ccc25a709587de0f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="fbd99869badae7f16c53ced0ec9d5924"></a><!-- doxytag: member="TlenPlugin::getPluginDeps" ref="fbd99869badae7f16c53ced0ec9d5924" args="() const" -->
+QStringList&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#fbd99869badae7f16c53ced0ec9d5924">getPluginDeps</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wektor zawierajacy nazwy wtyczek ktore sa wymagane przy ladowaniu wtyczki </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d72e9a78213f995569a4cb06a23e77a1"></a><!-- doxytag: member="TlenPlugin::getCacheDir" ref="d72e9a78213f995569a4cb06a23e77a1" args="() const" -->
+QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#d72e9a78213f995569a4cb06a23e77a1">getCacheDir</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>bezwględna scieżka do cache przeznaczonego dla wtyczki </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QStringList&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#60dc38c1a633650d35c747a148792119">getRegisteredSignals</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>lista zarejestrowanych przez wtyczke sygnałów. </dd></dl>
+ <a href="#60dc38c1a633650d35c747a148792119"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7602d925cb1b7c1b754ceed0ec30c64a"></a><!-- doxytag: member="TlenPlugin::writeSettings" ref="7602d925cb1b7c1b754ceed0ec30c64a" args="()" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#7602d925cb1b7c1b754ceed0ec30c64a">writeSettings</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zapisuje ustawienia wtyczki na dysku. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9495131bc7fdd91650dbe2c98e015d87"></a><!-- doxytag: member="TlenPlugin::getRosterHandler" ref="9495131bc7fdd91650dbe2c98e015d87" args="() const" -->
+virtual <a class="el" href="classTlenPluginRosterHandler.html">TlenPluginRosterHandler</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#9495131bc7fdd91650dbe2c98e015d87">getRosterHandler</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca obiekt odpowiedzialny za obsługę specjalnych kontaktów dodawanych przez plugin do listy kontaktów. <br></td></tr>
+<tr><td colspan="2"><br><h2>Metody chronione</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#69340681749bee612c3f26d22b63a269">load</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda uruchamiająca wtyczkę<br>
+ UWAGA: wtyczka nie musi sama pobierać ustawien, zostaną one załadowane przed wywołaniem tej metody.  <a href="#69340681749bee612c3f26d22b63a269"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="122958a9b97c6c04976b7bd011c9c449"></a><!-- doxytag: member="TlenPlugin::unload" ref="122958a9b97c6c04976b7bd011c9c449" args="()=0" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#122958a9b97c6c04976b7bd011c9c449">unload</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda wywoływana przy wyładowywaniu wtyczki UWAGA: wtyczka nie musi sama zapisywać ustawień, ustawienia zapisywane są od razu po wywołaniu tej metody. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b3853f8aba19d0217c4a5f5bac14b91d"></a><!-- doxytag: member="TlenPlugin::pluginPrefsUpdated" ref="b3853f8aba19d0217c4a5f5bac14b91d" args="()" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>pluginPrefsUpdated</b> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#bd53ca6f6a69c352e24fc2b282bf02d8">signalRegister</a> (const QString &amp;signal, const QList&lt; <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a">TlenArg::Type</a> &gt; &amp;args)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda rejestrujaca sygnal wtyczki.  <a href="#bd53ca6f6a69c352e24fc2b282bf02d8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#bd272fce79adff03c3c50c0f903a31fb">signalUnregister</a> (const QString &amp;signal)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">metoda wyrejestrowujaca sygnal  <a href="#bd272fce79adff03c3c50c0f903a31fb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#958b6d9d9d0b790783e4bfde63066d82">signalEmit</a> (const QString &amp;signal, QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; arglist)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">metoda emitujaca sygnal  <a href="#958b6d9d9d0b790783e4bfde63066d82"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#0e98d6e8edcc6aea9c9c1a547f75432d">slotConnect</a> (const QString &amp;sender, const QString &amp;signal, TlenPluginSlot slot)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">podlacza wtyczke do sygnalu podanego nadawcy  <a href="#0e98d6e8edcc6aea9c9c1a547f75432d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#5b4db7a3eae10d125cdc3dc8083c6afe">slotDisconnect</a> (const QString &amp;sender, const QString &amp;signal, TlenPluginSlot)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">odlacza wtyczke od sygnalu  <a href="#5b4db7a3eae10d125cdc3dc8083c6afe"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#f2a9e14f677ed45f60ed041ab4cc0213">setPluginSettingsUi</a> (const QString &amp;ui)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ustawia plik ui jako strone ustawien.  <a href="#f2a9e14f677ed45f60ed041ab4cc0213"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="64679dc5dad80d1a0b6c10c82d58bc38"></a><!-- doxytag: member="TlenPlugin::updatePluginSettingsUi" ref="64679dc5dad80d1a0b6c10c82d58bc38" args="()" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#64679dc5dad80d1a0b6c10c82d58bc38">updatePluginSettingsUi</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Updatuje ui ustawien na podstawie <a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a>. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#3865764594a70d1f132e4a1f670f16de">addPluginSettingsField</a> (const <a class="el" href="classTlenField.html">TlenField</a> &amp;field)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dodaje pole ustawien wtyczki.  <a href="#3865764594a70d1f132e4a1f670f16de"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#18ea925493dfe2eaea71e03a174b69e7">addPluginDependency</a> (const QString &amp;pluginname)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dodaje nazwe wtyczki do zaleznosci.  <a href="#18ea925493dfe2eaea71e03a174b69e7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPlugin.html#10b0710c187af66704563d82acdc74a5">postNotification</a> (const QString &amp;nid, const QString &amp;title, const QString &amp;text, const QString &amp;iconpath=QString(), const QString &amp;groupiconpath=QString(), const <a class="el" href="classTlenPluginAction.html">TlenPluginAction</a> &amp;action=<a class="el" href="classTlenPluginAction.html">TlenPluginAction</a>(), const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;args=QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt;())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Puszcza powiadomienie.  <a href="#10b0710c187af66704563d82acdc74a5"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Klasa bazowa wszystkich wtyczek w Tlenie. 
+<p>
+Aby stworzyć wtyczkę należy zadeklarować klasę dziedziczącą z <a class="el" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a> <div class="fragment"><pre class="fragment"> <span class="keyword">class </span>MojaWtyczka: <span class="keyword">public</span> <a class="code" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a>
+ {
+        <span class="keyword">public</span>:
+                MojaWtyczka();
+                <span class="keywordtype">bool</span> <a class="code" href="classTlenPlugin.html#69340681749bee612c3f26d22b63a269" title="Metoda uruchamiająca wtyczkę  UWAGA: wtyczka nie musi sama pobierać ustawien,...">load</a>();
+                <span class="keywordtype">void</span> <a class="code" href="classTlenPlugin.html#122958a9b97c6c04976b7bd011c9c449" title="Metoda wywoływana przy wyładowywaniu wtyczki UWAGA: wtyczka nie musi sama zapisywać...">unload</a>();
+                ...
+ };
+</pre></div><p>
+Należy także zaimplementować wszystkie wymagane metody (kompilator powie których brakuje). <br>
+ <br>
+ Po zdefiniowaniu wszystkich metod należy wywołać makro podając nazwę klasy naszej wtyczki <div class="fragment"><pre class="fragment"> MojaWtyczka::MojaWtyczka()
+ {
+        ...
+ }
+
+ <span class="keywordtype">bool</span> <a class="code" href="classTlenPlugin.html#69340681749bee612c3f26d22b63a269" title="Metoda uruchamiająca wtyczkę  UWAGA: wtyczka nie musi sama pobierać ustawien,...">MojaWtyczka::load</a>()
+ {
+        ...
+ }
+
+ <span class="keywordtype">void</span> <a class="code" href="classTlenPlugin.html#122958a9b97c6c04976b7bd011c9c449" title="Metoda wywoływana przy wyładowywaniu wtyczki UWAGA: wtyczka nie musi sama zapisywać...">MojaWtyczka::unload</a>()
+ {
+        ...
+ }
+
+ TLEN_INIT_PLUGIN(MojaWtyczka)
+</pre></div> 
+<p>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="f2d1bc39a38537d7311d8a04b3a206e1"></a><!-- doxytag: member="TlenPlugin::getType" ref="f2d1bc39a38537d7311d8a04b3a206e1" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenPlugin::Type TlenPlugin::getType           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca typ wtyczki. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>typ wtyczki </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="dabcac9bf30840db69551e8ab6eb1522"></a><!-- doxytag: member="TlenPlugin::name" ref="dabcac9bf30840db69551e8ab6eb1522" args="() const=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QString TlenPlugin::name           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Nazwa wtyczki nie powinna byc nigdy tlumaczona (nie powinna byc zawarta w tlen_tr). 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>nazwa wtyczki </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ec30ea9fb4027e3ad4557e6a615afe25"></a><!-- doxytag: member="TlenPlugin::friendlyName" ref="ec30ea9fb4027e3ad4557e6a615afe25" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QString TlenPlugin::friendlyName           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Nazwa wtyczki, ktora powinna byc tlumaczona. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>nazwa wtyczki </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d31878e50c7496c2ada824c6b23961be"></a><!-- doxytag: member="TlenPlugin::getPluginId" ref="d31878e50c7496c2ada824c6b23961be" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString TlenPlugin::getPluginId           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Id wtyczki. 
+<p>
+Składa się z nazwy plugin loadera dla danej wtyczki oraz nazwy wtyczki <dl class="return" compact><dt><b>Zwraca:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="77b29c5f1f380a8d8e810b80633b89f8"></a><!-- doxytag: member="TlenPlugin::version" ref="77b29c5f1f380a8d8e810b80633b89f8" args="() const=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int TlenPlugin::version           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wersja wtyczki. </dd></dl>
+
+<p>
+Wersję wtyczki należy tworzyć makrem TLEN_PLUGIN_VERSION np. TLEN_PLUGIN_VERSION(1,0,0) odpowiada wersji 1.0.0 
+</div>
+</div><p>
+<a class="anchor" name="f7afb5434c0422258a81de07634a60d9"></a><!-- doxytag: member="TlenPlugin::getPluginSettingsUi" ref="f7afb5434c0422258a81de07634a60d9" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString TlenPlugin::getPluginSettingsUi           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Wtyczki, ktore chca same obslugiwac swoja strone ustwien musza zwracac sciezke do swojego pliku UI. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>nazwa ui ze strona ustawien </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="77a37290fe1f67f0d89ba8bbdf9efb33"></a><!-- doxytag: member="TlenPlugin::setSttingsUi" ref="77a37290fe1f67f0d89ba8bbdf9efb33" args="(QWidget *widget)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenPlugin::setSttingsUi           </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&nbsp;</td>
+          <td class="paramname"> <em>widget</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Wtyczka dostaje wskaznik do utworzonej strony ustawien po przejsciu na nia przez uzytkownika. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>wskaznik</em>&nbsp;</td><td>do okna ustwien wtyczki </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f38b0bdd0111b41cfdc455275607de56"></a><!-- doxytag: member="TlenPlugin::getPluginPref" ref="f38b0bdd0111b41cfdc455275607de56" args="(const QString &amp;id) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenField.html">TlenField</a> TlenPlugin::getPluginPref           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>- id ustawienia </td></tr>
+  </table>
+</dl>
+
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd><a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a> opisujacy ustawienie wtyczki </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c91f40bfc6d75702650778915a5e605f"></a><!-- doxytag: member="TlenPlugin::setPluginPref" ref="c91f40bfc6d75702650778915a5e605f" args="(const QString &amp;id, const TlenArg &amp;value, bool update=true)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TlenPlugin::setPluginPref           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenArg.html">TlenArg</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>update</em> = <code>true</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda zmienia wartosc ustawienia. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>- nazwa pola </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>- nowa wartosc pola  true jesli pole o nazwie podanej w zmiennej label zostalo znalezione </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="27dc22e218c8e999a9d340f701542963"></a><!-- doxytag: member="TlenPlugin::setPluginPref" ref="27dc22e218c8e999a9d340f701542963" args="(const QString &amp;id, const QString &amp;selected_id, const QStringList &amp;idList, const QStringList &amp;labelList=QStringList())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TlenPlugin::setPluginPref           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>selected_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&nbsp;</td>
+          <td class="paramname"> <em>idList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&nbsp;</td>
+          <td class="paramname"> <em>labelList</em> = <code>QStringList()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda zmienia wartosc ustawienia. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>- nazwa pola </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>- nowa wartosc pola  true jesli pole o nazwie podanej w zmiennej label zostalo znalezione </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="26c7920c094044c5ccc25a709587de0f"></a><!-- doxytag: member="TlenPlugin::setPluginPrefs" ref="26c7920c094044c5ccc25a709587de0f" args="(const QList&lt; TlenField &gt; &amp;fields)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenPlugin::setPluginPrefs           </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>fields</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zmeinia ustawienia wtyczki na podstawie wektoru <a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fields</em>&nbsp;</td><td>- wektor zawierajacy TlenFields opisujace nowe ustawienia wtyczki </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="60dc38c1a633650d35c747a148792119"></a><!-- doxytag: member="TlenPlugin::getRegisteredSignals" ref="60dc38c1a633650d35c747a148792119" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList TlenPlugin::getRegisteredSignals           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>lista zarejestrowanych przez wtyczke sygnałów. </dd></dl>
+
+<p>
+Jeśli wtyczka jest niezaładowana, to lista jest pusta. 
+</div>
+</div><p>
+<a class="anchor" name="69340681749bee612c3f26d22b63a269"></a><!-- doxytag: member="TlenPlugin::load" ref="69340681749bee612c3f26d22b63a269" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool TlenPlugin::load           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected, pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda uruchamiająca wtyczkę<br>
+ UWAGA: wtyczka nie musi sama pobierać ustawien, zostaną one załadowane przed wywołaniem tej metody. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>true jeśli udało się załadować poprawnie wtyczkę </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="bd53ca6f6a69c352e24fc2b282bf02d8"></a><!-- doxytag: member="TlenPlugin::signalRegister" ref="bd53ca6f6a69c352e24fc2b282bf02d8" args="(const QString &amp;signal, const QList&lt; TlenArg::Type &gt; &amp;args)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenPlugin::signalRegister           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>signal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QList&lt; <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a">TlenArg::Type</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>args</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda rejestrujaca sygnal wtyczki. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>signal</em>&nbsp;</td><td>- nazwa sygnalu </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>args</em>&nbsp;</td><td>- parametry uzyte przy emitowaniu sygnalu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="bd272fce79adff03c3c50c0f903a31fb"></a><!-- doxytag: member="TlenPlugin::signalUnregister" ref="bd272fce79adff03c3c50c0f903a31fb" args="(const QString &amp;signal)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenPlugin::signalUnregister           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>signal</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+metoda wyrejestrowujaca sygnal 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>signal</em>&nbsp;</td><td>- nazwa sygnalu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="958b6d9d9d0b790783e4bfde63066d82"></a><!-- doxytag: member="TlenPlugin::signalEmit" ref="958b6d9d9d0b790783e4bfde63066d82" args="(const QString &amp;signal, QList&lt; TlenArg &gt; arglist)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenPlugin::signalEmit           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>signal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt;&nbsp;</td>
+          <td class="paramname"> <em>arglist</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+metoda emitujaca sygnal 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>signal</em>&nbsp;</td><td>- nazwa sygnalu </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>arglist</em>&nbsp;</td><td>- wektor zawierajacy liste argumentow przekazywanych z sygnalem </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0e98d6e8edcc6aea9c9c1a547f75432d"></a><!-- doxytag: member="TlenPlugin::slotConnect" ref="0e98d6e8edcc6aea9c9c1a547f75432d" args="(const QString &amp;sender, const QString &amp;signal, TlenPluginSlot slot)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TlenPlugin::slotConnect           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>signal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TlenPluginSlot&nbsp;</td>
+          <td class="paramname"> <em>slot</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+podlacza wtyczke do sygnalu podanego nadawcy 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sender</em>&nbsp;</td><td>- nazwa nadawcy sygnalu </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>signal</em>&nbsp;</td><td>- nazwa sygnalu </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>callback</em>&nbsp;</td><td>- wskaznik na metode wtyczki np. TLEN_SLOT(MojaWtyczka::MojaMetoda) </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>true jesli udalo sie podlaczyc do sygnalu, false jesli nadawca lub sygnal nadawcy nie istnieje UWAGA: metoda ta zawsze zwraca true jesli polaczenie nastepuje w trakcie ladowania wtyczek </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5b4db7a3eae10d125cdc3dc8083c6afe"></a><!-- doxytag: member="TlenPlugin::slotDisconnect" ref="5b4db7a3eae10d125cdc3dc8083c6afe" args="(const QString &amp;sender, const QString &amp;signal, TlenPluginSlot)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenPlugin::slotDisconnect           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>signal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TlenPluginSlot&nbsp;</td>
+          <td class="paramname"></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+odlacza wtyczke od sygnalu 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sender</em>&nbsp;</td><td>- nazwa nadawcy sygnalu </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>signal</em>&nbsp;</td><td>- nazwa sygnalu </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>callback</em>&nbsp;</td><td>- wskaznik na metode wtyczki np. TLEN_SLOT(MojaWtyczka::MojaMetoda) </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f2a9e14f677ed45f60ed041ab4cc0213"></a><!-- doxytag: member="TlenPlugin::setPluginSettingsUi" ref="f2a9e14f677ed45f60ed041ab4cc0213" args="(const QString &amp;ui)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenPlugin::setPluginSettingsUi           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>ui</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Ustawia plik ui jako strone ustawien. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ui</em>&nbsp;</td><td>- nazwa ui </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>receiver</em>&nbsp;</td><td>- "odbiornik" wiadomosci z ui </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3865764594a70d1f132e4a1f670f16de"></a><!-- doxytag: member="TlenPlugin::addPluginSettingsField" ref="3865764594a70d1f132e4a1f670f16de" args="(const TlenField &amp;field)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenPlugin::addPluginSettingsField           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenField.html">TlenField</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>field</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dodaje pole ustawien wtyczki. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>field</em>&nbsp;</td><td>- pole </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="18ea925493dfe2eaea71e03a174b69e7"></a><!-- doxytag: member="TlenPlugin::addPluginDependency" ref="18ea925493dfe2eaea71e03a174b69e7" args="(const QString &amp;pluginname)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenPlugin::addPluginDependency           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>pluginname</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dodaje nazwe wtyczki do zaleznosci. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pluginname</em>&nbsp;</td><td>- nazwa dodawanej do zaleznosci wtyczki </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="10b0710c187af66704563d82acdc74a5"></a><!-- doxytag: member="TlenPlugin::postNotification" ref="10b0710c187af66704563d82acdc74a5" args="(const QString &amp;nid, const QString &amp;title, const QString &amp;text, const QString &amp;iconpath=QString(), const QString &amp;groupiconpath=QString(), const TlenPluginAction &amp;action=TlenPluginAction(), const QList&lt; TlenArg &gt; &amp;args=QList&lt; TlenArg &gt;())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenPlugin::postNotification           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>nid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>iconpath</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>groupiconpath</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenPluginAction.html">TlenPluginAction</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>action</em> = <code><a class="el" href="classTlenPluginAction.html">TlenPluginAction</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>args</em> = <code>QList&lt;&nbsp;<a class="el" href="classTlenArg.html">TlenArg</a>&nbsp;&gt;()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Puszcza powiadomienie. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nid</em>&nbsp;</td><td>id </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>title</em>&nbsp;</td><td>tytuł </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>text</em>&nbsp;</td><td>tekst </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>iconpath</em>&nbsp;</td><td>ikonka </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>groupiconpath</em>&nbsp;</td><td>ikonka grupowania </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>action</em>&nbsp;</td><td>akcja </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>args</em>&nbsp;</td><td>argumenty dla akcji </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<hr>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>include/plugin/<a class="el" href="TlenPlugin_8h-source.html">TlenPlugin.h</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Dokumentacja klasy TlenPluginAction</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li class="current"><a href="classes.html"><span>Klasy</span></a></li>
+    <li><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabetyczna</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;klas</span></a></li>
+    <li><a href="hierarchy.html"><span>Hierarchia&nbsp;klas</span></a></li>
+    <li><a href="functions.html"><span>Składowe&nbsp;klas</span></a></li>
+  </ul>
+</div>
+<h1>Dokumentacja klasy TlenPluginAction</h1><!-- doxytag: class="TlenPluginAction" -->Reprezentuje akcję w pluginie.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="TlenPluginAction_8h-source.html">TlenPluginAction.h</a>&gt;</code>
+<p>
+<a href="classTlenPluginAction-members.html">Lista wszystkich składowych.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="914f714e15460d6a201b274fa16f6c87"></a><!-- doxytag: member="TlenPluginAction::TlenPluginAction" ref="914f714e15460d6a201b274fa16f6c87" args="(const TlenPlugin *r, TlenPluginActionCallback cb, const QList&lt; TlenArg &gt; &amp;actdata=QList&lt; TlenArg &gt;())" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>TlenPluginAction</b> (const <a class="el" href="classTlenPlugin.html">TlenPlugin</a> *r, TlenPluginActionCallback cb, const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;actdata=QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt;())</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d485c7c1c575d9a05ee99a4b6b28ae9a"></a><!-- doxytag: member="TlenPluginAction::TlenPluginAction" ref="d485c7c1c575d9a05ee99a4b6b28ae9a" args="(TlenPlugin *r, TlenPluginActionCallback cb, const QList&lt; TlenArg &gt; &amp;actdata=QList&lt; TlenArg &gt;())" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>TlenPluginAction</b> (<a class="el" href="classTlenPlugin.html">TlenPlugin</a> *r, TlenPluginActionCallback cb, const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;actdata=QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt;())</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="0903944bc3ff22ff9bb627ba88075ad2"></a><!-- doxytag: member="TlenPluginAction::operator==" ref="0903944bc3ff22ff9bb627ba88075ad2" args="(const TlenPluginAction &amp;other) const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classTlenPluginAction.html">TlenPluginAction</a> &amp;other) const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="8bd5e9642138945a2ce311121f25c409"></a><!-- doxytag: member="TlenPluginAction::operator()" ref="8bd5e9642138945a2ce311121f25c409" args="()" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>operator()</b> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="87f22f02c81908ca75766a155b10aa0f"></a><!-- doxytag: member="TlenPluginAction::operator()" ref="87f22f02c81908ca75766a155b10aa0f" args="(QList&lt; TlenArg &gt; &amp;)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="08338c8c9b36e2fc6efde8c25ccfcce3"></a><!-- doxytag: member="TlenPluginAction::getActionData" ref="08338c8c9b36e2fc6efde8c25ccfcce3" args="() const" -->
+QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>getActionData</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7c98dd29f15e68668bf6ad912bff3bb2"></a><!-- doxytag: member="TlenPluginAction::isValid" ref="7c98dd29f15e68668bf6ad912bff3bb2" args="() const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>isValid</b> () const</td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Reprezentuje akcję w pluginie. 
+<p>
+Jest to obiekt funkcyjny, który może być wywołany np. po odpaleniu odpowiednij pozycji w menu kontektsowym. 
+<p>
+<hr>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>include/data/<a class="el" href="TlenPluginAction_8h-source.html">TlenPluginAction.h</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

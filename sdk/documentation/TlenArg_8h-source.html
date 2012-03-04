@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Plik źródłowy include/data/TlenArg.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li><a href="classes.html"><span>Klasy</span></a></li>
+    <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<h1>include/data/TlenArg.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef _TLEN_ARG_H_</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define _TLEN_ARG_H_</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;QString&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;QByteArray&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;QStringList&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;QMetaType&gt;</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;core/export.h&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;data/TlenBuddyResource.h&gt;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;data/TlenTextFormat.h&gt;</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="keyword">class </span><a class="code" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a>;
+<a name="l00014"></a>00014 <span class="keyword">class </span><a class="code" href="classTlenXmlNode.html" title="Klasa do obsługi XML.">TlenXmlNode</a>;
+<a name="l00015"></a>00015 <span class="keyword">class </span><a class="code" href="classTlenBuddy.html" title="Reprezentuje kontakt.">TlenBuddy</a>;
+<a name="l00016"></a>00016 <span class="keyword">class </span><a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a>;
+<a name="l00017"></a>00017 <span class="keyword">class </span><a class="code" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a>;
+<a name="l00018"></a>00018 <span class="keyword">class </span>TlenArgPrivate;
+<a name="l00019"></a>00019 <span class="keyword">class </span><a class="code" href="classTlenPluginAction.html" title="Reprezentuje akcję w pluginie.">TlenPluginAction</a>;
+<a name="l00020"></a>00020 <span class="keyword">class </span><a class="code" href="classTlenPresence.html" title="Opisuje prezencję.">TlenPresence</a>;
+<a name="l00021"></a>00021 <span class="keyword">class </span><a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>;
+<a name="l00022"></a>00022 <span class="keyword">class </span><a class="code" href="classTlenService.html" title="Klasa opisująca usługę jaką realizuje plugin.">TlenService</a>;
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 
+<a name="l00030"></a><a class="code" href="classTlenArg.html">00030</a> <span class="keyword">class </span>__tlen_data__ <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>
+<a name="l00031"></a>00031 {
+<a name="l00032"></a>00032         <span class="keyword">public</span>:
+<a name="l00040"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a">00040</a>                 <span class="keyword">enum</span> <a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a" title="określa typ TlenArg">Type</a> {
+<a name="l00041"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9af97a8a3ee84c7c105ec8f74c49aa8fd6">00041</a>                         None,                   
+<a name="l00042"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a0ce60f0887d4cf92ce2ae53ffa0a7d9d">00042</a>                         Char,                   
+<a name="l00043"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a8620b21177194608e29d45f1463e1ba9">00043</a>                         UChar,                  
+<a name="l00044"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a0b8b688d71d14800bcc1dcf5e77bd575">00044</a>                         Int,                    
+<a name="l00045"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a852bfb633b88380c5b42b32057e9b5bc">00045</a>                         UInt,                   
+<a name="l00046"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ab8c39c2ddca17b0204da8f33316189be">00046</a>                         Int64,          
+<a name="l00047"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a32a8cebf1fbe38e5d5e06ca2f8ab295c">00047</a>                         UInt64,         
+<a name="l00048"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a6312a88a0152819a3c70c3df0cf454e7">00048</a>                         Float,                  
+<a name="l00049"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a3ae15a919593d1f39e93bb9d780e3637">00049</a>                         Double,                 
+<a name="l00050"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aca7083d952423c05e0fa520ea37dd4bd">00050</a>                         String,                 
+<a name="l00051"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a4d9f39f9d5145f51138e54fdae4ee0a1">00051</a>                         ByteArray,              
+<a name="l00052"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa318c4de9930a6562ce8e1ff4ba66977">00052</a>                         StringList,             
+<a name="l00053"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ae450b45345701da81da5d8d24c6951bc">00053</a>                         Bool,                   
+<a name="l00054"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a488c1a9c26e607db6e05908456a807fc">00054</a>                         Pointer,                
+<a name="l00055"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a106e09485d797649ef967e32e45436ac">00055</a>                         PointerList,    
+<a name="l00056"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a2d3db3f4bb6c1673a2e7053e7eeb9eb7">00056</a>                         Plugin,                 
+<a name="l00057"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a3e8b8386c993c71fb87e42d92cb9bbb2">00057</a>                         Field,                  
+<a name="l00058"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aaf1b4c7760d17247d18d6000b0423810">00058</a>                         FieldList,              
+<a name="l00059"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a235cb345e0c9b6305885be5a530cfed2">00059</a>                         XmlNode,                
+<a name="l00060"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a67d3b07b253851f45ae0cd148874db9f">00060</a>                         Buddy,                  
+<a name="l00061"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ac28481818ee710c557cb2c82a635ada1">00061</a>                         BuddyResource,  
+<a name="l00062"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ad9813e64d619690514a56dee513c0d8c">00062</a>                         Account,                
+<a name="l00063"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ad195ced3e94c2707d77b224197c5bbbc">00063</a>                         PluginAction,   
+<a name="l00064"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa769d4ab4e23f85ebc9c0f0d8a72af92">00064</a>                         Presence,               
+<a name="l00065"></a>00065                         ArgList,        
+<a name="l00066"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aeea58c264e211487547fdf459d4ca7ce">00066</a>                         Service,                
+<a name="l00067"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa0c3a7125ce5e16fa2b4e218a96feaa8">00067</a>                         ServiceList,            
+<a name="l00068"></a>00068                         TextFormatList,
+<a name="l00069"></a><a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ab7cdb8e4047a717a0358ae5b23fd956b">00069</a>                         Undefined               
+<a name="l00070"></a>00070                 };
+<a name="l00071"></a>00071 
+<a name="l00075"></a>00075                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>();
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> &amp;);
+<a name="l00078"></a>00078                 ~<a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>();
+<a name="l00079"></a>00079 
+<a name="l00085"></a>00085                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> &amp;data);
+<a name="l00086"></a>00086 
+<a name="l00092"></a>00092                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> &amp;data);
+<a name="l00093"></a>00093 
+<a name="l00099"></a>00099                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> QByteArray &amp;data);
+<a name="l00100"></a>00100         
+<a name="l00106"></a>00106                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;data);
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> QList&lt;TlenArg&gt;&amp; argsList);
+<a name="l00109"></a>00109 
+<a name="l00115"></a>00115                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;data);
+<a name="l00116"></a>00116 
+<a name="l00117"></a>00117 
+<a name="l00123"></a>00123                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> qint64 &amp;data);
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125 
+<a name="l00131"></a>00131                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> quint64 &amp;data);
+<a name="l00132"></a>00132 
+<a name="l00138"></a>00138                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;data);
+<a name="l00139"></a>00139 
+<a name="l00140"></a>00140 
+<a name="l00146"></a>00146                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> &amp;data);
+<a name="l00147"></a>00147 
+<a name="l00153"></a>00153                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> QString &amp;data);
+<a name="l00154"></a>00154 
+<a name="l00160"></a>00160                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> QStringList &amp;data);
+<a name="l00161"></a>00161 
+<a name="l00167"></a>00167                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> &amp;data);
+<a name="l00168"></a>00168 
+<a name="l00174"></a>00174                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keywordtype">void</span> *data);
+<a name="l00175"></a>00175 
+<a name="l00181"></a>00181                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> QList&lt;void *&gt; &amp;data);
+<a name="l00182"></a>00182 
+<a name="l00188"></a>00188                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> <a class="code" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a> &amp;data);
+<a name="l00189"></a>00189 
+<a name="l00195"></a>00195                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> QList&lt;TlenField&gt; &amp;data);
+<a name="l00196"></a>00196 
+<a name="l00202"></a>00202                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> <a class="code" href="classTlenXmlNode.html" title="Klasa do obsługi XML.">TlenXmlNode</a> &amp;data);
+<a name="l00203"></a>00203 
+<a name="l00209"></a>00209                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> <a class="code" href="classTlenBuddy.html" title="Reprezentuje kontakt.">TlenBuddy</a> &amp;data);
+<a name="l00210"></a>00210 
+<a name="l00211"></a>00211 
+<a name="l00216"></a>00216                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> TlenBuddyResource &amp;data);
+<a name="l00217"></a>00217         
+<a name="l00223"></a>00223                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *data);
+<a name="l00224"></a>00224 
+<a name="l00230"></a>00230                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> <a class="code" href="classTlenPluginAction.html" title="Reprezentuje akcję w pluginie.">TlenPluginAction</a> &amp;);
+<a name="l00231"></a>00231 
+<a name="l00237"></a>00237                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<a class="code" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a> *data);
+<a name="l00238"></a>00238 
+<a name="l00244"></a>00244                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> <a class="code" href="classTlenPresence.html" title="Opisuje prezencję.">TlenPresence</a> &amp;data);
+<a name="l00245"></a>00245 
+<a name="l00251"></a>00251                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> <a class="code" href="classTlenService.html" title="Klasa opisująca usługę jaką realizuje plugin.">TlenService</a> &amp;data);
+<a name="l00252"></a>00252 
+<a name="l00258"></a>00258                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> QList&lt;TlenService&gt; &amp;data);
+<a name="l00259"></a>00259 
+<a name="l00265"></a>00265                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>(<span class="keyword">const</span> QList&lt;TlenTextFormat&gt; &amp;data);
+<a name="l00266"></a>00266 
+<a name="l00271"></a>00271                 <a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a" title="określa typ TlenArg">TlenArg::Type</a> getType() <span class="keyword">const</span>;
+<a name="l00272"></a>00272                 QString getTypeName() <span class="keyword">const</span>;
+<a name="l00273"></a>00273 
+<a name="l00279"></a>00279                 <span class="keywordtype">char</span> toChar() <span class="keyword">const</span>;
+<a name="l00280"></a>00280 
+<a name="l00286"></a>00286                 <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> toUChar() <span class="keyword">const</span>;
+<a name="l00287"></a>00287 
+<a name="l00293"></a>00293                 <span class="keywordtype">int</span> toInt() <span class="keyword">const</span>;
+<a name="l00294"></a>00294                 
+<a name="l00300"></a>00300                 <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> toUInt() <span class="keyword">const</span>;
+<a name="l00301"></a>00301 
+<a name="l00307"></a>00307                 qint64 toInt64() <span class="keyword">const</span>;
+<a name="l00308"></a>00308 
+<a name="l00314"></a>00314                 quint64 toUInt64() <span class="keyword">const</span>;
+<a name="l00315"></a>00315 
+<a name="l00321"></a>00321                 <span class="keywordtype">double</span> toDouble() <span class="keyword">const</span>;
+<a name="l00322"></a>00322 
+<a name="l00328"></a>00328                 <span class="keywordtype">float</span> toFloat() <span class="keyword">const</span>;
+<a name="l00329"></a>00329 
+<a name="l00335"></a>00335                 QString toString() <span class="keyword">const</span>;
+<a name="l00336"></a>00336 
+<a name="l00342"></a>00342                 QByteArray toByteArray() <span class="keyword">const</span>;
+<a name="l00343"></a>00343         
+<a name="l00344"></a>00344         
+<a name="l00350"></a>00350                 QStringList toStringList() <span class="keyword">const</span>;
+<a name="l00351"></a>00351 
+<a name="l00357"></a>00357                 <span class="keywordtype">bool</span> toBool() <span class="keyword">const</span>;
+<a name="l00358"></a>00358 
+<a name="l00364"></a>00364                 <span class="keywordtype">void</span> *toPointer() <span class="keyword">const</span>;
+<a name="l00365"></a>00365 
+<a name="l00371"></a>00371                 QList&lt;void *&gt; toPointerList() <span class="keyword">const</span>;
+<a name="l00372"></a>00372 
+<a name="l00373"></a>00373 
+<a name="l00374"></a>00374                 QList&lt;TlenArg&gt; toArgList() <span class="keyword">const</span>;
+<a name="l00375"></a>00375 
+<a name="l00381"></a>00381                 <a class="code" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a> toField() <span class="keyword">const</span>;
+<a name="l00382"></a>00382 
+<a name="l00388"></a>00388                 QList&lt;TlenField&gt; toFieldList() <span class="keyword">const</span>;
+<a name="l00389"></a>00389 
+<a name="l00395"></a>00395                 <a class="code" href="classTlenXmlNode.html" title="Klasa do obsługi XML.">TlenXmlNode</a> toXmlNode() <span class="keyword">const</span>;
+<a name="l00396"></a>00396 
+<a name="l00402"></a>00402                 <a class="code" href="classTlenBuddy.html" title="Reprezentuje kontakt.">TlenBuddy</a> toBuddy() <span class="keyword">const</span>;
+<a name="l00403"></a>00403 
+<a name="l00409"></a>00409                 TlenBuddyResource toBuddyResource() <span class="keyword">const</span>;
+<a name="l00410"></a>00410         
+<a name="l00416"></a>00416                 <a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *toAccount() <span class="keyword">const</span>;
+<a name="l00417"></a>00417 
+<a name="l00423"></a>00423                 <a class="code" href="classTlenPluginAction.html" title="Reprezentuje akcję w pluginie.">TlenPluginAction</a> toPluginAction() <span class="keyword">const</span>;
+<a name="l00424"></a>00424 
+<a name="l00430"></a>00430                 <a class="code" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a> *toPlugin() <span class="keyword">const</span>;
+<a name="l00431"></a>00431                 
+<a name="l00437"></a>00437                 <a class="code" href="classTlenPresence.html" title="Opisuje prezencję.">TlenPresence</a> toPresence() <span class="keyword">const</span>;
+<a name="l00438"></a>00438 
+<a name="l00444"></a>00444                 <a class="code" href="classTlenService.html" title="Klasa opisująca usługę jaką realizuje plugin.">TlenService</a> toService() <span class="keyword">const</span>;
+<a name="l00445"></a>00445 
+<a name="l00451"></a>00451                 QList&lt;TlenService&gt; toServiceList() <span class="keyword">const</span>;
+<a name="l00452"></a>00452 
+<a name="l00458"></a>00458                 QList&lt;TlenTextFormat&gt; toTextFormatList() <span class="keyword">const</span>;
+<a name="l00459"></a>00459 
+<a name="l00460"></a>00460 
+<a name="l00469"></a>00469                 <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> &amp;arg) <span class="keyword">const</span>;
+<a name="l00470"></a>00470 
+<a name="l00471"></a>00471                 <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> &amp;arg) <span class="keyword">const</span>;
+<a name="l00472"></a>00472 
+<a name="l00473"></a>00473                 <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> operator=(<span class="keyword">const</span> <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> &amp;other);
+<a name="l00474"></a>00474         
+<a name="l00482"></a>00482                 <span class="keyword">static</span> <span class="keywordtype">bool</span> setFieldValue(<a class="code" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a> &amp;field, <span class="keyword">const</span> <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> &amp;val);
+<a name="l00483"></a>00483 
+<a name="l00484"></a>00484         <span class="keyword">private</span>:
+<a name="l00485"></a>00485                 TlenArgPrivate *d;
+<a name="l00486"></a>00486 };
+<a name="l00487"></a>00487 
+<a name="l00488"></a>00488 Q_DECLARE_METATYPE(<a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>);
+<a name="l00489"></a>00489 
+<a name="l00490"></a>00490 
+<a name="l00491"></a>00491 
+<a name="l00492"></a>00492 <span class="preprocessor">#endif // _TLEN_ARG_H_</span>
+</pre></div><hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

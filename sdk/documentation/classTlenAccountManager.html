@@ -1,0 +1,540 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Dokumentacja klasy TlenAccountManager</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li class="current"><a href="classes.html"><span>Klasy</span></a></li>
+    <li><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabetyczna</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;klas</span></a></li>
+    <li><a href="hierarchy.html"><span>Hierarchia&nbsp;klas</span></a></li>
+    <li><a href="functions.html"><span>Składowe&nbsp;klas</span></a></li>
+  </ul>
+</div>
+<h1>Dokumentacja klasy TlenAccountManager</h1><!-- doxytag: class="TlenAccountManager" -->Zarządza kontami.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="TlenAccountManager_8h-source.html">TlenAccountManager.h</a>&gt;</code>
+<p>
+<a href="classTlenAccountManager-members.html">Lista wszystkich składowych.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountManager.html#3808cd2bbfcd876ab16b6d267ae5cadf">createAccount</a> (const QString &amp;display, const QString &amp;uid, const QString &amp;pass, bool rememberPass, <a class="el" href="classTlenProtocol.html">TlenProtocol</a> *protocol, const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;defaultPresence, const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;accSettings=QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt;())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy konto o podanych parametrach.  <a href="#3808cd2bbfcd876ab16b6d267ae5cadf"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountManager.html#49f1db7720317e48e48e7f26299569d3">loadAccount</a> (const QString &amp;uid, const QString &amp;protoid)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ładuje konto.  <a href="#49f1db7720317e48e48e7f26299569d3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountManager.html#9eaeb6d46025ef5b81bb64c1300e2fb5">getAccount</a> (const QString &amp;uid, const QString &amp;protoid)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca konto.  <a href="#9eaeb6d46025ef5b81bb64c1300e2fb5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountManager.html#4fd31ab10f1e3584b5403b127238a8b2">enableAccount</a> (const QString &amp;uid, const QString &amp;protoid)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Włącza konto.  <a href="#4fd31ab10f1e3584b5403b127238a8b2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountManager.html#76b6abe246168d68c89ce313cf9ef809">disableAccount</a> (const QString &amp;uid, const QString &amp;protoid)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wyłącza konto.  <a href="#76b6abe246168d68c89ce313cf9ef809"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountManager.html#c63db34c0dac1678aef96d32ea21ea57">removeAccount</a> (const QString &amp;uid, const QString &amp;protoid)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa konto.  <a href="#c63db34c0dac1678aef96d32ea21ea57"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenAccountInfo.html">TlenAccountInfo</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountManager.html#e269f9f5145a22fed368cef09d089a6c">getAccountsInfo</a> (const QString &amp;protoid=QString()) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca informacje o kontach.  <a href="#e269f9f5145a22fed368cef09d089a6c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenAccountInfo.html">TlenAccountInfo</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountManager.html#2c0f85cc5a148604d0ce5102a1f0c935">getDisabledAccountsInfo</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca informacje o wyłączonych kontach.  <a href="#2c0f85cc5a148604d0ce5102a1f0c935"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountManager.html#27ed0390668fd2707c8ceca5596ca626">getAccounts</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca konta.  <a href="#27ed0390668fd2707c8ceca5596ca626"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountManager.html#e65668b3321e539d491d4950565cffd7">getLoggedInAccounts</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca zalogowane konta.  <a href="#e65668b3321e539d491d4950565cffd7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountManager.html#49f0658fbf982732209d612e456941ce">getAccountsForProtocol</a> (const QString &amp;) const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca konta dla danego protokołu.  <a href="#49f0658fbf982732209d612e456941ce"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountManager.html#cc27ff084e060c5e99200f8c0649e0de">getLoggedInAccountsForProtocol</a> (const QString &amp;) const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca zalogowane konta dla danego protokołu.  <a href="#cc27ff084e060c5e99200f8c0649e0de"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountManager.html#9819084d6bc7851c98ea28255f99f35b">accountEnabled</a> (const QString &amp;uid, const QString &amp;protocol) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca czy konto jest włączone.  <a href="#9819084d6bc7851c98ea28255f99f35b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="cebc32d341ea7dcd4c5a84583a8c95e2"></a><!-- doxytag: member="TlenAccountManager::getMainAccount" ref="cebc32d341ea7dcd4c5a84583a8c95e2" args="() const" -->
+<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountManager.html#cebc32d341ea7dcd4c5a84583a8c95e2">getMainAccount</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>Zwraca konto główne </dd></dl>
+<br></td></tr>
+<tr><td colspan="2"><br><h2>Statyczne metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="45c806f99ce16bfc63c3eb252c238f79"></a><!-- doxytag: member="TlenAccountManager::getInstance" ref="45c806f99ce16bfc63c3eb252c238f79" args="()" -->
+static <a class="el" href="classTlenAccountManager.html">TlenAccountManager</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Zarządza kontami. 
+<p>
+Umożliwia odczytywanie, włączanie, wyłaczanie kont. 
+<p>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="3808cd2bbfcd876ab16b6d267ae5cadf"></a><!-- doxytag: member="TlenAccountManager::createAccount" ref="3808cd2bbfcd876ab16b6d267ae5cadf" args="(const QString &amp;display, const QString &amp;uid, const QString &amp;pass, bool rememberPass, TlenProtocol *protocol, const TlenPresence &amp;defaultPresence, const QList&lt; TlenField &gt; &amp;accSettings=QList&lt; TlenField &gt;())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a>* TlenAccountManager::createAccount           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>pass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>rememberPass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTlenProtocol.html">TlenProtocol</a> *&nbsp;</td>
+          <td class="paramname"> <em>protocol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>defaultPresence</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>accSettings</em> = <code>QList&lt;&nbsp;<a class="el" href="classTlenField.html">TlenField</a>&nbsp;&gt;()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy konto o podanych parametrach. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>display</em>&nbsp;</td><td>nazwa wyświetlana </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>uid</em>&nbsp;</td><td>id </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pass</em>&nbsp;</td><td>hasło </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>rememberPass</em>&nbsp;</td><td>czy hasło ma być zapamiętane </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>protocol</em>&nbsp;</td><td>protokół </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>defaultPresence</em>&nbsp;</td><td>domyślna prezencja </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>accSettings</em>&nbsp;</td><td>ustawienia konta </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>utworzone konto </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="49f1db7720317e48e48e7f26299569d3"></a><!-- doxytag: member="TlenAccountManager::loadAccount" ref="49f1db7720317e48e48e7f26299569d3" args="(const QString &amp;uid, const QString &amp;protoid)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a>* TlenAccountManager::loadAccount           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>protoid</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Ładuje konto. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>uid</em>&nbsp;</td><td>id </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>protoid</em>&nbsp;</td><td>id protokołu </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>załadowane konto </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9eaeb6d46025ef5b81bb64c1300e2fb5"></a><!-- doxytag: member="TlenAccountManager::getAccount" ref="9eaeb6d46025ef5b81bb64c1300e2fb5" args="(const QString &amp;uid, const QString &amp;protoid)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a>* TlenAccountManager::getAccount           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>protoid</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca konto. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>uid</em>&nbsp;</td><td>id </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>protoid</em>&nbsp;</td><td>id protokołu </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>konto </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4fd31ab10f1e3584b5403b127238a8b2"></a><!-- doxytag: member="TlenAccountManager::enableAccount" ref="4fd31ab10f1e3584b5403b127238a8b2" args="(const QString &amp;uid, const QString &amp;protoid)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountManager::enableAccount           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>protoid</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Włącza konto. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>uid</em>&nbsp;</td><td>id </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>protoid</em>&nbsp;</td><td>id protokołu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="76b6abe246168d68c89ce313cf9ef809"></a><!-- doxytag: member="TlenAccountManager::disableAccount" ref="76b6abe246168d68c89ce313cf9ef809" args="(const QString &amp;uid, const QString &amp;protoid)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountManager::disableAccount           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>protoid</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Wyłącza konto. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>uid</em>&nbsp;</td><td>id </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>protoid</em>&nbsp;</td><td>id protokołu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c63db34c0dac1678aef96d32ea21ea57"></a><!-- doxytag: member="TlenAccountManager::removeAccount" ref="c63db34c0dac1678aef96d32ea21ea57" args="(const QString &amp;uid, const QString &amp;protoid)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountManager::removeAccount           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>protoid</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Usuwa konto. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>uid</em>&nbsp;</td><td>id </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>protoid</em>&nbsp;</td><td>id protokołu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e269f9f5145a22fed368cef09d089a6c"></a><!-- doxytag: member="TlenAccountManager::getAccountsInfo" ref="e269f9f5145a22fed368cef09d089a6c" args="(const QString &amp;protoid=QString()) const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenAccountInfo.html">TlenAccountInfo</a> *&gt; TlenAccountManager::getAccountsInfo           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>protoid</em> = <code>QString()</code>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca informacje o kontach. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>protoid</em>&nbsp;</td><td>id protokołu, jeśli puste zwraca wszystkie konta </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>informacje o kontach </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2c0f85cc5a148604d0ce5102a1f0c935"></a><!-- doxytag: member="TlenAccountManager::getDisabledAccountsInfo" ref="2c0f85cc5a148604d0ce5102a1f0c935" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenAccountInfo.html">TlenAccountInfo</a> *&gt; TlenAccountManager::getDisabledAccountsInfo           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca informacje o wyłączonych kontach. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>informacje o kontach </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="27ed0390668fd2707c8ceca5596ca626"></a><!-- doxytag: member="TlenAccountManager::getAccounts" ref="27ed0390668fd2707c8ceca5596ca626" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&gt; TlenAccountManager::getAccounts           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca konta. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>konta </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e65668b3321e539d491d4950565cffd7"></a><!-- doxytag: member="TlenAccountManager::getLoggedInAccounts" ref="e65668b3321e539d491d4950565cffd7" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&gt; TlenAccountManager::getLoggedInAccounts           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca zalogowane konta. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>zalogowane konta </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="49f0658fbf982732209d612e456941ce"></a><!-- doxytag: member="TlenAccountManager::getAccountsForProtocol" ref="49f0658fbf982732209d612e456941ce" args="(const QString &amp;) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&gt; TlenAccountManager::getAccountsForProtocol           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca konta dla danego protokołu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>protokołu </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>konta </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="cc27ff084e060c5e99200f8c0649e0de"></a><!-- doxytag: member="TlenAccountManager::getLoggedInAccountsForProtocol" ref="cc27ff084e060c5e99200f8c0649e0de" args="(const QString &amp;) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&gt; TlenAccountManager::getLoggedInAccountsForProtocol           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca zalogowane konta dla danego protokołu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>protokołu </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>konta </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9819084d6bc7851c98ea28255f99f35b"></a><!-- doxytag: member="TlenAccountManager::accountEnabled" ref="9819084d6bc7851c98ea28255f99f35b" args="(const QString &amp;uid, const QString &amp;protocol) const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TlenAccountManager::accountEnabled           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>protocol</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca czy konto jest włączone. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>uid</em>&nbsp;</td><td>id </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>protocol</em>&nbsp;</td><td>id protokołu </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>stan konta </dd></dl>
+
+</div>
+</div><p>
+<hr>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>include/plugin/<a class="el" href="TlenAccountManager_8h-source.html">TlenAccountManager.h</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

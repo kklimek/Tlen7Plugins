@@ -1,0 +1,337 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Dokumentacja klasy TlenXmlProtocol</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li class="current"><a href="classes.html"><span>Klasy</span></a></li>
+    <li><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabetyczna</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;klas</span></a></li>
+    <li><a href="hierarchy.html"><span>Hierarchia&nbsp;klas</span></a></li>
+    <li><a href="functions.html"><span>Składowe&nbsp;klas</span></a></li>
+  </ul>
+</div>
+<h1>Dokumentacja klasy TlenXmlProtocol</h1><!-- doxytag: class="TlenXmlProtocol" --><!-- doxytag: inherits="TlenProtocol" -->Klasa bazowa dla protokołów bazujących na strumieniu XML.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="TlenXmlProtocol_8h-source.html">TlenXmlProtocol.h</a>&gt;</code>
+<p>
+Dziedziczy <a class="el" href="classTlenProtocol.html">TlenProtocol</a>.
+<p>
+<a href="classTlenXmlProtocol-members.html">Lista wszystkich składowych.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Typy publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenXmlProtocol.html#d655932cb132e98a4f427e35b2cc36c5">Error</a> { <a class="el" href="classTlenXmlProtocol.html#d655932cb132e98a4f427e35b2cc36c53f458b53e22d42517548605ba11a587b">UnexpectedElementError</a>, 
+<a class="el" href="classTlenXmlProtocol.html#d655932cb132e98a4f427e35b2cc36c5b115ff91ec7a8f78ec8ed8c3a6176483">XmlNotWellFormedError</a>
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Opisuje błąd parsowania XML.  <a href="classTlenXmlProtocol.html#d655932cb132e98a4f427e35b2cc36c5">Więcej...</a><br></td></tr>
+<tr><td colspan="2"><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9a8e16f1a9b132f9612ecbd46c716b14"></a><!-- doxytag: member="TlenXmlProtocol::TlenXmlProtocol" ref="9a8e16f1a9b132f9612ecbd46c716b14" args="(bool namespaceprocessing=true)" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>TlenXmlProtocol</b> (bool namespaceprocessing=true)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenXmlProtocol.html#dcac5eff370c57944c2e03687bfff35f">socketReadyRead</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QByteArray &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda zaimplementowana na potrzeby protokołu bazującego na strumieniu XML.  <a href="#dcac5eff370c57944c2e03687bfff35f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b3fb9eb9f189cf741649020734727f7e"></a><!-- doxytag: member="TlenXmlProtocol::TLEN_DECLARE_SLOT" ref="b3fb9eb9f189cf741649020734727f7e" args="(xmlProtocolOnNode)" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>TLEN_DECLARE_SLOT</b> (xmlProtocolOnNode)</td></tr>
+
+<tr><td colspan="2"><br><h2>Metody chronione</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="15483f8c5cb943249a72b9b7586f8f2f"></a><!-- doxytag: member="TlenXmlProtocol::reset" ref="15483f8c5cb943249a72b9b7586f8f2f" args="(TlenAccountConnection *acc)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>reset</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenXmlProtocol.html#65e6f584968991bfbfc2ceb06c614a72">writeRootOpen</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *, const <a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> &amp;node)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Otwiera nowy stream w protokole.  <a href="#65e6f584968991bfbfc2ceb06c614a72"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7a31afbfc5d4cfa9dadfe3af20c562fa"></a><!-- doxytag: member="TlenXmlProtocol::writeDTD" ref="7a31afbfc5d4cfa9dadfe3af20c562fa" args="(TlenAccountConnection *, const QByteArray &amp;version=&quot;1.0&quot;, const QByteArray &amp;encoding=&quot;UTF-8&quot;)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>writeDTD</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *, const QByteArray &amp;version=&quot;1.0&quot;, const QByteArray &amp;encoding=&quot;UTF-8&quot;)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenXmlProtocol.html#bfba010fe5e924bab45760f7ea2565bb">onNode</a> (const <a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> &amp;node, <a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda reaguje na node w roocie dokumentu np.  <a href="#bfba010fe5e924bab45760f7ea2565bb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenXmlProtocol.html#5f2702900e59c8d0f0665f9329d6a80d">onRootOpen</a> (const <a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> &amp;node, <a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda reagujaca na pierwszy otwierajacy node w strumieniu.  <a href="#5f2702900e59c8d0f0665f9329d6a80d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenXmlProtocol.html#7a97d64444a367d9339479ba2f459f6b">onRootClose</a> (const <a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> &amp;node, <a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda reaguje na zakonczenie dokumentu, bedzie to zamkniecie noda ktory przyszedl w onRootOpen.  <a href="#7a97d64444a367d9339479ba2f459f6b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenXmlProtocol.html#cc36f264cfd6c5ca82770b88c8c01045">onError</a> (<a class="el" href="classTlenXmlProtocol.html#d655932cb132e98a4f427e35b2cc36c5">TlenXmlProtocol::Error</a> err, <a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda reaguje na blad w parsowaniu xmla.  <a href="#cc36f264cfd6c5ca82770b88c8c01045"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Klasa bazowa dla protokołów bazujących na strumieniu XML. 
+<p>
+Jeśli chcemy zaimplementować protokół bazujący na strumieniu XML najwygodniejszym sposobem jest wykorzystanie tej klasy. Klasa ma cztery metody, które TRZEBA reimplementować:<ul>
+<li>onNode</li><li>onRootOpen</li><li>onRootClose</li><li>onError <br>
+</li></ul>
+<p>
+Metoda onRootOpen jest wywoływana przy napotkaniu pierwszego node XML.<br>
+ Metoda onNode jest wywołtwana przy napotkaniu każdego kolejnego node XML.<br>
+ Metoda onRootClose jest wywoływana przy zamknięciu pierwszego node XML.<br>
+<br>
+ Przykład:<br>
+ Następujący dokument XML: <div class="fragment"><pre class="fragment">  &lt;xmlroot&gt;
+        &lt;xmlchild1&gt;
+                &lt;xmlchild2/&gt;
+        &lt;/xmlchild1&gt;
+  &lt;/xmlroot&gt;
+</pre></div> spowoduje:<ol type=1>
+<li>onRootOpen z <a class="el" href="classTlenXmlNode.html" title="Klasa do obsługi XML.">TlenXmlNode</a> &lt;xmlroot&gt;</li><li>onNode z <a class="el" href="classTlenXmlNode.html" title="Klasa do obsługi XML.">TlenXmlNode</a> &lt;xmlchild1&gt;&lt;xmlchild2&gt;&lt;xmlchild1&gt;</li><li>onRootClose z <a class="el" href="classTlenXmlNode.html" title="Klasa do obsługi XML.">TlenXmlNode</a> &lt;xmlroot&gt; </li></ol>
+
+<p>
+<hr><h2>Dokumentacja składowych wyliczanych</h2>
+<a class="anchor" name="d655932cb132e98a4f427e35b2cc36c5"></a><!-- doxytag: member="TlenXmlProtocol::Error" ref="d655932cb132e98a4f427e35b2cc36c5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classTlenXmlProtocol.html#d655932cb132e98a4f427e35b2cc36c5">TlenXmlProtocol::Error</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Opisuje błąd parsowania XML. 
+<p>
+<dl compact><dt><b>Wartości wyliczeń: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="d655932cb132e98a4f427e35b2cc36c53f458b53e22d42517548605ba11a587b"></a><!-- doxytag: member="UnexpectedElementError" ref="d655932cb132e98a4f427e35b2cc36c53f458b53e22d42517548605ba11a587b" args="" -->UnexpectedElementError</em>&nbsp;</td><td>
+Nieoczekiwany element w drzewie xml. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="d655932cb132e98a4f427e35b2cc36c5b115ff91ec7a8f78ec8ed8c3a6176483"></a><!-- doxytag: member="XmlNotWellFormedError" ref="d655932cb132e98a4f427e35b2cc36c5b115ff91ec7a8f78ec8ed8c3a6176483" args="" -->XmlNotWellFormedError</em>&nbsp;</td><td>
+Zle uformowany xml, czyli np jakis node zamyka sie za nodem rodzicem itd. </td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="dcac5eff370c57944c2e03687bfff35f"></a><!-- doxytag: member="TlenXmlProtocol::socketReadyRead" ref="dcac5eff370c57944c2e03687bfff35f" args="(TlenAccountConnection *acc, const QByteArray &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenXmlProtocol::socketReadyRead           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QByteArray &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda zaimplementowana na potrzeby protokołu bazującego na strumieniu XML. 
+<p>
+Nie należy jej reimplementować, inaczej metody onRootOpen, onNode, onRootClose i onError nie zostaną wywołane 
+<p>
+Reimplementowana z <a class="el" href="classTlenProtocol.html">TlenProtocol</a>.
+</div>
+</div><p>
+<a class="anchor" name="65e6f584968991bfbfc2ceb06c614a72"></a><!-- doxytag: member="TlenXmlProtocol::writeRootOpen" ref="65e6f584968991bfbfc2ceb06c614a72" args="(TlenAccountConnection *, const TlenXmlNode &amp;node)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenXmlProtocol::writeRootOpen           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>node</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Otwiera nowy stream w protokole. 
+<p>
+Nastepny odebrany node zostanie przekazany do onRootOpen, a nie onXmlNode. 
+</div>
+</div><p>
+<a class="anchor" name="bfba010fe5e924bab45760f7ea2565bb"></a><!-- doxytag: member="TlenXmlProtocol::onNode" ref="bfba010fe5e924bab45760f7ea2565bb" args="(const TlenXmlNode &amp;node, TlenAccountConnection *acc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenXmlProtocol::onNode           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected, pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda reaguje na node w roocie dokumentu np. 
+<p>
+jesli przyjdzie node <b>&lt;tekst&gt;</b> to zostanie przekazany w calosci do metody <dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>node</em>&nbsp;</td><td>- node xml </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto ktore otrzymalo noda </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5f2702900e59c8d0f0665f9329d6a80d"></a><!-- doxytag: member="TlenXmlProtocol::onRootOpen" ref="5f2702900e59c8d0f0665f9329d6a80d" args="(const TlenXmlNode &amp;node, TlenAccountConnection *acc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenXmlProtocol::onRootOpen           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected, pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda reagujaca na pierwszy otwierajacy node w strumieniu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>node</em>&nbsp;</td><td>- node xml </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto ktore otrzymalo noda </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7a97d64444a367d9339479ba2f459f6b"></a><!-- doxytag: member="TlenXmlProtocol::onRootClose" ref="7a97d64444a367d9339479ba2f459f6b" args="(const TlenXmlNode &amp;node, TlenAccountConnection *acc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenXmlProtocol::onRootClose           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected, pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda reaguje na zakonczenie dokumentu, bedzie to zamkniecie noda ktory przyszedl w onRootOpen. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>node</em>&nbsp;</td><td>- node xml </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto ktore otrzymalo noda </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="cc36f264cfd6c5ca82770b88c8c01045"></a><!-- doxytag: member="TlenXmlProtocol::onError" ref="cc36f264cfd6c5ca82770b88c8c01045" args="(TlenXmlProtocol::Error err, TlenAccountConnection *acc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenXmlProtocol::onError           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenXmlProtocol.html#d655932cb132e98a4f427e35b2cc36c5">TlenXmlProtocol::Error</a>&nbsp;</td>
+          <td class="paramname"> <em>err</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected, pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda reaguje na blad w parsowaniu xmla. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>err</em>&nbsp;</td><td>- blad </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto ktore napotkalo blad </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<hr>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>include/plugin/<a class="el" href="TlenXmlProtocol_8h-source.html">TlenXmlProtocol.h</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

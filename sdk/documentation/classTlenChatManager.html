@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Dokumentacja klasy TlenChatManager</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li class="current"><a href="classes.html"><span>Klasy</span></a></li>
+    <li><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabetyczna</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;klas</span></a></li>
+    <li><a href="hierarchy.html"><span>Hierarchia&nbsp;klas</span></a></li>
+    <li><a href="functions.html"><span>Składowe&nbsp;klas</span></a></li>
+  </ul>
+</div>
+<h1>Dokumentacja klasy TlenChatManager</h1><!-- doxytag: class="TlenChatManager" -->Zarządza oknami rozmów.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="TlenChatManager_8h-source.html">TlenChatManager.h</a>&gt;</code>
+<p>
+<a href="classTlenChatManager-members.html">Lista wszystkich składowych.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenChatWindow.html">TlenChatWindow</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenChatManager.html#65e6cb1f75cd65782dfdf04d3c6a6fb4">createChatWindow</a> (const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy okno rozmowy z danym kontaktem.  <a href="#65e6cb1f75cd65782dfdf04d3c6a6fb4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenChatManager.html#dda3cd1075fa3b38ce5d9968bab24688">removeChatWindow</a> (<a class="el" href="classTlenChatWindow.html">TlenChatWindow</a> *)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa okno rozmowy.  <a href="#dda3cd1075fa3b38ce5d9968bab24688"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenChatWindow.html">TlenChatWindow</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenChatManager.html#cf6f3a06a1e42ba9fd22b19aeee6e99a">getChatWindow</a> (const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca okno rozmowy dla danego kontaktu.  <a href="#cf6f3a06a1e42ba9fd22b19aeee6e99a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenChatWindow.html">TlenChatWindow</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenChatManager.html#6cecbcf7af1dd956688df68d528498d7">getExistingChatWindows</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca istniejące okna z rozmowami.  <a href="#6cecbcf7af1dd956688df68d528498d7"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Statyczne metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="75ad19ebf34bbdedf92e5c2d4486ed28"></a><!-- doxytag: member="TlenChatManager::getInstance" ref="75ad19ebf34bbdedf92e5c2d4486ed28" args="()" -->
+static <a class="el" href="classTlenChatManager.html">TlenChatManager</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Zarządza oknami rozmów. 
+<p>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="65e6cb1f75cd65782dfdf04d3c6a6fb4"></a><!-- doxytag: member="TlenChatManager::createChatWindow" ref="65e6cb1f75cd65782dfdf04d3c6a6fb4" args="(const TlenBuddy &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenChatWindow.html">TlenChatWindow</a>* TlenChatManager::createChatWindow           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy okno rozmowy z danym kontaktem. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>kontakt</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>utworzone okno rozmowy </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="dda3cd1075fa3b38ce5d9968bab24688"></a><!-- doxytag: member="TlenChatManager::removeChatWindow" ref="dda3cd1075fa3b38ce5d9968bab24688" args="(TlenChatWindow *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenChatManager::removeChatWindow           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenChatWindow.html">TlenChatWindow</a> *&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Usuwa okno rozmowy. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>okno</em>&nbsp;</td><td>rozmowy </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="cf6f3a06a1e42ba9fd22b19aeee6e99a"></a><!-- doxytag: member="TlenChatManager::getChatWindow" ref="cf6f3a06a1e42ba9fd22b19aeee6e99a" args="(const TlenBuddy &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenChatWindow.html">TlenChatWindow</a>* TlenChatManager::getChatWindow           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca okno rozmowy dla danego kontaktu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>kontakt</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>okno rozmowy </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6cecbcf7af1dd956688df68d528498d7"></a><!-- doxytag: member="TlenChatManager::getExistingChatWindows" ref="6cecbcf7af1dd956688df68d528498d7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenChatWindow.html">TlenChatWindow</a> *&gt; TlenChatManager::getExistingChatWindows           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca istniejące okna z rozmowami. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>lista okien z rozmowami </dd></dl>
+
+</div>
+</div><p>
+<hr>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>include/gui/<a class="el" href="TlenChatManager_8h-source.html">TlenChatManager.h</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

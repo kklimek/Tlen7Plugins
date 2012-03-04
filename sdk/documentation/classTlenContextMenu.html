@@ -1,0 +1,308 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Dokumentacja klasy TlenContextMenu</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li class="current"><a href="classes.html"><span>Klasy</span></a></li>
+    <li><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabetyczna</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;klas</span></a></li>
+    <li><a href="hierarchy.html"><span>Hierarchia&nbsp;klas</span></a></li>
+    <li><a href="functions.html"><span>Składowe&nbsp;klas</span></a></li>
+  </ul>
+</div>
+<h1>Dokumentacja klasy TlenContextMenu</h1><!-- doxytag: class="TlenContextMenu" --><!-- doxytag: inherits="TlenAction" -->Reprezentuje menu kontekstowe.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="TlenContextMenu_8h-source.html">TlenContextMenu.h</a>&gt;</code>
+<p>
+Dziedziczy <a class="el" href="classTlenAction.html">TlenAction</a>.
+<p>
+<a href="classTlenContextMenu-members.html">Lista wszystkich składowych.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d983b8629a8a4b600dad64e9e1e5eef7"></a><!-- doxytag: member="TlenContextMenu::TlenContextMenu" ref="d983b8629a8a4b600dad64e9e1e5eef7" args="(const QString &amp;id, const QString &amp;caption=QString(), const QString &amp;ico=QString(), const QList&lt; TlenArg &gt; &amp;actiondata=QList&lt; TlenArg &gt;())" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>TlenContextMenu</b> (const QString &amp;id, const QString &amp;caption=QString(), const QString &amp;ico=QString(), const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;actiondata=QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt;())</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f0a9f8fd01be1d9837711911aa1895c9"></a><!-- doxytag: member="TlenContextMenu::getId" ref="f0a9f8fd01be1d9837711911aa1895c9" args="() const" -->
+const QString&nbsp;</td><td class="memItemRight" valign="bottom"><b>getId</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f44169ee083ea6e6f54a2b14b2604494"></a><!-- doxytag: member="TlenContextMenu::addAction" ref="f44169ee083ea6e6f54a2b14b2604494" args="(TlenAction *)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenContextMenu.html#f44169ee083ea6e6f54a2b14b2604494">addAction</a> (<a class="el" href="classTlenAction.html">TlenAction</a> *)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dodaje akcje na koncu menu. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="41560209332d4379911954327286ec29"></a><!-- doxytag: member="TlenContextMenu::addMenu" ref="41560209332d4379911954327286ec29" args="(TlenContextMenu *)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenContextMenu.html#41560209332d4379911954327286ec29">addMenu</a> (<a class="el" href="classTlenContextMenu.html">TlenContextMenu</a> *)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dodaje podmenu na koncu menu. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenAction.html">TlenAction</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenContextMenu.html#6065f475af4ec0420be446871185c381">addAction</a> (const QString &amp;caption, const QString &amp;icon, const <a class="el" href="classTlenPluginAction.html">TlenPluginAction</a> &amp;, const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;actdata=QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt;())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy i dodaje akcje na koncu menu.  <a href="#6065f475af4ec0420be446871185c381"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenContextMenu.html#1c1899b0aae156c48088dcf4c89e7c10">insertAction</a> (int pos, <a class="el" href="classTlenAction.html">TlenAction</a> *)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wstawia akcje na wybrana pozycje.  <a href="#1c1899b0aae156c48088dcf4c89e7c10"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenContextMenu.html#90d603dc9c13190f2e84efd465853a61">insertMenu</a> (int pos, <a class="el" href="classTlenContextMenu.html">TlenContextMenu</a> *)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wstawia podmenu na wybrana pozycje.  <a href="#90d603dc9c13190f2e84efd465853a61"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenAction.html">TlenAction</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenContextMenu.html#8d7ae293546dab8a416378dc6dc83d0d">insertAction</a> (int pos, const QString &amp;caption, const QString &amp;icon, const <a class="el" href="classTlenPluginAction.html">TlenPluginAction</a> &amp;, const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;actdata=QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt;())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy i dodaje akcje na koncu menu.  <a href="#8d7ae293546dab8a416378dc6dc83d0d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="fd83c1aa0327fe48f2a827cf02b2a1cd"></a><!-- doxytag: member="TlenContextMenu::actionList" ref="fd83c1aa0327fe48f2a827cf02b2a1cd" args="() const" -->
+QList&lt; <a class="el" href="classTlenAction.html">TlenAction</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>actionList</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d887173f7565e5b2020ae45b9f91e4e7"></a><!-- doxytag: member="TlenContextMenu::actionsCount" ref="d887173f7565e5b2020ae45b9f91e4e7" args="() const" -->
+int&nbsp;</td><td class="memItemRight" valign="bottom"><b>actionsCount</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f557d6e7d1fd2c2c481bc19bb18669c8"></a><!-- doxytag: member="TlenContextMenu::removeAction" ref="f557d6e7d1fd2c2c481bc19bb18669c8" args="(int pos)" -->
+<a class="el" href="classTlenAction.html">TlenAction</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenContextMenu.html#f557d6e7d1fd2c2c481bc19bb18669c8">removeAction</a> (int pos)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa akcje we wskazanej pozycji UWAGA: Metoda asertuje gdy parametr pos jest wiekszy niz ilosc akcji w menu. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7ff12ef3c8716acc2be3eebc76d77a96"></a><!-- doxytag: member="TlenContextMenu::removeAction" ref="7ff12ef3c8716acc2be3eebc76d77a96" args="(TlenAction *)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenContextMenu.html#7ff12ef3c8716acc2be3eebc76d77a96">removeAction</a> (<a class="el" href="classTlenAction.html">TlenAction</a> *)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa wskazana akcje z menu Jesli akcja nie znajduje sie w menu ta metoda nie robi nic. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ce0982cee2ffd211260ed44adc985df7"></a><!-- doxytag: member="TlenContextMenu::addSeparator" ref="ce0982cee2ffd211260ed44adc985df7" args="()" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenContextMenu.html#ce0982cee2ffd211260ed44adc985df7">addSeparator</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dodaje separator na koncu menu. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenContextMenu.html#ccb7df232c6512c976b9e59a2eb861bc">insertSeparator</a> (int pos)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dodaje separator we wskazanej pozycji.  <a href="#ccb7df232c6512c976b9e59a2eb861bc"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4382fa31f3bb6b78ade0fc0aa43dad3b"></a><!-- doxytag: member="TlenContextMenu::containsAction" ref="4382fa31f3bb6b78ade0fc0aa43dad3b" args="(TlenAction *)" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>containsAction</b> (<a class="el" href="classTlenAction.html">TlenAction</a> *)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a218d08d232738c5440ab46e75f82b1d"></a><!-- doxytag: member="TlenContextMenu::isEmpty" ref="a218d08d232738c5440ab46e75f82b1d" args="() const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>isEmpty</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="5fc61510887952211ff8025c6a0bcc6f"></a><!-- doxytag: member="TlenContextMenu::getSubmenu" ref="5fc61510887952211ff8025c6a0bcc6f" args="(const QString &amp;id) const " -->
+<a class="el" href="classTlenContextMenu.html">TlenContextMenu</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>getSubmenu</b> (const QString &amp;id) const </td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Reprezentuje menu kontekstowe. 
+<p>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="6065f475af4ec0420be446871185c381"></a><!-- doxytag: member="TlenContextMenu::addAction" ref="6065f475af4ec0420be446871185c381" args="(const QString &amp;caption, const QString &amp;icon, const TlenPluginAction &amp;, const QList&lt; TlenArg &gt; &amp;actdata=QList&lt; TlenArg &gt;())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenAction.html">TlenAction</a>* TlenContextMenu::addAction           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>caption</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>icon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenPluginAction.html">TlenPluginAction</a> &amp;&nbsp;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>actdata</em> = <code>QList&lt;&nbsp;<a class="el" href="classTlenArg.html">TlenArg</a>&nbsp;&gt;()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy i dodaje akcje na koncu menu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>caption</em>&nbsp;</td><td>- tekst akcji </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>icon</em>&nbsp;</td><td>- sciezka do ikony </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cb</em>&nbsp;</td><td>- callback akcji </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>utworzona akcja </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1c1899b0aae156c48088dcf4c89e7c10"></a><!-- doxytag: member="TlenContextMenu::insertAction" ref="1c1899b0aae156c48088dcf4c89e7c10" args="(int pos, TlenAction *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenContextMenu::insertAction           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTlenAction.html">TlenAction</a> *&nbsp;</td>
+          <td class="paramname"></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Wstawia akcje na wybrana pozycje. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pos</em>&nbsp;</td><td>- pozycja w ktora chcemy wstawic, 0 bedzie zawsze na poczatku, -1 zawsze na koncu. Jesli wartosc pos jest wieksza niz ilosc pozycji w menu, to akcja wstawiona zostaje na koncu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="90d603dc9c13190f2e84efd465853a61"></a><!-- doxytag: member="TlenContextMenu::insertMenu" ref="90d603dc9c13190f2e84efd465853a61" args="(int pos, TlenContextMenu *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenContextMenu::insertMenu           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTlenContextMenu.html">TlenContextMenu</a> *&nbsp;</td>
+          <td class="paramname"></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Wstawia podmenu na wybrana pozycje. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pos</em>&nbsp;</td><td>- pozycja w ktora chcemy wstawic, 0 bedzie zawsze na poczatku, -1 zawsze na koncu. Jesli wartosc pos jest wieksza niz ilosc pozycji w menu, to akcja wstawiona zostaje na koncu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="8d7ae293546dab8a416378dc6dc83d0d"></a><!-- doxytag: member="TlenContextMenu::insertAction" ref="8d7ae293546dab8a416378dc6dc83d0d" args="(int pos, const QString &amp;caption, const QString &amp;icon, const TlenPluginAction &amp;, const QList&lt; TlenArg &gt; &amp;actdata=QList&lt; TlenArg &gt;())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenAction.html">TlenAction</a>* TlenContextMenu::insertAction           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>caption</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>icon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenPluginAction.html">TlenPluginAction</a> &amp;&nbsp;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>actdata</em> = <code>QList&lt;&nbsp;<a class="el" href="classTlenArg.html">TlenArg</a>&nbsp;&gt;()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy i dodaje akcje na koncu menu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pos</em>&nbsp;</td><td>- pozycja w ktora chcemy wstawic, 0 bedzie zawsze na poczatku, -1 zawsze na koncu. Jesli wartosc pos jest wieksza niz ilosc pozycji w menu, to akcja wstawiona zostaje na koncu </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>caption</em>&nbsp;</td><td>- tekst akcji </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>icon</em>&nbsp;</td><td>- sciezka do ikony </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cb</em>&nbsp;</td><td>- callback akcji </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>utworzona akcja </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ccb7df232c6512c976b9e59a2eb861bc"></a><!-- doxytag: member="TlenContextMenu::insertSeparator" ref="ccb7df232c6512c976b9e59a2eb861bc" args="(int pos)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenContextMenu::insertSeparator           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>pos</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dodaje separator we wskazanej pozycji. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pos</em>&nbsp;</td><td>- pozycja w ktora chcemy wstawic, 0 bedzie zawsze na poczatku, -1 zawsze na koncu. Jesli wartosc pos jest wieksza niz ilosc pozycji w menu, to akcja wstawiona zostaje na koncu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<hr>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>include/gui/<a class="el" href="TlenContextMenu_8h-source.html">TlenContextMenu.h</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Plik źródłowy include/plugin/TlenPluginManager.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li><a href="classes.html"><span>Klasy</span></a></li>
+    <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<h1>include/plugin/TlenPluginManager.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef __TLEN_PLUGIN_MANAGER_H__</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define __TLEN_PLUGIN_MANAGER_H__</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;QString&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;QStringList&gt;</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;core/export.h&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;data/TlenArg.h&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;plugin/TlenPluginLoader.h&gt;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="keyword">class </span>TlenPluginManagerPrivate;
+<a name="l00012"></a>00012 <span class="keyword">class </span><a class="code" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a>;
+<a name="l00013"></a>00013 <span class="keyword">class </span><a class="code" href="classTlenProtocol.html" title="Bazowa klasa wszystkich wtyczek dostarczających usługę protokołu.">TlenProtocol</a>;
+<a name="l00014"></a>00014 
+<a name="l00018"></a><a class="code" href="classTlenPluginManager.html">00018</a> <span class="keyword">class </span>__tlen_plugin__ <a class="code" href="classTlenPluginManager.html" title="Służy do zarządzania pluginami.">TlenPluginManager</a> {
+<a name="l00019"></a>00019         
+<a name="l00020"></a>00020         <span class="keyword">public</span>:
+<a name="l00021"></a>00021                 <span class="keyword">static</span> <a class="code" href="classTlenPluginManager.html" title="Służy do zarządzania pluginami.">TlenPluginManager</a> *getInstance();                
+<a name="l00022"></a>00022         
+<a name="l00027"></a>00027                 QStringList getRegisteredProtocolNames() <span class="keyword">const</span>;
+<a name="l00032"></a>00032                 QList&lt;TlenProtocol *&gt; getRegisteredProtocols() <span class="keyword">const</span>;
+<a name="l00037"></a>00037                 QStringList getLoadedPluginNames() <span class="keyword">const</span>;
+<a name="l00042"></a>00042                 QList&lt;TlenPlugin *&gt; getLoadedPlugins() <span class="keyword">const</span>;
+<a name="l00048"></a>00048                 QList&lt;TlenPlugin *&gt; getPluginsWithService(<span class="keyword">const</span> QString &amp;service) <span class="keyword">const</span>;
+<a name="l00053"></a>00053                 QList&lt;TlenPluginData *&gt; getPlugins() <span class="keyword">const</span>;
+<a name="l00058"></a>00058                 QList&lt;TlenPluginData *&gt; getAvailableProtocols() <span class="keyword">const</span>;
+<a name="l00064"></a>00064                 TlenPluginData * getPluginInfoById(<span class="keyword">const</span> QString &amp;pid) <span class="keyword">const</span>;   
+<a name="l00070"></a>00070                 <a class="code" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a> *getPluginByName(<span class="keyword">const</span> QString &amp;name);
+<a name="l00076"></a>00076                 <a class="code" href="classTlenProtocol.html" title="Bazowa klasa wszystkich wtyczek dostarczających usługę protokołu.">TlenProtocol</a> *getProtocolByName(<span class="keyword">const</span> QString &amp;name);
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078         <span class="keyword">private</span>:
+<a name="l00079"></a>00079                 <a class="code" href="classTlenPluginManager.html" title="Służy do zarządzania pluginami.">TlenPluginManager</a>();
+<a name="l00080"></a>00080                 <a class="code" href="classTlenPluginManager.html" title="Służy do zarządzania pluginami.">TlenPluginManager</a>(<span class="keyword">const</span> <a class="code" href="classTlenPluginManager.html" title="Służy do zarządzania pluginami.">TlenPluginManager</a>&amp;);
+<a name="l00081"></a>00081                 <a class="code" href="classTlenPluginManager.html" title="Służy do zarządzania pluginami.">TlenPluginManager</a> operator=(<span class="keyword">const</span> <a class="code" href="classTlenPluginManager.html" title="Służy do zarządzania pluginami.">TlenPluginManager</a> &amp;);
+<a name="l00082"></a>00082                 ~<a class="code" href="classTlenPluginManager.html" title="Służy do zarządzania pluginami.">TlenPluginManager</a>();
+<a name="l00083"></a>00083                 <span class="keyword">static</span> <a class="code" href="classTlenPluginManager.html" title="Służy do zarządzania pluginami.">TlenPluginManager</a> *instance;
+<a name="l00084"></a>00084                 TlenPluginManagerPrivate *d;
+<a name="l00085"></a>00085                 <span class="keyword">friend</span> <span class="keyword">class </span>TlenApplication;           
+<a name="l00086"></a>00086 };
+<a name="l00087"></a>00087 
+<a name="l00088"></a>00088 <span class="preprocessor">#endif</span>
+</pre></div><hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

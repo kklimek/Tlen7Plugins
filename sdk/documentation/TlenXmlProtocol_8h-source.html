@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Plik źródłowy include/plugin/TlenXmlProtocol.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li><a href="classes.html"><span>Klasy</span></a></li>
+    <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<h1>include/plugin/TlenXmlProtocol.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef __TLEN_XML_PROTOCOL_H__</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define __TLEN_XML_PROTOCOL_H__</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;QHash&gt;</span>
+<a name="l00005"></a>00005 
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;plugin/TlenProtocol.h&gt;</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="keyword">class </span><a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a>;
+<a name="l00009"></a>00009 <span class="keyword">class </span>QXmlStreamReader;
+<a name="l00010"></a>00010 
+<a name="l00039"></a><a class="code" href="classTlenXmlProtocol.html">00039</a> <span class="keyword">class </span>__tlen_plugin__ <a class="code" href="classTlenXmlProtocol.html" title="Klasa bazowa dla protokołów bazujących na strumieniu XML.">TlenXmlProtocol</a>: <span class="keyword">public</span> <a class="code" href="classTlenProtocol.html" title="Bazowa klasa wszystkich wtyczek dostarczających usługę protokołu.">TlenProtocol</a>
+<a name="l00040"></a>00040 {
+<a name="l00041"></a>00041         <span class="keyword">public</span>:
+<a name="l00045"></a><a class="code" href="classTlenXmlProtocol.html#d655932cb132e98a4f427e35b2cc36c5">00045</a>                 <span class="keyword">enum</span> <a class="code" href="classTlenXmlProtocol.html#d655932cb132e98a4f427e35b2cc36c5" title="Opisuje błąd parsowania XML.">Error</a> {
+<a name="l00046"></a><a class="code" href="classTlenXmlProtocol.html#d655932cb132e98a4f427e35b2cc36c53f458b53e22d42517548605ba11a587b">00046</a>                         UnexpectedElementError,         
+<a name="l00047"></a><a class="code" href="classTlenXmlProtocol.html#d655932cb132e98a4f427e35b2cc36c5b115ff91ec7a8f78ec8ed8c3a6176483">00047</a>                         XmlNotWellFormedError           
+<a name="l00048"></a>00048                 };
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050                 <a class="code" href="classTlenXmlProtocol.html" title="Klasa bazowa dla protokołów bazujących na strumieniu XML.">TlenXmlProtocol</a>(<span class="keywordtype">bool</span> namespaceprocessing = <span class="keyword">true</span>);
+<a name="l00051"></a>00051                 ~<a class="code" href="classTlenXmlProtocol.html" title="Klasa bazowa dla protokołów bazujących na strumieniu XML.">TlenXmlProtocol</a>();
+<a name="l00056"></a>00056                 <span class="keywordtype">void</span> <a class="code" href="classTlenProtocol.html#427636616bab8c717ae291ec47555e09" title="metoda reagujace na dane dostepne w sockecie">socketReadyRead</a>(<a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *acc, <span class="keyword">const</span> QByteArray &amp;data);
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058                 TLEN_DECLARE_SLOT(xmlProtocolOnNode);
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060         <span class="keyword">protected</span>:
+<a name="l00061"></a>00061                 <span class="keywordtype">void</span> reset(<a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *acc);
+<a name="l00062"></a>00062         
+<a name="l00067"></a>00067                 <span class="keywordtype">void</span> writeRootOpen(<a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *, <span class="keyword">const</span> <a class="code" href="classTlenXmlNode.html" title="Klasa do obsługi XML.">TlenXmlNode</a> &amp;node);
+<a name="l00068"></a>00068                 <span class="keywordtype">void</span> writeDTD(<a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *, <span class="keyword">const</span> QByteArray &amp;version = <span class="stringliteral">"1.0"</span>, <span class="keyword">const</span> QByteArray &amp;encoding = <span class="stringliteral">"UTF-8"</span>);
+<a name="l00069"></a>00069                 
+<a name="l00076"></a>00076                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> onNode(<span class="keyword">const</span> <a class="code" href="classTlenXmlNode.html" title="Klasa do obsługi XML.">TlenXmlNode</a> &amp;node, <a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *acc) = 0;
+<a name="l00077"></a>00077                 
+<a name="l00083"></a>00083                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> onRootOpen(<span class="keyword">const</span> <a class="code" href="classTlenXmlNode.html" title="Klasa do obsługi XML.">TlenXmlNode</a> &amp;node, <a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *acc) = 0;
+<a name="l00084"></a>00084                 
+<a name="l00090"></a>00090                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> onRootClose(<span class="keyword">const</span> <a class="code" href="classTlenXmlNode.html" title="Klasa do obsługi XML.">TlenXmlNode</a> &amp;node, <a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *acc) = 0;
+<a name="l00091"></a>00091 
+<a name="l00097"></a>00097                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> onError(<a class="code" href="classTlenXmlProtocol.html#d655932cb132e98a4f427e35b2cc36c5" title="Opisuje błąd parsowania XML.">TlenXmlProtocol::Error</a> err, <a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *acc) = 0;
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099         <span class="keyword">private</span>:
+<a name="l00100"></a>00100                 <span class="keywordtype">void</span> getWholeNode(QXmlStreamReader *, <a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *);
+<a name="l00101"></a>00101                 QHash&lt;TlenAccountConnection *, bool&gt; documentStarted;
+<a name="l00102"></a>00102 
+<a name="l00103"></a>00103                 QHash&lt;TlenAccountConnection *, QXmlStreamReader *&gt; readermap;
+<a name="l00104"></a>00104                 QHash&lt;TlenAccountConnection *, QString&gt; rootmap;
+<a name="l00105"></a>00105                 QHash&lt;TlenAccountConnection *, QString&gt; nodemap;
+<a name="l00106"></a>00106                 
+<a name="l00107"></a>00107                 QHash&lt;TlenAccountConnection *, TlenXmlNode&gt; wholeNode;
+<a name="l00108"></a>00108                 QHash&lt;TlenAccountConnection *, QList&lt;TlenXmlNode&gt; &gt; nodeLevel;
+<a name="l00109"></a>00109         
+<a name="l00110"></a>00110                 <span class="keywordtype">bool</span> xmlprocessing;
+<a name="l00111"></a>00111 };
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113 
+<a name="l00114"></a>00114 
+<a name="l00115"></a>00115 <span class="preprocessor">#endif</span>
+<a name="l00116"></a>00116 <span class="preprocessor"></span>
+</pre></div><hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

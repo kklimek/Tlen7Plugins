@@ -1,0 +1,880 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Dokumentacja klasy TlenAccountConnection</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li class="current"><a href="classes.html"><span>Klasy</span></a></li>
+    <li><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabetyczna</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;klas</span></a></li>
+    <li><a href="hierarchy.html"><span>Hierarchia&nbsp;klas</span></a></li>
+    <li><a href="functions.html"><span>Składowe&nbsp;klas</span></a></li>
+  </ul>
+</div>
+<h1>Dokumentacja klasy TlenAccountConnection</h1><!-- doxytag: class="TlenAccountConnection" --><!-- doxytag: inherits="TlenSocket" -->Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="TlenAccountConnection_8h-source.html">TlenAccountConnection.h</a>&gt;</code>
+<p>
+Dziedziczy <a class="el" href="classTlenSocket.html">TlenSocket</a>.
+<p>
+<a href="classTlenAccountConnection-members.html">Lista wszystkich składowych.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="dd37807f3173ec309862677c2b642422"></a><!-- doxytag: member="TlenAccountConnection::getProtocolName" ref="dd37807f3173ec309862677c2b642422" args="() const" -->
+QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#dd37807f3173ec309862677c2b642422">getProtocolName</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>nazwa wtyczki protokołu </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3f06faae629f8add921f606b51a7e88b"></a><!-- doxytag: member="TlenAccountConnection::getProtocol" ref="3f06faae629f8add921f606b51a7e88b" args="() const" -->
+<a class="el" href="classTlenProtocol.html">TlenProtocol</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#3f06faae629f8add921f606b51a7e88b">getProtocol</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wskaznik na protokół konta </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="819ac8a0037422951e4d2f8f702bad07"></a><!-- doxytag: member="TlenAccountConnection::getAccountSettings" ref="819ac8a0037422951e4d2f8f702bad07" args="() const" -->
+QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#819ac8a0037422951e4d2f8f702bad07">getAccountSettings</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wektor ustawień konta, specyficznych dla protokołu konta </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9cc4b9f46b6d591efdb4a777eaf97178"></a><!-- doxytag: member="TlenAccountConnection::getAccountSettingsInOrder" ref="9cc4b9f46b6d591efdb4a777eaf97178" args="() const" -->
+QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#9cc4b9f46b6d591efdb4a777eaf97178">getAccountSettingsInOrder</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wektor ustawień konta, specyficznych dla protokołu konta w kolejności ich definiowania </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenField.html">TlenField</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#d70d30a751afe43a5b0bf8c403e5278f">getAccountSetting</a> (const QString &amp;id) const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca ustawienie konta o podanym id.  <a href="#d70d30a751afe43a5b0bf8c403e5278f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="131e14f15896d37a320ff2ce66a717c5"></a><!-- doxytag: member="TlenAccountConnection::setAccountSettings" ref="131e14f15896d37a320ff2ce66a717c5" args="(const QList&lt; TlenField &gt; &amp;fields)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#131e14f15896d37a320ff2ce66a717c5">setAccountSettings</a> (const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;fields)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ustawia opcje konta. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#463db1ae18bf51a20f69fdae8ac575c6">setAccountSetting</a> (const QString &amp;id, const <a class="el" href="classTlenField.html">TlenField</a> &amp;f)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ustawia opcje konta.  <a href="#463db1ae18bf51a20f69fdae8ac575c6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="737dfab18f3b0f65f515a78f84a95f8e"></a><!-- doxytag: member="TlenAccountConnection::getAlias" ref="737dfab18f3b0f65f515a78f84a95f8e" args="() const" -->
+QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#737dfab18f3b0f65f515a78f84a95f8e">getAlias</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>alias konta </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#891ec1b8b8212642a47dfd4b5291ade5">setAlias</a> (const QString &amp;newalias)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienia obecny alias konta `newalias`.  <a href="#891ec1b8b8212642a47dfd4b5291ade5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e09c63f220213b64ef6048b7474bd07a"></a><!-- doxytag: member="TlenAccountConnection::getUid" ref="e09c63f220213b64ef6048b7474bd07a" args="() const" -->
+QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#e09c63f220213b64ef6048b7474bd07a">getUid</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>identyfikator konta </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4a4dfa7d2e82f5b7ebd9722ef6f016bb"></a><!-- doxytag: member="TlenAccountConnection::getUidWithResource" ref="4a4dfa7d2e82f5b7ebd9722ef6f016bb" args="() const" -->
+QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#4a4dfa7d2e82f5b7ebd9722ef6f016bb">getUidWithResource</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>identyfikator konta wraz z zasobem </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="565cb8e3e7b31a0051352371035a658c"></a><!-- doxytag: member="TlenAccountConnection::getPassword" ref="565cb8e3e7b31a0051352371035a658c" args="() const" -->
+QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#565cb8e3e7b31a0051352371035a658c">getPassword</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>hasło konta </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#d1270453b19313007317101f7d3490ba">setPassword</a> (const QString &amp;password)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ustawia hasło na podane.  <a href="#d1270453b19313007317101f7d3490ba"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#551a86e7dac4585fdc08e85bb5b51687">sendMessage</a> (const QString &amp;buddyid, const QString &amp;msg, const QString &amp;resource, const QString &amp;subject=QString())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wysyła wiadomość za pośrednictwem protokołu.  <a href="#551a86e7dac4585fdc08e85bb5b51687"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#f2dbc0595483b8561611745261a44c4c">sendConferenceMessage</a> (const QString &amp;confId, const QString &amp;msg, const QList&lt; TlenTextFormat &gt; &amp;params)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wysyła wiadomość konferencyjną.  <a href="#f2dbc0595483b8561611745261a44c4c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#c4b64edbfe4c709043cbbce1c85adf2f">sendPrivateConferenceMessage</a> (const QString &amp;confId, const QString &amp;buddyId, const QString &amp;msg, const QList&lt; TlenTextFormat &gt; &amp;params)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wysyła prywatną wiadomość konferencyjną.  <a href="#c4b64edbfe4c709043cbbce1c85adf2f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#83b16e5999f1a5c22f8c29d36a771635">getPubdirInfo</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wysyła za pośrednictwem protokołu żądanie o pobranie danych publicznych.  <a href="#83b16e5999f1a5c22f8c29d36a771635"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#61c3dbec425168d60de4339605a7f030">getGlobals</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pobiera globalne ustawiena konta czyli<ul>
+<li>TlenField::String alias - nazwa wyświetalna konta</li><li>TlenField::String password - hasło</li><li><a class="el" href="classTlenField.html#7a4ef50ad098ee6d02eba2173a7da2b1fab5ed50807805d7dce36580bb5bf277" title="Kontrolka check box.">TlenField::CheckBox</a> pasword/remember - czy zapamiętuje hasło</li><li><a class="el" href="classTlenField.html#7a4ef50ad098ee6d02eba2173a7da2b1fab5ed50807805d7dce36580bb5bf277" title="Kontrolka check box.">TlenField::CheckBox</a> enabled - czy konto jest właczone</li><li><a class="el" href="classTlenField.html#7a4ef50ad098ee6d02eba2173a7da2b1fab5ed50807805d7dce36580bb5bf277" title="Kontrolka check box.">TlenField::CheckBox</a> presence/restore - czy przywracać ostatnio uźywana prezencję</li><li>TlenField::String presence/last/type - typ ostatniej prezencji</li><li>TlenField::String presence/last/description - stan opisowy ostatniej prezencji</li><li>TlenField::String presence/default/type - typ domyślnej prezencji</li><li>TlenField::String presence/default/description - stan opisowy domyślnej prezencji. </li></ul>
+ <a href="#61c3dbec425168d60de4339605a7f030"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#ca0c7e9223726a39f8ec0468f0793d18">setPresence</a> (const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;pres)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienia prezencję konta <br>
+ Jeśli konto nie jest zalogowane, to metoda ta najpierw zaloguje konto, a potem zmieni jego prezencję.  <a href="#ca0c7e9223726a39f8ec0468f0793d18"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="72179f6e44905b5563fa8a3a887523ca"></a><!-- doxytag: member="TlenAccountConnection::logoutAccount" ref="72179f6e44905b5563fa8a3a887523ca" args="()" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#72179f6e44905b5563fa8a3a887523ca">logoutAccount</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wylogowuje konto. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#0986649512da35eada9e85ab02938543">setPresence</a> (<a class="el" href="classTlenPresence.html#c45395627d27601813f288e1a17b06a9">TlenPresence::Flag</a> presflag, const QString &amp;descr=QString())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienia prezencje konta.  <a href="#0986649512da35eada9e85ab02938543"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#554fa070f346ded712cdd5b0dffcf534">setPresence</a> (const QString &amp;id, const QString &amp;descr=QString())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienia prezencje konta.  <a href="#554fa070f346ded712cdd5b0dffcf534"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="1a1184352fd0a102c2bda1f07cd4b4ac"></a><!-- doxytag: member="TlenAccountConnection::getDefaultPresence" ref="1a1184352fd0a102c2bda1f07cd4b4ac" args="() const" -->
+<a class="el" href="classTlenPresence.html">TlenPresence</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#1a1184352fd0a102c2bda1f07cd4b4ac">getDefaultPresence</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>domyślna prezencja konta </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c3e30e050f54908ed2fae7c4a5bb6c89"></a><!-- doxytag: member="TlenAccountConnection::getLastPresence" ref="c3e30e050f54908ed2fae7c4a5bb6c89" args="() const" -->
+<a class="el" href="classTlenPresence.html">TlenPresence</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#c3e30e050f54908ed2fae7c4a5bb6c89">getLastPresence</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>ostatnia prezencja konta przed wylogowaniem </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="684e84b1b718712ed602c886717a8555"></a><!-- doxytag: member="TlenAccountConnection::getPresence" ref="684e84b1b718712ed602c886717a8555" args="() const" -->
+<a class="el" href="classTlenPresence.html">TlenPresence</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#684e84b1b718712ed602c886717a8555">getPresence</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>obecna prezencja konta </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="29cf0f9fff3e4e6821ccec33fcf7a931"></a><!-- doxytag: member="TlenAccountConnection::getDesiredPresence" ref="29cf0f9fff3e4e6821ccec33fcf7a931" args="() const" -->
+<a class="el" href="classTlenPresence.html">TlenPresence</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#29cf0f9fff3e4e6821ccec33fcf7a931">getDesiredPresence</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>prezencja jaka jest aktualnie ustawiana </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenPresence.html">TlenPresence</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#d4b73b513ea0b1e22bc1faadc5340394">getNeededPresence</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca jaka ma być ustawiona prezencja konta po jego zalogowaniu.  <a href="#d4b73b513ea0b1e22bc1faadc5340394"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#e7635c2f1ebea4dd8f78e71ec1c08866">setSID</a> (const QString &amp;s)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ustala identyfikator sesji konta.  <a href="#e7635c2f1ebea4dd8f78e71ec1c08866"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f01787d714671691b76227c8244343e4"></a><!-- doxytag: member="TlenAccountConnection::getSID" ref="f01787d714671691b76227c8244343e4" args="() const" -->
+QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#f01787d714671691b76227c8244343e4">getSID</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>identyfikator sesji </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#9765e13080a81137357399e6c981b18a">addContact</a> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;contact)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dodaje do konta kontakt.  <a href="#9765e13080a81137357399e6c981b18a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#da40e234a04950a655f8f3220c4d72ca">setEnabled</a> (bool e)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ustala czy konto jest włączone.  <a href="#da40e234a04950a655f8f3220c4d72ca"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="beebd08a8340ea4b5e2598f54e1c5691"></a><!-- doxytag: member="TlenAccountConnection::isEnabled" ref="beebd08a8340ea4b5e2598f54e1c5691" args="() const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#beebd08a8340ea4b5e2598f54e1c5691">isEnabled</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>czy konto jest włączone </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#f12ce199c268f00ae38b3bbca75cc035">setRestoreLastPresence</a> (bool r)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Włącza opcje "presence/last/restore", czyli przywracanie prezencji z ostatniej sesji.  <a href="#f12ce199c268f00ae38b3bbca75cc035"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#69ef4fe7fa4f01ad08fc2aa7bbfb338f">setRestoreLastDescription</a> (bool r)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Włącza przywracanie opisu z ostatniej prezencji.  <a href="#69ef4fe7fa4f01ad08fc2aa7bbfb338f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4bfdbe02920f047d2c39353e5fea610b"></a><!-- doxytag: member="TlenAccountConnection::restoreLastDescription" ref="4bfdbe02920f047d2c39353e5fea610b" args="() const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#4bfdbe02920f047d2c39353e5fea610b">restoreLastDescription</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>zwraca czy ma być przywracany ostatni opis </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7c05a4af8fec886f6345da95a12b1a56"></a><!-- doxytag: member="TlenAccountConnection::restoreLastPresence" ref="7c05a4af8fec886f6345da95a12b1a56" args="() const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#7c05a4af8fec886f6345da95a12b1a56">restoreLastPresence</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>czy przywracać prezencję z ostatniej sesji </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#d1d830d2ac7fe008c92c4de276a6cd78">setRememberPassword</a> (bool r)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Włącza opcje "password/remember", czyli czy zapamietywać hasło przy wyjściu z programu.  <a href="#d1d830d2ac7fe008c92c4de276a6cd78"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="114890219f28ac90e5452a3a4a2babf9"></a><!-- doxytag: member="TlenAccountConnection::rememberPassword" ref="114890219f28ac90e5452a3a4a2babf9" args="() const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#114890219f28ac90e5452a3a4a2babf9">rememberPassword</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>czy zapamiętywać hasło przy wyjściu z programu </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#5360b5fcce8f6ebc6232e3853d78ddac">setDefaultPresence</a> (const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;pres)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ustala domyślną prezencje.  <a href="#5360b5fcce8f6ebc6232e3853d78ddac"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d9809b548fe431e7a57bb2b7fe6fdfc0"></a><!-- doxytag: member="TlenAccountConnection::isLoggedIn" ref="d9809b548fe431e7a57bb2b7fe6fdfc0" args="() const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#d9809b548fe431e7a57bb2b7fe6fdfc0">isLoggedIn</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>czy konto jest zalogowane </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#fa611a7bdb0634d79fb67813d2b9148e">setAvatar</a> (const QString &amp;avatarpath)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienia avatar konta.  <a href="#fa611a7bdb0634d79fb67813d2b9148e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="154e72843a26bf63c1aaa0530c657ceb"></a><!-- doxytag: member="TlenAccountConnection::removeAvatar" ref="154e72843a26bf63c1aaa0530c657ceb" args="()" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#154e72843a26bf63c1aaa0530c657ceb">removeAvatar</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa avatar konta. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ba515a8b277813beeb4d3768b069d72b"></a><!-- doxytag: member="TlenAccountConnection::getAvatar" ref="ba515a8b277813beeb4d3768b069d72b" args="()" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#ba515a8b277813beeb4d3768b069d72b">getAvatar</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pobiera avatar za pomocą protokołu. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="5f3c66ffe0a0caab3086e7e034b84d71"></a><!-- doxytag: member="TlenAccountConnection::getCurrentAvatarPath" ref="5f3c66ffe0a0caab3086e7e034b84d71" args="() const" -->
+QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#5f3c66ffe0a0caab3086e7e034b84d71">getCurrentAvatarPath</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>ścieżka do obecnego avataru </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="be5b7a0a0e4b5df9a8694d179109e5b2"></a><!-- doxytag: member="TlenAccountConnection::getLoginTime" ref="be5b7a0a0e4b5df9a8694d179109e5b2" args="()" -->
+QTime&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenAccountConnection.html#be5b7a0a0e4b5df9a8694d179109e5b2">getLoginTime</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>czas zalogowania </dd></dl>
+<br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem. 
+<p>
+Za pomoca tej klasy możemy zmienić niemal wszystkie ustawienia konta. 
+<p>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="d70d30a751afe43a5b0bf8c403e5278f"></a><!-- doxytag: member="TlenAccountConnection::getAccountSetting" ref="d70d30a751afe43a5b0bf8c403e5278f" args="(const QString &amp;id) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenField.html">TlenField</a> TlenAccountConnection::getAccountSetting           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca ustawienie konta o podanym id. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>id </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wartość ustawienia </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="463db1ae18bf51a20f69fdae8ac575c6"></a><!-- doxytag: member="TlenAccountConnection::setAccountSetting" ref="463db1ae18bf51a20f69fdae8ac575c6" args="(const QString &amp;id, const TlenField &amp;f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::setAccountSetting           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenField.html">TlenField</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>f</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Ustawia opcje konta. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>id ustawienia </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>f</em>&nbsp;</td><td>wartość ustawienia </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="891ec1b8b8212642a47dfd4b5291ade5"></a><!-- doxytag: member="TlenAccountConnection::setAlias" ref="891ec1b8b8212642a47dfd4b5291ade5" args="(const QString &amp;newalias)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::setAlias           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>newalias</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zmienia obecny alias konta `newalias`. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>newalias</em>&nbsp;</td><td>- nowy alias konta </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d1270453b19313007317101f7d3490ba"></a><!-- doxytag: member="TlenAccountConnection::setPassword" ref="d1270453b19313007317101f7d3490ba" args="(const QString &amp;password)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::setPassword           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>password</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Ustawia hasło na podane. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>password</em>&nbsp;</td><td>hasło </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="551a86e7dac4585fdc08e85bb5b51687"></a><!-- doxytag: member="TlenAccountConnection::sendMessage" ref="551a86e7dac4585fdc08e85bb5b51687" args="(const QString &amp;buddyid, const QString &amp;msg, const QString &amp;resource, const QString &amp;subject=QString())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::sendMessage           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>buddyid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>resource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>subject</em> = <code>QString()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Wysyła wiadomość za pośrednictwem protokołu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>buddyid</em>&nbsp;</td><td>- identyfikator kontaktu, do którego wysyłamy wiadomość </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>msg</em>&nbsp;</td><td>- treść wiadomości </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>res</em>&nbsp;</td><td>- zasób do którego wysyłana jest wiadomść </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f2dbc0595483b8561611745261a44c4c"></a><!-- doxytag: member="TlenAccountConnection::sendConferenceMessage" ref="f2dbc0595483b8561611745261a44c4c" args="(const QString &amp;confId, const QString &amp;msg, const QList&lt; TlenTextFormat &gt; &amp;params)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::sendConferenceMessage           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>confId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QList&lt; TlenTextFormat &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>params</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Wysyła wiadomość konferencyjną. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>confId</em>&nbsp;</td><td>id konferencji </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>msg</em>&nbsp;</td><td>treść wiadomości </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>params</em>&nbsp;</td><td>formatowanie </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c4b64edbfe4c709043cbbce1c85adf2f"></a><!-- doxytag: member="TlenAccountConnection::sendPrivateConferenceMessage" ref="c4b64edbfe4c709043cbbce1c85adf2f" args="(const QString &amp;confId, const QString &amp;buddyId, const QString &amp;msg, const QList&lt; TlenTextFormat &gt; &amp;params)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::sendPrivateConferenceMessage           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>confId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>buddyId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QList&lt; TlenTextFormat &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>params</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Wysyła prywatną wiadomość konferencyjną. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>confId</em>&nbsp;</td><td>id konferencji </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buddyId</em>&nbsp;</td><td>id kontaktu </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>msg</em>&nbsp;</td><td>treść wiadomości </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>params</em>&nbsp;</td><td>formatowanie </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="83b16e5999f1a5c22f8c29d36a771635"></a><!-- doxytag: member="TlenAccountConnection::getPubdirInfo" ref="83b16e5999f1a5c22f8c29d36a771635" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::getPubdirInfo           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Wysyła za pośrednictwem protokołu żądanie o pobranie danych publicznych. 
+<p>
+<br>
+ Pobrane dane publiczne zostaną wyemitowane sygnałem PUBDIR_ACC_DATA_RECEIVED. <br>
+ Jeśli konto nie jest zalogowane ta metoda nic nie robi. 
+</div>
+</div><p>
+<a class="anchor" name="61c3dbec425168d60de4339605a7f030"></a><!-- doxytag: member="TlenAccountConnection::getGlobals" ref="61c3dbec425168d60de4339605a7f030" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenField.html">TlenField</a>&gt; TlenAccountConnection::getGlobals           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Pobiera globalne ustawiena konta czyli<ul>
+<li>TlenField::String alias - nazwa wyświetalna konta</li><li>TlenField::String password - hasło</li><li><a class="el" href="classTlenField.html#7a4ef50ad098ee6d02eba2173a7da2b1fab5ed50807805d7dce36580bb5bf277" title="Kontrolka check box.">TlenField::CheckBox</a> pasword/remember - czy zapamiętuje hasło</li><li><a class="el" href="classTlenField.html#7a4ef50ad098ee6d02eba2173a7da2b1fab5ed50807805d7dce36580bb5bf277" title="Kontrolka check box.">TlenField::CheckBox</a> enabled - czy konto jest właczone</li><li><a class="el" href="classTlenField.html#7a4ef50ad098ee6d02eba2173a7da2b1fab5ed50807805d7dce36580bb5bf277" title="Kontrolka check box.">TlenField::CheckBox</a> presence/restore - czy przywracać ostatnio uźywana prezencję</li><li>TlenField::String presence/last/type - typ ostatniej prezencji</li><li>TlenField::String presence/last/description - stan opisowy ostatniej prezencji</li><li>TlenField::String presence/default/type - typ domyślnej prezencji</li><li>TlenField::String presence/default/description - stan opisowy domyślnej prezencji. </li></ul>
+
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wektor globalnych ustawien. </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ca0c7e9223726a39f8ec0468f0793d18"></a><!-- doxytag: member="TlenAccountConnection::setPresence" ref="ca0c7e9223726a39f8ec0468f0793d18" args="(const TlenPresence &amp;pres)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::setPresence           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>pres</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zmienia prezencję konta <br>
+ Jeśli konto nie jest zalogowane, to metoda ta najpierw zaloguje konto, a potem zmieni jego prezencję. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pres</em>&nbsp;</td><td>- nowa prezencja konta. <br>
+ Jeśli prezencja ma identyfikator nienależący do protokołu, ta metoda nie robi nic. </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0986649512da35eada9e85ab02938543"></a><!-- doxytag: member="TlenAccountConnection::setPresence" ref="0986649512da35eada9e85ab02938543" args="(TlenPresence::Flag presflag, const QString &amp;descr=QString())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::setPresence           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenPresence.html#c45395627d27601813f288e1a17b06a9">TlenPresence::Flag</a>&nbsp;</td>
+          <td class="paramname"> <em>presflag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>descr</em> = <code>QString()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zmienia prezencje konta. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>presflag</em>&nbsp;</td><td>flaga prezencji na jaką zmieniamy </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>descr</em>&nbsp;</td><td>stan opisowy prezencji </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="554fa070f346ded712cdd5b0dffcf534"></a><!-- doxytag: member="TlenAccountConnection::setPresence" ref="554fa070f346ded712cdd5b0dffcf534" args="(const QString &amp;id, const QString &amp;descr=QString())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::setPresence           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>descr</em> = <code>QString()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zmienia prezencje konta. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>id prezencji na jaką zmieniamy </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>descr</em>&nbsp;</td><td>stan opisowy prezencji </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d4b73b513ea0b1e22bc1faadc5340394"></a><!-- doxytag: member="TlenAccountConnection::getNeededPresence" ref="d4b73b513ea0b1e22bc1faadc5340394" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenPresence.html">TlenPresence</a> TlenAccountConnection::getNeededPresence           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca jaka ma być ustawiona prezencja konta po jego zalogowaniu. 
+<p>
+W zależności od ustawień zwraca domyślną prezencję lub ostatnią przed wylogowaniem. <dl class="return" compact><dt><b>Zwraca:</b></dt><dd>prezencja </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e7635c2f1ebea4dd8f78e71ec1c08866"></a><!-- doxytag: member="TlenAccountConnection::setSID" ref="e7635c2f1ebea4dd8f78e71ec1c08866" args="(const QString &amp;s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::setSID           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>s</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Ustala identyfikator sesji konta. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>s</em>&nbsp;</td><td>- nowy identyfikator sesji </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9765e13080a81137357399e6c981b18a"></a><!-- doxytag: member="TlenAccountConnection::addContact" ref="9765e13080a81137357399e6c981b18a" args="(const TlenBuddyContact &amp;contact)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::addContact           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>contact</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dodaje do konta kontakt. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>contact</em>&nbsp;</td><td>- dodawany kontakt </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="da40e234a04950a655f8f3220c4d72ca"></a><!-- doxytag: member="TlenAccountConnection::setEnabled" ref="da40e234a04950a655f8f3220c4d72ca" args="(bool e)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::setEnabled           </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>e</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Ustala czy konto jest włączone. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>e</em>&nbsp;</td><td>- czy konto ma byc włączone </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f12ce199c268f00ae38b3bbca75cc035"></a><!-- doxytag: member="TlenAccountConnection::setRestoreLastPresence" ref="f12ce199c268f00ae38b3bbca75cc035" args="(bool r)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::setRestoreLastPresence           </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>r</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Włącza opcje "presence/last/restore", czyli przywracanie prezencji z ostatniej sesji. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>- czy przywracać prezencję z ostatniej sesji </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="69ef4fe7fa4f01ad08fc2aa7bbfb338f"></a><!-- doxytag: member="TlenAccountConnection::setRestoreLastDescription" ref="69ef4fe7fa4f01ad08fc2aa7bbfb338f" args="(bool r)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::setRestoreLastDescription           </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>r</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Włącza przywracanie opisu z ostatniej prezencji. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>czy przywrócić opis </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d1d830d2ac7fe008c92c4de276a6cd78"></a><!-- doxytag: member="TlenAccountConnection::setRememberPassword" ref="d1d830d2ac7fe008c92c4de276a6cd78" args="(bool r)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::setRememberPassword           </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>r</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Włącza opcje "password/remember", czyli czy zapamietywać hasło przy wyjściu z programu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>- czy zapamiętywać hasło przy wyjściu z programu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5360b5fcce8f6ebc6232e3853d78ddac"></a><!-- doxytag: member="TlenAccountConnection::setDefaultPresence" ref="5360b5fcce8f6ebc6232e3853d78ddac" args="(const TlenPresence &amp;pres)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::setDefaultPresence           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>pres</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Ustala domyślną prezencje. 
+<p>
+Domyślna prezencja jest ustalana po starcie programu jeśli opcja "presence/last/restore" jest wyłączona <dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pres</em>&nbsp;</td><td>- nowa domyślna prezencja. </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="fa611a7bdb0634d79fb67813d2b9148e"></a><!-- doxytag: member="TlenAccountConnection::setAvatar" ref="fa611a7bdb0634d79fb67813d2b9148e" args="(const QString &amp;avatarpath)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenAccountConnection::setAvatar           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>avatarpath</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zmienia avatar konta. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>avatarpath</em>&nbsp;</td><td>- scieżka do pliku z avatarem </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<hr>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>include/plugin/<a class="el" href="TlenAccountConnection_8h-source.html">TlenAccountConnection.h</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

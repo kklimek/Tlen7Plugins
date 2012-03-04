@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Plik źródłowy include/plugin/TlenPluginLoader.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li><a href="classes.html"><span>Klasy</span></a></li>
+    <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<h1>include/plugin/TlenPluginLoader.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef __TLEN_PLUGIN_LOADER_H__</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define __TLEN_PLUGIN_LOADER_H__</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;plugin/TlenPlugin.h&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;plugin/TlenPluginTypes.h&gt;</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="keyword">typedef</span> <span class="keyword">struct </span>__tlen_plugin__ _TlenProtocolPresenceData {
+<a name="l00008"></a>00008         QString id;
+<a name="l00009"></a>00009         QString display;
+<a name="l00010"></a>00010         QString icon;
+<a name="l00011"></a>00011 } TlenProtocolPresenceData;
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="keyword">typedef</span> <span class="keyword">struct </span>__tlen_plugin__ _TlenProtocolData {
+<a name="l00014"></a>00014         QString protocolId;
+<a name="l00015"></a>00015         QList&lt;TlenField&gt; accountSettings;
+<a name="l00016"></a>00016         QList&lt;TlenProtocolPresenceData&gt; presence;
+<a name="l00017"></a>00017         QString validIdMask;
+<a name="l00018"></a>00018 } TlenProtocolData;
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 
+<a name="l00021"></a>00021 <span class="comment">// struktura przetrzymujaca opis wtyczki dla np. dialogu wyswietlajacego informacje o wtyczce</span>
+<a name="l00022"></a>00022 <span class="comment">// dane te dostepne sa bez ladowania wtyczki</span>
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 <span class="keyword">typedef</span> <span class="keyword">struct </span>__tlen_plugin__ _TlenPluginData {
+<a name="l00025"></a>00025         _TlenPluginData():
+<a name="l00026"></a>00026         protocolData(NULL),
+<a name="l00027"></a>00027         loaded(false)
+<a name="l00028"></a>00028         {
+<a name="l00029"></a>00029         }
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031         ~_TlenPluginData()
+<a name="l00032"></a>00032         {
+<a name="l00033"></a>00033                 <span class="keyword">delete</span> protocolData;
+<a name="l00034"></a>00034         }
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036         QString name;
+<a name="l00037"></a>00037         QString friendlyName;
+<a name="l00038"></a>00038         QString author;
+<a name="l00039"></a>00039         QString descr;
+<a name="l00040"></a>00040         <span class="keywordtype">int</span> version;
+<a name="l00041"></a>00041         QString www;
+<a name="l00042"></a>00042         QString email;
+<a name="l00043"></a>00043         QString fname;
+<a name="l00044"></a>00044         QStringList deps;
+<a name="l00045"></a>00045         QString loader;
+<a name="l00046"></a>00046         QString icon;
+<a name="l00047"></a>00047         QString mediumIcon;
+<a name="l00048"></a>00048         QString bigIcon;
+<a name="l00049"></a>00049         QString license;
+<a name="l00050"></a>00050         QStringList settingsTags;
+<a name="l00051"></a>00051         QStringList searchPhrases;
+<a name="l00052"></a>00052         QList&lt;QPair&lt;QString, QString&gt; &gt; settingsLinks;
+<a name="l00053"></a>00053         QList&lt;TlenField&gt; settings;
+<a name="l00054"></a>00054         QList&lt;TlenService&gt; services;
+<a name="l00055"></a>00055         TlenPlugin::Type type;
+<a name="l00056"></a>00056         
+<a name="l00057"></a>00057         TlenProtocolData * protocolData;
+<a name="l00058"></a>00058         
+<a name="l00059"></a>00059         <span class="keywordtype">bool</span> loaded;
+<a name="l00060"></a>00060         <span class="keywordtype">bool</span> hasUi;
+<a name="l00061"></a>00061         
+<a name="l00062"></a>00062 } TlenPluginData;
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064 <span class="keyword">class </span>__tlen_plugin__ TlenPluginLoader: <span class="keyword">public</span> <a class="code" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a>
+<a name="l00065"></a>00065 {
+<a name="l00066"></a>00066 <span class="keyword">public</span>:
+<a name="l00067"></a>00067         TlenPluginLoader();
+<a name="l00068"></a>00068         <span class="keyword">virtual</span> ~TlenPluginLoader();
+<a name="l00069"></a>00069         <span class="keyword">virtual</span> QList&lt;TlenPluginData *&gt; getPluginList() <span class="keyword">const</span> = 0;
+<a name="l00070"></a>00070         <span class="keyword">virtual</span> <a class="code" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a> *pluginLoad(<span class="keyword">const</span> QString &amp;) <span class="keyword">const</span> = 0;
+<a name="l00071"></a>00071         <span class="keyword">virtual</span> QString getLoaderId() <span class="keyword">const</span> = 0;
+<a name="l00072"></a>00072         <span class="keyword">virtual</span> <span class="keywordtype">void</span> pluginUnload(<a class="code" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a> *) <span class="keyword">const</span>;
+<a name="l00073"></a>00073         <span class="keyword">virtual</span> QStringList defaultPluginList()<span class="keyword"> const </span>{<span class="keywordflow">return</span> QStringList();}
+<a name="l00074"></a>00074         
+<a name="l00075"></a>00075 <span class="keyword">protected</span>:
+<a name="l00076"></a>00076         QStringList getPluginsWithExtension(<span class="keyword">const</span> QString &amp;ext) <span class="keyword">const</span>;
+<a name="l00077"></a>00077         LibraryHandle loadLibrary(<span class="keyword">const</span> QString &amp;path) <span class="keyword">const</span>;
+<a name="l00078"></a>00078         LibraryHandle loadLibrary(<span class="keyword">const</span> <span class="keywordtype">char</span> *) <span class="keyword">const</span>;
+<a name="l00079"></a>00079         <span class="keywordtype">void</span> *getSymbol(LibraryHandle handle, <span class="keyword">const</span> <span class="keywordtype">char</span> *symbol) <span class="keyword">const</span>;
+<a name="l00080"></a>00080         <span class="keywordtype">bool</span> freeLibrary(LibraryHandle handle) <span class="keyword">const</span>;
+<a name="l00081"></a>00081         <span class="keywordtype">void</span> setPluginLibraryHandle(<a class="code" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a> *p, LibraryHandle) <span class="keyword">const</span>;
+<a name="l00082"></a>00082         
+<a name="l00083"></a>00083 <span class="keyword">private</span>:
+<a name="l00084"></a>00084         <span class="keyword">friend</span> <span class="keyword">class </span>TlenPluginManagerPrivate;
+<a name="l00085"></a>00085 };
+<a name="l00086"></a>00086 
+<a name="l00087"></a>00087 <span class="preprocessor">#endif</span>
+</pre></div><hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

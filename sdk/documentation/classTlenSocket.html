@@ -1,0 +1,468 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Dokumentacja klasy TlenSocket</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li class="current"><a href="classes.html"><span>Klasy</span></a></li>
+    <li><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabetyczna</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;klas</span></a></li>
+    <li><a href="hierarchy.html"><span>Hierarchia&nbsp;klas</span></a></li>
+    <li><a href="functions.html"><span>Składowe&nbsp;klas</span></a></li>
+  </ul>
+</div>
+<h1>Dokumentacja klasy TlenSocket</h1><!-- doxytag: class="TlenSocket" -->Obsługa połączenia internetowego.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="TlenSocket_8h-source.html">TlenSocket.h</a>&gt;</code>
+<p>
+Dziedziczona przez <a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a>.
+<p>
+<a href="classTlenSocket-members.html">Lista wszystkich składowych.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Typy publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26f">Error</a> { <br>
+&nbsp;&nbsp;<a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26fef23cb76bafee520290aed65a98966d6">ConnectionRefused</a>, 
+<a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26f8dc38a3d41fffe5c5268f72d28f273e6">RemoteHostClosed</a>, 
+<a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26fcdf5785b7b75a42999f6a2df95e345ef">HostNotFound</a>, 
+<a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26fa1e34b54c8b7f917809fd9029000f2fb">AccessError</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26f56e243a21d4e21cdf8575a7db40b2b4b">ResourceError</a>, 
+<a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26ffafb0b4a474068feb0367de7bb2c7951">SocketTimeout</a>, 
+<a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26f58182752998b54e31110de217ae669ba">NetworkError</a>, 
+<a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26f7a7a76f6ee2227d3f0fd17a657a88f9d">ConnectionLost</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26ff2bcb2adfc20c88591337532bf9d1dce">UnsupportedOperation</a>, 
+<a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26f5252b962cf22231813dca4437bc021eb">UnknownError</a>
+<br>
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">określa jaki błąd wystąpił podczas operacji na sockecie  <a href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26f">Więcej...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><b>SslError</b> { <br>
+&nbsp;&nbsp;<b>NoError</b>, 
+<b>UnableToGetIssuerCertificate</b>, 
+<b>UnableToDecryptCertificateSignature</b>, 
+<b>UnableToDecodeIssuerPublicKey</b>, 
+<br>
+&nbsp;&nbsp;<b>CertificateSignatureFailed</b>, 
+<b>CertificateNotYetValid</b>, 
+<b>CertificateExpired</b>, 
+<b>InvalidNotBeforeField</b>, 
+<br>
+&nbsp;&nbsp;<b>InvalidNotAfterField</b>, 
+<b>SelfSignedCertificate</b>, 
+<b>SelfSignedCertificateInChain</b>, 
+<b>UnableToGetLocalIssuerCertificate</b>, 
+<br>
+&nbsp;&nbsp;<b>UnableToVerifyFirstCertificate</b>, 
+<b>CertificateRevoked</b>, 
+<b>InvalidCaCertificate</b>, 
+<b>PathLengthExceeded</b>, 
+<br>
+&nbsp;&nbsp;<b>InvalidPurpose</b>, 
+<b>CertificateUntrusted</b>, 
+<b>CertificateRejected</b>, 
+<b>SubjectIssuerMismatch</b>, 
+<br>
+&nbsp;&nbsp;<b>AuthorityIssuerSerialNumberMismatch</b>, 
+<b>NoPeerCertificate</b>, 
+<b>HostNameMismatch</b>, 
+<b>UnspecifiedError</b>, 
+<br>
+&nbsp;&nbsp;<b>NoSslSupport</b>
+<br>
+ }</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><b>SslProtocol</b> { <b>SslV3</b>, 
+<b>SslV2</b>, 
+<b>TlsV1</b>, 
+<b>AnyProtocol</b>
+ }</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><b>State</b> { <br>
+&nbsp;&nbsp;<b>UnconnectedState</b>, 
+<b>HostLookupState</b>, 
+<b>ConnectingState</b>, 
+<b>ConnectedState</b>, 
+<br>
+&nbsp;&nbsp;<b>BoundState</b>, 
+<b>ClosingState</b>, 
+<b>ListeningState</b>
+<br>
+ }</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><b>ProtocolType</b> { <b>Tcp</b>, 
+<b>Udp</b>
+ }</td></tr>
+
+<tr><td colspan="2"><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenSocket.html#5c13757a07da6b171336e802832b6202">TlenSocket</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Domyślny konstruktor.  <a href="#5c13757a07da6b171336e802832b6202"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenSocket.html#364b1daf68e4be62796834a69048a0b1">TlenSocket</a> (ProtocolType protocolType)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ten konstruktor umożliwia wybór typ (TCP/UDP) tworzonego socketa.  <a href="#364b1daf68e4be62796834a69048a0b1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="6701a92b40826679ee8f916b23eedfaf"></a><!-- doxytag: member="TlenSocket::readRawData" ref="6701a92b40826679ee8f916b23eedfaf" args="(qint64 size=-1)" -->
+QByteArray&nbsp;</td><td class="memItemRight" valign="bottom"><b>readRawData</b> (qint64 size=-1)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenSocket.html#c6b4b3b1f1774d88885cfb1184e19ed0">connectToHost</a> (const QString &amp;address, unsigned short port)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">otwiera połączenie  <a href="#c6b4b3b1f1774d88885cfb1184e19ed0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a22b43b4aa73227fd53b0e51e6c167e1"></a><!-- doxytag: member="TlenSocket::connectToHostEncrypted" ref="a22b43b4aa73227fd53b0e51e6c167e1" args="(const QString &amp;address, unsigned short port, SslProtocol=AnyProtocol)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenSocket.html#a22b43b4aa73227fd53b0e51e6c167e1">connectToHostEncrypted</a> (const QString &amp;address, unsigned short port, SslProtocol=AnyProtocol)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">otwiera połączenie szyfrowane. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9218f09a13f53126e3a485669364a8df"></a><!-- doxytag: member="TlenSocket::startClientEncryption" ref="9218f09a13f53126e3a485669364a8df" args="(SslProtocol=AnyProtocol)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>startClientEncryption</b> (SslProtocol=AnyProtocol)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="2130ae666403719b82b98dfeab0e137a"></a><!-- doxytag: member="TlenSocket::ignoreSslError" ref="2130ae666403719b82b98dfeab0e137a" args="()" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>ignoreSslError</b> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="82615de60c4770444cebbb8de55fbc0e"></a><!-- doxytag: member="TlenSocket::overridePeerName" ref="82615de60c4770444cebbb8de55fbc0e" args="(const QString &amp;peername)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>overridePeerName</b> (const QString &amp;peername)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3c78002fab2427ffa5112f4fe58ae7c6"></a><!-- doxytag: member="TlenSocket::peerName" ref="3c78002fab2427ffa5112f4fe58ae7c6" args="() const" -->
+QString&nbsp;</td><td class="memItemRight" valign="bottom"><b>peerName</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c2e876ea9e776d4f522b6298f7186213"></a><!-- doxytag: member="TlenSocket::isEncrypted" ref="c2e876ea9e776d4f522b6298f7186213" args="() const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>isEncrypted</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="03efd3807c5b3ecf83583fbd89edb498"></a><!-- doxytag: member="TlenSocket::peerCertificateChain" ref="03efd3807c5b3ecf83583fbd89edb498" args="() const" -->
+QList&lt; QSslCertificate &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>peerCertificateChain</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="426b7bd56fb04ccdf235577ede453a74"></a><!-- doxytag: member="TlenSocket::peerCertificate" ref="426b7bd56fb04ccdf235577ede453a74" args="() const" -->
+QSslCertificate&nbsp;</td><td class="memItemRight" valign="bottom"><b>peerCertificate</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a50732a006dfb5be0048a36ff12c5fc3"></a><!-- doxytag: member="TlenSocket::acceptCertificate" ref="a50732a006dfb5be0048a36ff12c5fc3" args="()" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>acceptCertificate</b> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f10fcae8d2b619ffe40817416210b71d"></a><!-- doxytag: member="TlenSocket::certificateAccepted" ref="f10fcae8d2b619ffe40817416210b71d" args="() const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>certificateAccepted</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="bc6badd92a1be2d542b06cb1e0d5875a"></a><!-- doxytag: member="TlenSocket::isConnectedToHost" ref="bc6badd92a1be2d542b06cb1e0d5875a" args="() const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenSocket.html#bc6badd92a1be2d542b06cb1e0d5875a">isConnectedToHost</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">stan połączenia <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="486715f5dcd44f776a763f21a2fdba98"></a><!-- doxytag: member="TlenSocket::state" ref="486715f5dcd44f776a763f21a2fdba98" args="() const" -->
+State&nbsp;</td><td class="memItemRight" valign="bottom"><b>state</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b3aaf37786c0802bce4fd4e1dc365c1f"></a><!-- doxytag: member="TlenSocket::disconnectFromHost" ref="b3aaf37786c0802bce4fd4e1dc365c1f" args="()" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenSocket.html#b3aaf37786c0802bce4fd4e1dc365c1f">disconnectFromHost</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zamyka połączenie o ile jest ono nawiązane, wcześniej zapisując dane które nie zostały jeszcze wysłane. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c4d77856555c640ed91c9ad770ee65bd"></a><!-- doxytag: member="TlenSocket::abort" ref="c4d77856555c640ed91c9ad770ee65bd" args="()" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenSocket.html#c4d77856555c640ed91c9ad770ee65bd">abort</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">zrywa natychmiast połączenie <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenSocket.html#f77957607d5863991759f0ded7f7efa8">writeData</a> (const QByteArray &amp;data, qint64 size=-1)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">wysyła dane  <a href="#f77957607d5863991759f0ded7f7efa8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenSocket.html#781cb798c90f9f99100dbea0279f49d1">writeData</a> (const <a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> &amp;node)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">To jest metoda przeciążona, udostępniona dla wygody. Różni się od powyższej metody tylko zestawem akceptowanych argumentów. wysyła node.  <a href="#781cb798c90f9f99100dbea0279f49d1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="777a6c9f4316fc4c981391fbddfd44c3"></a><!-- doxytag: member="TlenSocket::lastError" ref="777a6c9f4316fc4c981391fbddfd44c3" args="() const" -->
+<a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26f">TlenSocket::Error</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenSocket.html#777a6c9f4316fc4c981391fbddfd44c3">lastError</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>ostatni błąd jaki wystąpił przy operacji na sockecie </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d1edeecd0ac1dc207291f455661cdadf"></a><!-- doxytag: member="TlenSocket::sslErrors" ref="d1edeecd0ac1dc207291f455661cdadf" args="() const" -->
+QList&lt; TlenSocket::SslError &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>sslErrors</b> () const</td></tr>
+
+<tr><td colspan="2"><br><h2>Metody chronione</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenSocket.html#fed46a6ccc0e96e2fc59db8d870558e5">connected</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda wywoływana w momencie nawiązania połączenia.  <a href="#fed46a6ccc0e96e2fc59db8d870558e5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="0df94bddd7e02001ce6a1f3a2d1d3744"></a><!-- doxytag: member="TlenSocket::disconnected" ref="0df94bddd7e02001ce6a1f3a2d1d3744" args="()" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenSocket.html#0df94bddd7e02001ce6a1f3a2d1d3744">disconnected</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda wywoływana jest w momencie gdy połączenie zostanie zakończone. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenSocket.html#70b6e299fe7fcd732ed5defc55fbc215">error</a> (<a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26f">TlenSocket::Error</a> err)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda wywoływana jest w momencie gdy wystąpi błąd operacji na gniździe.  <a href="#70b6e299fe7fcd732ed5defc55fbc215"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a072aaab2f07679ea6da3d24f37c7ffe"></a><!-- doxytag: member="TlenSocket::peerVerifyError" ref="a072aaab2f07679ea6da3d24f37c7ffe" args="(const QList&lt; TlenSocket::SslError &gt; &amp;err)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>peerVerifyError</b> (const QList&lt; TlenSocket::SslError &gt; &amp;err)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="0e01a03dd22b871a1d519761e1de24da"></a><!-- doxytag: member="TlenSocket::connectionEncrypted" ref="0e01a03dd22b871a1d519761e1de24da" args="()" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>connectionEncrypted</b> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="8b29ee576befd6cb8967de44d6d79a5c"></a><!-- doxytag: member="TlenSocket::readyRead" ref="8b29ee576befd6cb8967de44d6d79a5c" args="()" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenSocket.html#8b29ee576befd6cb8967de44d6d79a5c">readyRead</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda wywoływana jest gdy wyłączony jest tryb blokujący i gdy w sockecie dostępne są dane do odczytu. <br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Obsługa połączenia internetowego. 
+<p>
+Należy napisać własną klasę dziedziczącą z <a class="el" href="classTlenSocket.html" title="Obsługa połączenia internetowego.">TlenSocket</a> i reimplementować chronione metody void <a class="el" href="classTlenSocket.html#fed46a6ccc0e96e2fc59db8d870558e5" title="Metoda wywoływana w momencie nawiązania połączenia.">TlenSocket::connected()</a>, void <a class="el" href="classTlenSocket.html#0df94bddd7e02001ce6a1f3a2d1d3744" title="Metoda wywoływana jest w momencie gdy połączenie zostanie zakończone.">TlenSocket::disconnected()</a>, void <a class="el" href="classTlenSocket.html#8b29ee576befd6cb8967de44d6d79a5c" title="Metoda wywoływana jest gdy wyłączony jest tryb blokujący i gdy w sockecie dostępne...">TlenSocket::readyRead()</a> i void <a class="el" href="classTlenSocket.html#70b6e299fe7fcd732ed5defc55fbc215" title="Metoda wywoływana jest w momencie gdy wystąpi błąd operacji na gniździe.">TlenSocket::error(TlenSocket::Error)</a> <br>
+ 
+<p>
+<hr><h2>Dokumentacja składowych wyliczanych</h2>
+<a class="anchor" name="88520eec74896ff5b7a746af707cc26f"></a><!-- doxytag: member="TlenSocket::Error" ref="88520eec74896ff5b7a746af707cc26f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26f">TlenSocket::Error</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+określa jaki błąd wystąpił podczas operacji na sockecie 
+<p>
+<dl compact><dt><b>Wartości wyliczeń: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="88520eec74896ff5b7a746af707cc26fef23cb76bafee520290aed65a98966d6"></a><!-- doxytag: member="ConnectionRefused" ref="88520eec74896ff5b7a746af707cc26fef23cb76bafee520290aed65a98966d6" args="" -->ConnectionRefused</em>&nbsp;</td><td>
+Połączenie zostało odrzucone. 
+<p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" name="88520eec74896ff5b7a746af707cc26f8dc38a3d41fffe5c5268f72d28f273e6"></a><!-- doxytag: member="RemoteHostClosed" ref="88520eec74896ff5b7a746af707cc26f8dc38a3d41fffe5c5268f72d28f273e6" args="" -->RemoteHostClosed</em>&nbsp;</td><td>
+Zdalny host zamknął połączenie. 
+<p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" name="88520eec74896ff5b7a746af707cc26fcdf5785b7b75a42999f6a2df95e345ef"></a><!-- doxytag: member="HostNotFound" ref="88520eec74896ff5b7a746af707cc26fcdf5785b7b75a42999f6a2df95e345ef" args="" -->HostNotFound</em>&nbsp;</td><td>
+Adres hosta nie został znaleziony. 
+<p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" name="88520eec74896ff5b7a746af707cc26fa1e34b54c8b7f917809fd9029000f2fb"></a><!-- doxytag: member="AccessError" ref="88520eec74896ff5b7a746af707cc26fa1e34b54c8b7f917809fd9029000f2fb" args="" -->AccessError</em>&nbsp;</td><td>
+Operacja nie powiodła się ponieważ aplikacja nie ma odpowiednich uprawnień. 
+<p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" name="88520eec74896ff5b7a746af707cc26f56e243a21d4e21cdf8575a7db40b2b4b"></a><!-- doxytag: member="ResourceError" ref="88520eec74896ff5b7a746af707cc26f56e243a21d4e21cdf8575a7db40b2b4b" args="" -->ResourceError</em>&nbsp;</td><td>
+System operacyjny wyczerpał wszystkie wolne zasoby (np. 
+<p>
+za dużo otwartych gniazd) </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="88520eec74896ff5b7a746af707cc26ffafb0b4a474068feb0367de7bb2c7951"></a><!-- doxytag: member="SocketTimeout" ref="88520eec74896ff5b7a746af707cc26ffafb0b4a474068feb0367de7bb2c7951" args="" -->SocketTimeout</em>&nbsp;</td><td>
+Operacja na sockecie wyczerpała swój limit czasu. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="88520eec74896ff5b7a746af707cc26f58182752998b54e31110de217ae669ba"></a><!-- doxytag: member="NetworkError" ref="88520eec74896ff5b7a746af707cc26f58182752998b54e31110de217ae669ba" args="" -->NetworkError</em>&nbsp;</td><td>
+Wystąpił błąd związany z połączeniem internetowym. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="88520eec74896ff5b7a746af707cc26f7a7a76f6ee2227d3f0fd17a657a88f9d"></a><!-- doxytag: member="ConnectionLost" ref="88520eec74896ff5b7a746af707cc26f7a7a76f6ee2227d3f0fd17a657a88f9d" args="" -->ConnectionLost</em>&nbsp;</td><td>
+Połączenie po stronie klienta zostało zerwane. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="88520eec74896ff5b7a746af707cc26ff2bcb2adfc20c88591337532bf9d1dce"></a><!-- doxytag: member="UnsupportedOperation" ref="88520eec74896ff5b7a746af707cc26ff2bcb2adfc20c88591337532bf9d1dce" args="" -->UnsupportedOperation</em>&nbsp;</td><td>
+Żądana operacja na gnieździe nie jest wspierana przez system operacyjny (np. 
+<p>
+brak wsparcia dla IPv6) </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="88520eec74896ff5b7a746af707cc26f5252b962cf22231813dca4437bc021eb"></a><!-- doxytag: member="UnknownError" ref="88520eec74896ff5b7a746af707cc26f5252b962cf22231813dca4437bc021eb" args="" -->UnknownError</em>&nbsp;</td><td>
+Wystąpił nieokreślony błąd. </td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<hr><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" name="5c13757a07da6b171336e802832b6202"></a><!-- doxytag: member="TlenSocket::TlenSocket" ref="5c13757a07da6b171336e802832b6202" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenSocket::TlenSocket           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Domyślny konstruktor. 
+<p>
+Tworzenie socketa TCP 
+</div>
+</div><p>
+<a class="anchor" name="364b1daf68e4be62796834a69048a0b1"></a><!-- doxytag: member="TlenSocket::TlenSocket" ref="364b1daf68e4be62796834a69048a0b1" args="(ProtocolType protocolType)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenSocket::TlenSocket           </td>
+          <td>(</td>
+          <td class="paramtype">ProtocolType&nbsp;</td>
+          <td class="paramname"> <em>protocolType</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Ten konstruktor umożliwia wybór typ (TCP/UDP) tworzonego socketa. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>protocolType</em>&nbsp;</td><td>Tcp lub Udp </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="c6b4b3b1f1774d88885cfb1184e19ed0"></a><!-- doxytag: member="TlenSocket::connectToHost" ref="c6b4b3b1f1774d88885cfb1184e19ed0" args="(const QString &amp;address, unsigned short port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenSocket::connectToHost           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&nbsp;</td>
+          <td class="paramname"> <em>port</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+otwiera połączenie 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>address</em>&nbsp;</td><td>- adres serwera z którym chcemy nawiązać połączenie </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>- port na którym chcemy nawiązać połączenie </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f77957607d5863991759f0ded7f7efa8"></a><!-- doxytag: member="TlenSocket::writeData" ref="f77957607d5863991759f0ded7f7efa8" args="(const QByteArray &amp;data, qint64 size=-1)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenSocket::writeData           </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64&nbsp;</td>
+          <td class="paramname"> <em>size</em> = <code>-1</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+wysyła dane 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- dane do wysłania </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>size</em>&nbsp;</td><td>- maksymalny rozmiar danych do zapisania (-1 aby zapisać cały ciąg) </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>ilość zapisanych danych (zawsze size lub data.size() jeśli size jest równy -1) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="781cb798c90f9f99100dbea0279f49d1"></a><!-- doxytag: member="TlenSocket::writeData" ref="781cb798c90f9f99100dbea0279f49d1" args="(const TlenXmlNode &amp;node)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenSocket::writeData           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>node</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+To jest metoda przeciążona, udostępniona dla wygody. Różni się od powyższej metody tylko zestawem akceptowanych argumentów. wysyła node. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>node</em>&nbsp;</td><td>- node do wysłania </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="fed46a6ccc0e96e2fc59db8d870558e5"></a><!-- doxytag: member="TlenSocket::connected" ref="fed46a6ccc0e96e2fc59db8d870558e5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenSocket::connected           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda wywoływana w momencie nawiązania połączenia. 
+<p>
+Należy ją reimplementować aby obsłużyć połączenie w spób jaki wymaga tego dany protokół. 
+</div>
+</div><p>
+<a class="anchor" name="70b6e299fe7fcd732ed5defc55fbc215"></a><!-- doxytag: member="TlenSocket::error" ref="70b6e299fe7fcd732ed5defc55fbc215" args="(TlenSocket::Error err)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenSocket::error           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26f">TlenSocket::Error</a>&nbsp;</td>
+          <td class="paramname"> <em>err</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda wywoływana jest w momencie gdy wystąpi błąd operacji na gniździe. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>err</em>&nbsp;</td><td>- typ błędu jaki wystąpił </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<hr>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>include/network/<a class="el" href="TlenSocket_8h-source.html">TlenSocket.h</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

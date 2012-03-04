@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Plik źródłowy include/roster/TlenRoster.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li><a href="classes.html"><span>Klasy</span></a></li>
+    <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<h1>include/roster/TlenRoster.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef __TLEN_ROSTER_H__</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define __TLEN_ROSTER_H__</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;QHash&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;QString&gt;</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;core/export.h&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;data/TlenArg.h&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;data/TlenBuddy.h&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;data/TlenBuddyResource.h&gt;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;data/TlenPresence.h&gt;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &lt;data/TlenSubscription.h&gt;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;plugin/TlenPlugin.h&gt;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <span class="keyword">class </span>TlenRosterPrivate;
+<a name="l00016"></a>00016 <span class="keyword">class </span>TlenApplication;
+<a name="l00017"></a>00017 
+<a name="l00021"></a><a class="code" href="classTlenRoster.html">00021</a> <span class="keyword">class </span>__tlen_roster__ <a class="code" href="classTlenRoster.html" title="Obsługa listy kontaktów.">TlenRoster</a>: <span class="keyword">public</span> <a class="code" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a>
+<a name="l00022"></a>00022 {
+<a name="l00023"></a>00023         <span class="keyword">public</span>:
+<a name="l00024"></a>00024                 <span class="keyword">static</span> <a class="code" href="classTlenRoster.html" title="Obsługa listy kontaktów.">TlenRoster</a> *getInstance();
+<a name="l00025"></a>00025 
+<a name="l00038"></a>00038                 <a class="code" href="classTlenBuddyContact.html" title="Kontakt dodany do listy kontaktów.">TlenBuddyContact</a> addContact(<a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *acc, <span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>, <span class="keyword">const</span> QString &amp;display, <span class="keyword">const</span> <a class="code" href="classTlenPresence.html" title="Opisuje prezencję.">TlenPresence</a> &amp;pres, <span class="keyword">const</span> QString &amp;group, <span class="keyword">const</span> QString &amp;meta = QString(), <span class="keyword">const</span> <a class="code" href="classTlenSubscriptionType.html" title="Opisuje typ subksrypcji specyficzny dla danego protokołu.">TlenSubscriptionType</a> &amp;subscr = <a class="code" href="classTlenSubscriptionType.html" title="Opisuje typ subksrypcji specyficzny dla danego protokołu.">TlenSubscriptionType</a>());
+<a name="l00046"></a>00046                 <a class="code" href="classTlenBuddyTemporary.html" title="Kontakt tymczasowy.">TlenBuddyTemporary</a> addTemporaryContact(<a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *acc, <span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>, <span class="keyword">const</span> <a class="code" href="classTlenPresence.html" title="Opisuje prezencję.">TlenPresence</a> &amp;pres);
+<a name="l00052"></a>00052                 <a class="code" href="classTlenBuddyGroup.html" title="Grupa do której przypisane są inne kontakty.">TlenBuddyGroup</a> addGroup(<span class="keyword">const</span> QString &amp;name);
+<a name="l00065"></a>00065                 <a class="code" href="classTlenBuddyCustom.html" title="Kontakt specjalnego typu.">TlenBuddyCustom</a> addCustom(<span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> QString &amp;group, <span class="keyword">const</span> QString &amp;subType, <span class="keyword">const</span> QString &amp;ownerid,<span class="keyword">const</span> QHash&lt;QString, TlenArg&gt; &amp;attribs, <span class="keyword">const</span> QString &amp;description=<span class="stringliteral">""</span>, <span class="keyword">const</span> QString &amp;presenceIcon=<span class="stringliteral">""</span>, <span class="keyword">const</span> QString &amp;avatarIcon=<span class="stringliteral">""</span>);
+<a name="l00066"></a>00066                 TlenBuddyMeta addMeta(<span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> QString &amp;group);               
+<a name="l00067"></a>00067 
+<a name="l00074"></a>00074                 <a class="code" href="classTlenBuddy.html" title="Reprezentuje kontakt.">TlenBuddy</a> getContactById(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>, <a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *acc) <span class="keyword">const</span>;
+<a name="l00080"></a>00080                 QList&lt;TlenBuddy&gt; getBuddiesForAccount(<a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *acc) <span class="keyword">const</span>;
+<a name="l00087"></a>00087                 QList&lt;TlenBuddy&gt; getBuddiesWithDisplayName(<span class="keyword">const</span> QString &amp;display, <a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *acc) <span class="keyword">const</span>;
+<a name="l00088"></a>00088                         
+<a name="l00093"></a>00093                 QList&lt;TlenBuddyMeta&gt; getMetas();
+<a name="l00098"></a>00098                 <span class="keywordtype">void</span> saveRoster(<a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *acc);
+<a name="l00105"></a>00105                 <span class="keywordtype">void</span> updateContactAttrib(<span class="keyword">const</span> <a class="code" href="classTlenBuddyContact.html" title="Kontakt dodany do listy kontaktów.">TlenBuddyContact</a> &amp;, <span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> <a class="code" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> &amp;attrib);
+<a name="l00111"></a>00111                 <span class="keywordtype">void</span> updateContactAvatar(<span class="keyword">const</span> <a class="code" href="classTlenBuddyContact.html" title="Kontakt dodany do listy kontaktów.">TlenBuddyContact</a> &amp;, <span class="keyword">const</span> QString &amp;avatarpath);
+<a name="l00117"></a>00117                 <span class="keywordtype">void</span> updateContactLocalAvatar(<span class="keyword">const</span> <a class="code" href="classTlenBuddyContact.html" title="Kontakt dodany do listy kontaktów.">TlenBuddyContact</a> &amp;, <span class="keyword">const</span> QString &amp;avatarpath);
+<a name="l00122"></a>00122                 <span class="keywordtype">void</span> removeContactAvatar(<span class="keyword">const</span> <a class="code" href="classTlenBuddyContact.html" title="Kontakt dodany do listy kontaktów.">TlenBuddyContact</a> &amp;);
+<a name="l00129"></a>00129                 <span class="keywordtype">void</span> updateContactPresence(<span class="keyword">const</span> <a class="code" href="classTlenBuddyContact.html" title="Kontakt dodany do listy kontaktów.">TlenBuddyContact</a> &amp;, <span class="keyword">const</span> <a class="code" href="classTlenPresence.html" title="Opisuje prezencję.">TlenPresence</a> &amp;presence, <span class="keyword">const</span> TlenBuddyResource &amp;resource = TlenBuddyResource());
+<a name="l00135"></a>00135                 <span class="keywordtype">void</span> updateContactSubscription(<span class="keyword">const</span> <a class="code" href="classTlenBuddyContact.html" title="Kontakt dodany do listy kontaktów.">TlenBuddyContact</a> &amp;, <span class="keyword">const</span> <a class="code" href="classTlenSubscriptionType.html" title="Opisuje typ subksrypcji specyficzny dla danego protokołu.">TlenSubscriptionType</a> &amp;);
+<a name="l00140"></a>00140                 <span class="keywordtype">void</span> clearContactResources(<span class="keyword">const</span> <a class="code" href="classTlenBuddyContact.html" title="Kontakt dodany do listy kontaktów.">TlenBuddyContact</a> &amp;);
+<a name="l00150"></a>00150                 <span class="keywordtype">void</span> updateContact(<span class="keyword">const</span> <a class="code" href="classTlenBuddyContact.html" title="Kontakt dodany do listy kontaktów.">TlenBuddyContact</a> &amp;, <span class="keyword">const</span> QString &amp;alias, <span class="keyword">const</span> QString &amp;group, <span class="keyword">const</span> QString &amp;meta, <span class="keyword">const</span> QList&lt;TlenField&gt; &amp;extrainfo, <span class="keyword">const</span> QStringList &amp;tags = QStringList());
+<a name="l00155"></a>00155                 <span class="keywordtype">void</span> removeTemporary(<span class="keyword">const</span> <a class="code" href="classTlenBuddyTemporary.html" title="Kontakt tymczasowy.">TlenBuddyTemporary</a> &amp;);
+<a name="l00160"></a>00160                 <span class="keywordtype">void</span> removeContact(<span class="keyword">const</span> <a class="code" href="classTlenBuddyContact.html" title="Kontakt dodany do listy kontaktów.">TlenBuddyContact</a> &amp;);
+<a name="l00166"></a>00166                 <span class="keywordtype">void</span> removeContact(<span class="keyword">const</span> <a class="code" href="classTlenBuddyContact.html" title="Kontakt dodany do listy kontaktów.">TlenBuddyContact</a> &amp;contact, <span class="keyword">const</span> <a class="code" href="classTlenBuddy.html" title="Reprezentuje kontakt.">TlenBuddy</a> &amp;parent);
+<a name="l00171"></a>00171                 <span class="keywordtype">void</span> removeCustom(<span class="keyword">const</span> <a class="code" href="classTlenBuddyCustom.html" title="Kontakt specjalnego typu.">TlenBuddyCustom</a> &amp;);
+<a name="l00172"></a>00172                 
+<a name="l00173"></a>00173                 <span class="keywordtype">void</span> updateCustom(<span class="keyword">const</span> <a class="code" href="classTlenBuddyCustom.html" title="Kontakt specjalnego typu.">TlenBuddyCustom</a> &amp;);
+<a name="l00174"></a>00174                 
+<a name="l00179"></a>00179                 <span class="keywordtype">bool</span> isEmpty();
+<a name="l00186"></a>00186                 <span class="keywordtype">bool</span> contactExists(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>, <a class="code" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> *acc) <span class="keyword">const</span>;                
+<a name="l00193"></a>00193                 <span class="keywordtype">bool</span> renameBuddy(<span class="keyword">const</span> <a class="code" href="classTlenBuddy.html" title="Reprezentuje kontakt.">TlenBuddy</a> &amp;b, <span class="keyword">const</span> QString &amp;display);           
+<a name="l00198"></a>00198                 QStringList getGroupsNames() <span class="keyword">const</span>;
+<a name="l00204"></a>00204                 <span class="keywordtype">void</span> changeGroup(<span class="keyword">const</span> <a class="code" href="classTlenBuddy.html" title="Reprezentuje kontakt.">TlenBuddy</a>&amp; buddy, <span class="keyword">const</span> QString &amp;group);
+<a name="l00209"></a>00209                 <span class="keywordtype">void</span> upGroup(<span class="keyword">const</span> <a class="code" href="classTlenBuddyGroup.html" title="Grupa do której przypisane są inne kontakty.">TlenBuddyGroup</a> &amp;group);
+<a name="l00214"></a>00214                 <span class="keywordtype">void</span> downGroup(<span class="keyword">const</span> <a class="code" href="classTlenBuddyGroup.html" title="Grupa do której przypisane są inne kontakty.">TlenBuddyGroup</a> &amp;group);
+<a name="l00215"></a>00215                 
+<a name="l00216"></a>00216         <span class="keyword">private</span>:
+<a name="l00217"></a>00217                 <a class="code" href="classTlenRoster.html" title="Obsługa listy kontaktów.">TlenRoster</a>();
+<a name="l00218"></a>00218                 ~<a class="code" href="classTlenRoster.html" title="Obsługa listy kontaktów.">TlenRoster</a>();
+<a name="l00219"></a>00219                                 
+<a name="l00221"></a>00221                 <span class="comment">// plugin specific</span>
+<a name="l00223"></a>00223 <span class="comment"></span>                <span class="keywordtype">bool</span> <a class="code" href="classTlenPlugin.html#69340681749bee612c3f26d22b63a269" title="Metoda uruchamiająca wtyczkę  UWAGA: wtyczka nie musi sama pobierać ustawien,...">load</a>();
+<a name="l00224"></a>00224                 <span class="keywordtype">void</span> <a class="code" href="classTlenPlugin.html#122958a9b97c6c04976b7bd011c9c449" title="Metoda wywoływana przy wyładowywaniu wtyczki UWAGA: wtyczka nie musi sama zapisywać...">unload</a>();
+<a name="l00225"></a>00225                 QString <a class="code" href="classTlenPlugin.html#dabcac9bf30840db69551e8ab6eb1522" title="Nazwa wtyczki nie powinna byc nigdy tlumaczona (nie powinna byc zawarta w tlen_tr)...">name</a>() <span class="keyword">const</span>;
+<a name="l00226"></a>00226                 QString <a class="code" href="classTlenPlugin.html#e1475ca47bb8cbee1ab797172f4881a7" title="nazwa pliku z ikonką wtyczki">icon</a>(<span class="keywordtype">int</span> size=0) <span class="keyword">const</span>;
+<a name="l00227"></a>00227                 QString <a class="code" href="classTlenPlugin.html#bba023647f72c4bffcf0cea8e1cec7f2" title="autor wtyczki">author</a>() <span class="keyword">const</span>;
+<a name="l00228"></a>00228                 QString <a class="code" href="classTlenPlugin.html#da891b7b80416b5be87f7aea14adf701" title="opis wtyczki">description</a>() <span class="keyword">const</span>;
+<a name="l00229"></a>00229                 <span class="keywordtype">int</span> <a class="code" href="classTlenPlugin.html#77b29c5f1f380a8d8e810b80633b89f8" title="wersja wtyczki.">version</a>() <span class="keyword">const</span>;
+<a name="l00230"></a>00230                 QString <a class="code" href="classTlenPlugin.html#aeb4e9653315d34707b30d6714568d06" title="strona domowa">web</a>() <span class="keyword">const</span>;
+<a name="l00231"></a>00231                 QString <a class="code" href="classTlenPlugin.html#b5127a4c92584c94fa6dccc5bffc5581" title="adres kontaktowy">email</a>() <span class="keyword">const</span>;
+<a name="l00233"></a>00233                                 
+<a name="l00234"></a>00234                 TLEN_DECLARE_SLOT(accountEnabled);
+<a name="l00235"></a>00235                 TLEN_DECLARE_SLOT(accountDisabled);
+<a name="l00236"></a>00236                 TLEN_DECLARE_SLOT(pluginLoaded);
+<a name="l00237"></a>00237                 TLEN_DECLARE_SLOT(pluginUnloaded);
+<a name="l00238"></a>00238                 
+<a name="l00239"></a>00239                 <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classTlenProtocol.html" title="Bazowa klasa wszystkich wtyczek dostarczających usługę protokołu.">TlenProtocol</a>;
+<a name="l00240"></a>00240                 <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a>;
+<a name="l00241"></a>00241                 <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classTlenSettingsManager.html" title="Służy do odczytywania i zapisywania ustawień programu, a także zwraca sciężki...">TlenSettingsManager</a>;
+<a name="l00242"></a>00242                 <span class="keyword">friend</span> <span class="keyword">class </span>TlenApplication;
+<a name="l00243"></a>00243                 <span class="keyword">friend</span> <span class="keyword">class </span>TlenRosterPrivate;
+<a name="l00244"></a>00244                                 
+<a name="l00245"></a>00245                 <span class="keyword">static</span> <a class="code" href="classTlenRoster.html" title="Obsługa listy kontaktów.">TlenRoster</a> *instance;            
+<a name="l00246"></a>00246                 TlenRosterPrivate *d;
+<a name="l00247"></a>00247 };
+<a name="l00248"></a>00248 
+<a name="l00253"></a>00253 
+<a name="l00254"></a>00254 <span class="comment">// Kontakty</span>
+<a name="l00256"></a>00256 <span class="comment"></span><span class="preprocessor">#define CONTACT_ADDED                   "contact_added"</span>
+<a name="l00257"></a>00257 <span class="preprocessor"></span><span class="preprocessor">#define CONTACT_CHANGED                 "contact_changed"</span>
+<a name="l00258"></a>00258 <span class="preprocessor"></span><span class="preprocessor">#define CONTACT_REMOVED                 "contact_removed"</span>
+<a name="l00259"></a>00259 <span class="preprocessor"></span><span class="preprocessor">#define CONTACT_REMOVED_FROM_PARENT     "contact_removed_from_parent"</span>
+<a name="l00260"></a>00260 <span class="preprocessor"></span><span class="preprocessor">#define CONTACT_PRESENCE_CHANGED        "contact_presence_changed"</span>
+<a name="l00261"></a>00261 <span class="preprocessor"></span><span class="preprocessor">#define CONTACT_SUBSCRIPTION_CHANGED    "contact_sunscription_changed"</span>
+<a name="l00262"></a>00262 <span class="preprocessor"></span><span class="preprocessor">#define CONTACT_AVATAR_CHANGED          "contact_avatar_changed"</span>
+<a name="l00263"></a>00263 <span class="preprocessor"></span><span class="preprocessor">#define CONTACT_RENAMED                 "contact_renamed"</span>
+<a name="l00264"></a>00264 <span class="preprocessor"></span><span class="preprocessor">#define CONTACT_ATTRIB_CHANGED          "contact_attrib_changed"</span>
+<a name="l00265"></a>00265 <span class="preprocessor"></span>
+<a name="l00267"></a>00267 <span class="comment">// Temporary</span>
+<a name="l00269"></a>00269 <span class="comment"></span><span class="preprocessor">#define TEMPORARY_ADDED                 "temporary_added"</span>
+<a name="l00270"></a>00270 <span class="preprocessor"></span><span class="preprocessor">#define TEMPORARY_REMOVED               "temporary_removed"</span>
+<a name="l00271"></a>00271 <span class="preprocessor"></span><span class="preprocessor">#define TEMPORARY_PRESENCE_CHANGED      "temporary_presence_changed"</span>
+<a name="l00272"></a>00272 <span class="preprocessor"></span><span class="preprocessor">#define TEMPORARY_CONVERTED_TO_CONTACT  "temporary_converted_to_contact"</span>
+<a name="l00273"></a>00273 <span class="preprocessor"></span>
+<a name="l00275"></a>00275 <span class="comment">// Grupy</span>
+<a name="l00277"></a>00277 <span class="comment"></span><span class="preprocessor">#define GROUP_ADDED                     "group_added"</span>
+<a name="l00278"></a>00278 <span class="preprocessor"></span><span class="preprocessor">#define GROUP_REMOVED                   "group_removed"</span>
+<a name="l00279"></a>00279 <span class="preprocessor"></span><span class="preprocessor">#define GROUP_CHILD_REMOVED             "group_child_removed"</span>
+<a name="l00280"></a>00280 <span class="preprocessor"></span><span class="preprocessor">#define GROUP_CHILD_ADDED               "group_child_added"</span>
+<a name="l00281"></a>00281 <span class="preprocessor"></span><span class="preprocessor">#define GROUP_COLLAPSED                 "group_collapsed"</span>
+<a name="l00282"></a>00282 <span class="preprocessor"></span><span class="preprocessor">#define GROUP_RENAMED                   "group_renamed"</span>
+<a name="l00283"></a>00283 <span class="preprocessor"></span>
+<a name="l00285"></a>00285 <span class="comment">// Meta</span>
+<a name="l00287"></a>00287 <span class="comment"></span><span class="preprocessor">#define META_ADDED                      "meta_added"</span>
+<a name="l00288"></a>00288 <span class="preprocessor"></span><span class="preprocessor">#define META_CHANGED                    "meta_changed"</span>
+<a name="l00289"></a>00289 <span class="preprocessor"></span><span class="preprocessor">#define META_REMOVED                    "meta_removed"</span>
+<a name="l00290"></a>00290 <span class="preprocessor"></span><span class="preprocessor">#define META_CHILD_REMOVED              "meta_child_removed"</span>
+<a name="l00291"></a>00291 <span class="preprocessor"></span><span class="preprocessor">#define META_CHILD_ADDED                "meta_child_added"</span>
+<a name="l00292"></a>00292 <span class="preprocessor"></span><span class="preprocessor">#define META_EXPANDED                   "meta_expanded"</span>
+<a name="l00293"></a>00293 <span class="preprocessor"></span><span class="preprocessor">#define META_COLLAPSED                  "meta_collapsed"</span>
+<a name="l00294"></a>00294 <span class="preprocessor"></span><span class="preprocessor">#define META_RENAMED                    "meta_renamed"</span>
+<a name="l00295"></a>00295 <span class="preprocessor"></span>
+<a name="l00297"></a>00297 <span class="comment">// Custom</span>
+<a name="l00299"></a>00299 <span class="comment"></span>
+<a name="l00300"></a>00300 
+<a name="l00301"></a>00301 
+<a name="l00302"></a>00302 
+<a name="l00303"></a>00303 <span class="preprocessor">#define CUSTOM_CHANGED                  "custom_changed"</span>
+<a name="l00304"></a>00304 <span class="preprocessor"></span><span class="preprocessor">#define CUSTOM_ADDED                    "custom_added"</span>
+<a name="l00305"></a>00305 <span class="preprocessor"></span><span class="preprocessor">#define CUSTOM_REMOVED                  "custom_removed"</span>
+<a name="l00306"></a>00306 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+</pre></div><hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

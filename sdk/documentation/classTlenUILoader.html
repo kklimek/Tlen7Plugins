@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Dokumentacja klasy TlenUILoader</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li class="current"><a href="classes.html"><span>Klasy</span></a></li>
+    <li><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabetyczna</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;klas</span></a></li>
+    <li><a href="hierarchy.html"><span>Hierarchia&nbsp;klas</span></a></li>
+    <li><a href="functions.html"><span>Składowe&nbsp;klas</span></a></li>
+  </ul>
+</div>
+<h1>Dokumentacja klasy TlenUILoader</h1><!-- doxytag: class="TlenUILoader" -->Ladowanie gui z plikow UI, zapamietuje pozycje okien.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="TlenUILoader_8h-source.html">TlenUILoader.h</a>&gt;</code>
+<p>
+<a href="classTlenUILoader-members.html">Lista wszystkich składowych.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QWidget *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenUILoader.html#c96f999d815cd5fb86fdecc69e619bd3">loadUI</a> (const QString &amp;name, const QString &amp;path=QString())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Laduje plik UI.  <a href="#c96f999d815cd5fb86fdecc69e619bd3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QWidget *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenUILoader.html#1e42d53d0db166160445a98745bb49bb">loadUI</a> (const QString &amp;name, QWidget *widget, const QString &amp;path=QString())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Laduje plik UI.  <a href="#1e42d53d0db166160445a98745bb49bb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QWidget *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenUILoader.html#7da9bfd477173fdafb87af471e81b978">loadUI</a> (const QString &amp;name, QMainWindow *widget)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Laduje plik UI.  <a href="#7da9bfd477173fdafb87af471e81b978"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Statyczne metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b66bbe1103203414edc77a8c72970b18"></a><!-- doxytag: member="TlenUILoader::getInstance" ref="b66bbe1103203414edc77a8c72970b18" args="()" -->
+static <a class="el" href="classTlenUILoader.html">TlenUILoader</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenUILoader.html#4937168f33ce4d8e125090a05b301721">insertWidget</a> (QWidget *parentWidget, QWidget *childWidget)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wstawia jedna kontrolke wewnatrz innej.  <a href="#4937168f33ce4d8e125090a05b301721"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Metody chronione</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9671c61e6e70b405f45bbec1269612ad"></a><!-- doxytag: member="TlenUILoader::TlenUILoader" ref="9671c61e6e70b405f45bbec1269612ad" args="(const TlenUILoader &amp;)" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>TlenUILoader</b> (const <a class="el" href="classTlenUILoader.html">TlenUILoader</a> &amp;)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ed523f1ef8f9c8822607e000eb1760c1"></a><!-- doxytag: member="TlenUILoader::operator=" ref="ed523f1ef8f9c8822607e000eb1760c1" args="(const TlenUILoader &amp;)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classTlenUILoader.html">TlenUILoader</a> &amp;)</td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Ladowanie gui z plikow UI, zapamietuje pozycje okien. 
+<p>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="c96f999d815cd5fb86fdecc69e619bd3"></a><!-- doxytag: member="TlenUILoader::loadUI" ref="c96f999d815cd5fb86fdecc69e619bd3" args="(const QString &amp;name, const QString &amp;path=QString())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget* TlenUILoader::loadUI           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em> = <code>QString()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Laduje plik UI. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>nazwa pliku bez rozszerzenia </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>path</em>&nbsp;</td><td>sciezka ktora zostanie przeszukana. Domyslnie jest to aktualny skorka </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>utworzona kontrolka </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1e42d53d0db166160445a98745bb49bb"></a><!-- doxytag: member="TlenUILoader::loadUI" ref="1e42d53d0db166160445a98745bb49bb" args="(const QString &amp;name, QWidget *widget, const QString &amp;path=QString())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget* TlenUILoader::loadUI           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&nbsp;</td>
+          <td class="paramname"> <em>widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em> = <code>QString()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Laduje plik UI. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>nazwa pliku bez rozszerzenia </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>widget</em>&nbsp;</td><td>kontrolka, ktora bedzie rodzicem dla ladowanej kontrolki </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>path</em>&nbsp;</td><td>sciezka ktora zostanie przeszukana. Domyslnie jest to aktualny skorka </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>utworzona kontrolka </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7da9bfd477173fdafb87af471e81b978"></a><!-- doxytag: member="TlenUILoader::loadUI" ref="7da9bfd477173fdafb87af471e81b978" args="(const QString &amp;name, QMainWindow *widget)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget* TlenUILoader::loadUI           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QMainWindow *&nbsp;</td>
+          <td class="paramname"> <em>widget</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Laduje plik UI. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>nazwa pliku bez rozszerzenia </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>widget</em>&nbsp;</td><td>okno glowne, ktore bedzie rodzicem dla ladowanej kontrolki </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>utworzona kontrolka </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4937168f33ce4d8e125090a05b301721"></a><!-- doxytag: member="TlenUILoader::insertWidget" ref="4937168f33ce4d8e125090a05b301721" args="(QWidget *parentWidget, QWidget *childWidget)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void TlenUILoader::insertWidget           </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&nbsp;</td>
+          <td class="paramname"> <em>parentWidget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&nbsp;</td>
+          <td class="paramname"> <em>childWidget</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Wstawia jedna kontrolke wewnatrz innej. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>parentWidget</em>&nbsp;</td><td>kontrolka nadrzedna </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>childWidget</em>&nbsp;</td><td>kontrolka podrzedna </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<hr>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>include/gui/<a class="el" href="TlenUILoader_8h-source.html">TlenUILoader.h</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

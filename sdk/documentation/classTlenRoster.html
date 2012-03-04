@@ -1,0 +1,1165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Dokumentacja klasy TlenRoster</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li class="current"><a href="classes.html"><span>Klasy</span></a></li>
+    <li><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabetyczna</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;klas</span></a></li>
+    <li><a href="hierarchy.html"><span>Hierarchia&nbsp;klas</span></a></li>
+    <li><a href="functions.html"><span>Składowe&nbsp;klas</span></a></li>
+  </ul>
+</div>
+<h1>Dokumentacja klasy TlenRoster</h1><!-- doxytag: class="TlenRoster" --><!-- doxytag: inherits="TlenPlugin" -->Obsługa listy kontaktów.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="TlenRoster_8h-source.html">TlenRoster.h</a>&gt;</code>
+<p>
+Dziedziczy <a class="el" href="classTlenPlugin.html">TlenPlugin</a>.
+<p>
+<a href="classTlenRoster-members.html">Lista wszystkich składowych.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#26fa93c10d17f8432942b55686b7a7e0">addContact</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;id, const QString &amp;display, const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;pres, const QString &amp;group, const QString &amp;meta=QString(), const <a class="el" href="classTlenSubscriptionType.html">TlenSubscriptionType</a> &amp;subscr=<a class="el" href="classTlenSubscriptionType.html">TlenSubscriptionType</a>())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dodaje kontakt.  <a href="#26fa93c10d17f8432942b55686b7a7e0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenBuddyTemporary.html">TlenBuddyTemporary</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#13455438a093c5729bb9210eec811d5a">addTemporaryContact</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;id, const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;pres)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dpodaje kontakt tymczasowy.  <a href="#13455438a093c5729bb9210eec811d5a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenBuddyGroup.html">TlenBuddyGroup</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#d756fdd85f8072b771ea6cc18c09653b">addGroup</a> (const QString &amp;name)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dodaje grupę.  <a href="#d756fdd85f8072b771ea6cc18c09653b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenBuddyCustom.html">TlenBuddyCustom</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#ee0ee73de6d6b32b5d2dc86a561fb37c">addCustom</a> (const QString &amp;name, const QString &amp;group, const QString &amp;subType, const QString &amp;ownerid, const QHash&lt; QString, <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;attribs, const QString &amp;description=&quot;&quot;, const QString &amp;presenceIcon=&quot;&quot;, const QString &amp;avatarIcon=&quot;&quot;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dodaje kontakt specjalny.  <a href="#ee0ee73de6d6b32b5d2dc86a561fb37c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f0defa4bcc1d4df3a05b669f8dcce3b8"></a><!-- doxytag: member="TlenRoster::addMeta" ref="f0defa4bcc1d4df3a05b669f8dcce3b8" args="(const QString &amp;name, const QString &amp;group)" -->
+TlenBuddyMeta&nbsp;</td><td class="memItemRight" valign="bottom"><b>addMeta</b> (const QString &amp;name, const QString &amp;group)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenBuddy.html">TlenBuddy</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#c8bc89b55c515e390480615d1c93dd15">getContactById</a> (const QString &amp;id, <a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca kontakt o podanym ID.  <a href="#c8bc89b55c515e390480615d1c93dd15"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#e52b356e70b03f959d80052f7e56213b">getBuddiesForAccount</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca wszystkie kontakty dla danego konta.  <a href="#e52b356e70b03f959d80052f7e56213b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#9ba2116d2878bb680025fb34af7b347b">getBuddiesWithDisplayName</a> (const QString &amp;display, <a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca wsztkie kontakty dla danego konta o podanej nazwie wyświetlanej.  <a href="#9ba2116d2878bb680025fb34af7b347b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; TlenBuddyMeta &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#f52dd9ff4838dcd2ae76cda3fe1bc5a8">getMetas</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca wszytkie metakontakty.  <a href="#f52dd9ff4838dcd2ae76cda3fe1bc5a8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#f87516fb7d35e273d89e14afa57fe192">saveRoster</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zapisuje roster na dysku.  <a href="#f87516fb7d35e273d89e14afa57fe192"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#eb410dc94fbb4f3b75e5f295051c06ac">updateContactAttrib</a> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;, const QString &amp;name, const <a class="el" href="classTlenArg.html">TlenArg</a> &amp;attrib)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Aktualizuje atrybut dla kontaktu.  <a href="#eb410dc94fbb4f3b75e5f295051c06ac"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#863800a0104fce10103adee41ad9c12a">updateContactAvatar</a> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;, const QString &amp;avatarpath)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Aktualizuje awatar dla kontaktu.  <a href="#863800a0104fce10103adee41ad9c12a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#2975ad951a08c503e1fcc9568612363b">updateContactLocalAvatar</a> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;, const QString &amp;avatarpath)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Aktualizuje awatar lokalny do kontaktu.  <a href="#2975ad951a08c503e1fcc9568612363b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#71564d0ce882a6be5c3b9e0e5890275b">removeContactAvatar</a> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa awatar kontaktu.  <a href="#71564d0ce882a6be5c3b9e0e5890275b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#c166cea1c9da942ada4ffa82957ba916">updateContactPresence</a> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;, const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;presence, const TlenBuddyResource &amp;resource=TlenBuddyResource())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Aktualizuje prezencję kontaktu.  <a href="#c166cea1c9da942ada4ffa82957ba916"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#76261e345c4fea738bc0b1a6c352be95">updateContactSubscription</a> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;, const <a class="el" href="classTlenSubscriptionType.html">TlenSubscriptionType</a> &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Aktualizuje sybskrypcję kontaktu.  <a href="#76261e345c4fea738bc0b1a6c352be95"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#004c42372486ecac4abb232d583a771b">clearContactResources</a> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Czyści zasoby kontaktu.  <a href="#004c42372486ecac4abb232d583a771b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#66d841d494270aa4992ab394c29d1b71">updateContact</a> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;, const QString &amp;alias, const QString &amp;group, const QString &amp;meta, const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;extrainfo, const QStringList &amp;tags=QStringList())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Aktualizuj kontakt.  <a href="#66d841d494270aa4992ab394c29d1b71"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#938c6da0581fc244128cc787c3838b60">removeTemporary</a> (const <a class="el" href="classTlenBuddyTemporary.html">TlenBuddyTemporary</a> &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa kontakt tymczasowy.  <a href="#938c6da0581fc244128cc787c3838b60"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#4dc7f0520a68813fafd043a3e194d792">removeContact</a> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa kontakt.  <a href="#4dc7f0520a68813fafd043a3e194d792"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#8d223227d83b3e852fb6bd885fcdf696">removeContact</a> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;contact, const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;parent)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa kontakt z rodzica.  <a href="#8d223227d83b3e852fb6bd885fcdf696"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#e9b7474119bf0351fd8c7ed219d302ea">removeCustom</a> (const <a class="el" href="classTlenBuddyCustom.html">TlenBuddyCustom</a> &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa kontakt specjalny.  <a href="#e9b7474119bf0351fd8c7ed219d302ea"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="81f79f03a44cb3f647fbbb7219de88a4"></a><!-- doxytag: member="TlenRoster::updateCustom" ref="81f79f03a44cb3f647fbbb7219de88a4" args="(const TlenBuddyCustom &amp;)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>updateCustom</b> (const <a class="el" href="classTlenBuddyCustom.html">TlenBuddyCustom</a> &amp;)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#9d3339f7e6c9803eb04538f22362809b">isEmpty</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca czy roster jest pusty.  <a href="#9d3339f7e6c9803eb04538f22362809b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#bf05c53ca2a19b6d4cf562fa58d11e85">contactExists</a> (const QString &amp;id, <a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sprawdza czy kontakt o danym id dla danego konta istnieje.  <a href="#bf05c53ca2a19b6d4cf562fa58d11e85"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#04836ca81baa64e5f383daf68aabfda3">renameBuddy</a> (const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;b, const QString &amp;display)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienia nazwę kontaktu.  <a href="#04836ca81baa64e5f383daf68aabfda3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QStringList&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#5b2f857f11a4b77a2a72e32d3c59efb7">getGroupsNames</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca listę grup.  <a href="#5b2f857f11a4b77a2a72e32d3c59efb7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#9ed2f64918038cfe38941b5cb2fcdf78">changeGroup</a> (const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;buddy, const QString &amp;group)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienia grupę dla kontaktu.  <a href="#9ed2f64918038cfe38941b5cb2fcdf78"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#6374d00747f28f812aa510447ebc544e">upGroup</a> (const <a class="el" href="classTlenBuddyGroup.html">TlenBuddyGroup</a> &amp;group)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Przesuwa grupę wyżej.  <a href="#6374d00747f28f812aa510447ebc544e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenRoster.html#14a0b072df1cbeb24bae4a7db3a95d15">downGroup</a> (const <a class="el" href="classTlenBuddyGroup.html">TlenBuddyGroup</a> &amp;group)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Przesuwa grupę niżej.  <a href="#14a0b072df1cbeb24bae4a7db3a95d15"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Statyczne metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e5f01780bfd35656fb338d40c9ef64d8"></a><!-- doxytag: member="TlenRoster::getInstance" ref="e5f01780bfd35656fb338d40c9ef64d8" args="()" -->
+static <a class="el" href="classTlenRoster.html">TlenRoster</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Obsługa listy kontaktów. 
+<p>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="26fa93c10d17f8432942b55686b7a7e0"></a><!-- doxytag: member="TlenRoster::addContact" ref="26fa93c10d17f8432942b55686b7a7e0" args="(TlenAccountConnection *acc, const QString &amp;id, const QString &amp;display, const TlenPresence &amp;pres, const QString &amp;group, const QString &amp;meta=QString(), const TlenSubscriptionType &amp;subscr=TlenSubscriptionType())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> TlenRoster::addContact           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>pres</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>meta</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenSubscriptionType.html">TlenSubscriptionType</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>subscr</em> = <code><a class="el" href="classTlenSubscriptionType.html">TlenSubscriptionType</a>()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dodaje kontakt. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>konto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>id </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>display</em>&nbsp;</td><td>nazwa wyświetlana </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>btype</em>&nbsp;</td><td>typ </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pres</em>&nbsp;</td><td>prezencja </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>group</em>&nbsp;</td><td>grupa </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>meta</em>&nbsp;</td><td>meta </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>subscr</em>&nbsp;</td><td>subskrypcja </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>dodany kontakt </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="13455438a093c5729bb9210eec811d5a"></a><!-- doxytag: member="TlenRoster::addTemporaryContact" ref="13455438a093c5729bb9210eec811d5a" args="(TlenAccountConnection *acc, const QString &amp;id, const TlenPresence &amp;pres)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenBuddyTemporary.html">TlenBuddyTemporary</a> TlenRoster::addTemporaryContact           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>pres</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dpodaje kontakt tymczasowy. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>konto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>id </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pres</em>&nbsp;</td><td>prezencja </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>dodany kontakt </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d756fdd85f8072b771ea6cc18c09653b"></a><!-- doxytag: member="TlenRoster::addGroup" ref="d756fdd85f8072b771ea6cc18c09653b" args="(const QString &amp;name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenBuddyGroup.html">TlenBuddyGroup</a> TlenRoster::addGroup           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dodaje grupę. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>nazwa </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>dodana grupa </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ee0ee73de6d6b32b5d2dc86a561fb37c"></a><!-- doxytag: member="TlenRoster::addCustom" ref="ee0ee73de6d6b32b5d2dc86a561fb37c" args="(const QString &amp;name, const QString &amp;group, const QString &amp;subType, const QString &amp;ownerid, const QHash&lt; QString, TlenArg &gt; &amp;attribs, const QString &amp;description=&quot;&quot;, const QString &amp;presenceIcon=&quot;&quot;, const QString &amp;avatarIcon=&quot;&quot;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenBuddyCustom.html">TlenBuddyCustom</a> TlenRoster::addCustom           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>subType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>ownerid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QHash&lt; QString, <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>attribs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>description</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>presenceIcon</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>avatarIcon</em> = <code>&quot;&quot;</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dodaje kontakt specjalny. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>nazwa </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>group</em>&nbsp;</td><td>grupa </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>subType</em>&nbsp;</td><td>podtyp </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>ownerid</em>&nbsp;</td><td>id wlaściciela (nazwa pluginu) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>attribs</em>&nbsp;</td><td>atrybuty </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>description</em>&nbsp;</td><td>opis </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>presenceIcon</em>&nbsp;</td><td>ikona prezencji </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>avatarIcon</em>&nbsp;</td><td>avatar </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>dodany kontakt </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c8bc89b55c515e390480615d1c93dd15"></a><!-- doxytag: member="TlenRoster::getContactById" ref="c8bc89b55c515e390480615d1c93dd15" args="(const QString &amp;id, TlenAccountConnection *acc) const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenBuddy.html">TlenBuddy</a> TlenRoster::getContactById           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca kontakt o podanym ID. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>id </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>konto </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>kontakt </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e52b356e70b03f959d80052f7e56213b"></a><!-- doxytag: member="TlenRoster::getBuddiesForAccount" ref="e52b356e70b03f959d80052f7e56213b" args="(TlenAccountConnection *acc) const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenBuddy.html">TlenBuddy</a>&gt; TlenRoster::getBuddiesForAccount           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca wszystkie kontakty dla danego konta. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>konto </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>lista kontaktów </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9ba2116d2878bb680025fb34af7b347b"></a><!-- doxytag: member="TlenRoster::getBuddiesWithDisplayName" ref="9ba2116d2878bb680025fb34af7b347b" args="(const QString &amp;display, TlenAccountConnection *acc) const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenBuddy.html">TlenBuddy</a>&gt; TlenRoster::getBuddiesWithDisplayName           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca wsztkie kontakty dla danego konta o podanej nazwie wyświetlanej. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>display</em>&nbsp;</td><td>nazwa wyświetlana </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>Konto, jeśli NULL zwraca dla wszystkich kont </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>lista kont </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f52dd9ff4838dcd2ae76cda3fe1bc5a8"></a><!-- doxytag: member="TlenRoster::getMetas" ref="f52dd9ff4838dcd2ae76cda3fe1bc5a8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;TlenBuddyMeta&gt; TlenRoster::getMetas           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca wszytkie metakontakty. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>lista metakontaktow </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f87516fb7d35e273d89e14afa57fe192"></a><!-- doxytag: member="TlenRoster::saveRoster" ref="f87516fb7d35e273d89e14afa57fe192" args="(TlenAccountConnection *acc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::saveRoster           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zapisuje roster na dysku. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>konto </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="eb410dc94fbb4f3b75e5f295051c06ac"></a><!-- doxytag: member="TlenRoster::updateContactAttrib" ref="eb410dc94fbb4f3b75e5f295051c06ac" args="(const TlenBuddyContact &amp;, const QString &amp;name, const TlenArg &amp;attrib)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::updateContactAttrib           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;&nbsp;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenArg.html">TlenArg</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>attrib</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Aktualizuje atrybut dla kontaktu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>kontakt</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>nazwa atrybutu </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>attrib</em>&nbsp;</td><td>wartośc atrybutu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="863800a0104fce10103adee41ad9c12a"></a><!-- doxytag: member="TlenRoster::updateContactAvatar" ref="863800a0104fce10103adee41ad9c12a" args="(const TlenBuddyContact &amp;, const QString &amp;avatarpath)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::updateContactAvatar           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;&nbsp;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>avatarpath</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Aktualizuje awatar dla kontaktu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>kontakt</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>avatarpath</em>&nbsp;</td><td>ścieżka do awatara </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2975ad951a08c503e1fcc9568612363b"></a><!-- doxytag: member="TlenRoster::updateContactLocalAvatar" ref="2975ad951a08c503e1fcc9568612363b" args="(const TlenBuddyContact &amp;, const QString &amp;avatarpath)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::updateContactLocalAvatar           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;&nbsp;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>avatarpath</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Aktualizuje awatar lokalny do kontaktu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>kontakt</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>avatarpath</em>&nbsp;</td><td>ścieżka do awatara </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="71564d0ce882a6be5c3b9e0e5890275b"></a><!-- doxytag: member="TlenRoster::removeContactAvatar" ref="71564d0ce882a6be5c3b9e0e5890275b" args="(const TlenBuddyContact &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::removeContactAvatar           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Usuwa awatar kontaktu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>kontakt</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c166cea1c9da942ada4ffa82957ba916"></a><!-- doxytag: member="TlenRoster::updateContactPresence" ref="c166cea1c9da942ada4ffa82957ba916" args="(const TlenBuddyContact &amp;, const TlenPresence &amp;presence, const TlenBuddyResource &amp;resource=TlenBuddyResource())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::updateContactPresence           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;&nbsp;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>presence</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TlenBuddyResource &amp;&nbsp;</td>
+          <td class="paramname"> <em>resource</em> = <code>TlenBuddyResource()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Aktualizuje prezencję kontaktu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>kontakt</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>presence</em>&nbsp;</td><td>prezencja </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>resource</em>&nbsp;</td><td>zasób </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="76261e345c4fea738bc0b1a6c352be95"></a><!-- doxytag: member="TlenRoster::updateContactSubscription" ref="76261e345c4fea738bc0b1a6c352be95" args="(const TlenBuddyContact &amp;, const TlenSubscriptionType &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::updateContactSubscription           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;&nbsp;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenSubscriptionType.html">TlenSubscriptionType</a> &amp;&nbsp;</td>
+          <td class="paramname"></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Aktualizuje sybskrypcję kontaktu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>kontakt</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>subskrypcja</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="004c42372486ecac4abb232d583a771b"></a><!-- doxytag: member="TlenRoster::clearContactResources" ref="004c42372486ecac4abb232d583a771b" args="(const TlenBuddyContact &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::clearContactResources           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Czyści zasoby kontaktu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>kontakt</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="66d841d494270aa4992ab394c29d1b71"></a><!-- doxytag: member="TlenRoster::updateContact" ref="66d841d494270aa4992ab394c29d1b71" args="(const TlenBuddyContact &amp;, const QString &amp;alias, const QString &amp;group, const QString &amp;meta, const QList&lt; TlenField &gt; &amp;extrainfo, const QStringList &amp;tags=QStringList())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::updateContact           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;&nbsp;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>alias</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>meta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>extrainfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&nbsp;</td>
+          <td class="paramname"> <em>tags</em> = <code>QStringList()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Aktualizuj kontakt. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>kontakt</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>alias</em>&nbsp;</td><td>nazwa wyświetlana </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>group</em>&nbsp;</td><td>grupa </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>meta</em>&nbsp;</td><td>meta </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>extrainfo</em>&nbsp;</td><td>dodatkowe informacje kontaktu </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>tags</em>&nbsp;</td><td>tagi </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="938c6da0581fc244128cc787c3838b60"></a><!-- doxytag: member="TlenRoster::removeTemporary" ref="938c6da0581fc244128cc787c3838b60" args="(const TlenBuddyTemporary &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::removeTemporary           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyTemporary.html">TlenBuddyTemporary</a> &amp;&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Usuwa kontakt tymczasowy. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>kontakt</em>&nbsp;</td><td>tymczasowy </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4dc7f0520a68813fafd043a3e194d792"></a><!-- doxytag: member="TlenRoster::removeContact" ref="4dc7f0520a68813fafd043a3e194d792" args="(const TlenBuddyContact &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::removeContact           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Usuwa kontakt. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>kontakt</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="8d223227d83b3e852fb6bd885fcdf696"></a><!-- doxytag: member="TlenRoster::removeContact" ref="8d223227d83b3e852fb6bd885fcdf696" args="(const TlenBuddyContact &amp;contact, const TlenBuddy &amp;parent)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::removeContact           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>contact</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>parent</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Usuwa kontakt z rodzica. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>contact</em>&nbsp;</td><td>kontakt </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>parent</em>&nbsp;</td><td>rodzic </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e9b7474119bf0351fd8c7ed219d302ea"></a><!-- doxytag: member="TlenRoster::removeCustom" ref="e9b7474119bf0351fd8c7ed219d302ea" args="(const TlenBuddyCustom &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::removeCustom           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyCustom.html">TlenBuddyCustom</a> &amp;&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Usuwa kontakt specjalny. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>kontakt</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9d3339f7e6c9803eb04538f22362809b"></a><!-- doxytag: member="TlenRoster::isEmpty" ref="9d3339f7e6c9803eb04538f22362809b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TlenRoster::isEmpty           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca czy roster jest pusty. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>czy pusty </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="bf05c53ca2a19b6d4cf562fa58d11e85"></a><!-- doxytag: member="TlenRoster::contactExists" ref="bf05c53ca2a19b6d4cf562fa58d11e85" args="(const QString &amp;id, TlenAccountConnection *acc) const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TlenRoster::contactExists           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Sprawdza czy kontakt o danym id dla danego konta istnieje. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>id kontaktu </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>konto </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>czy istnieje </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="04836ca81baa64e5f383daf68aabfda3"></a><!-- doxytag: member="TlenRoster::renameBuddy" ref="04836ca81baa64e5f383daf68aabfda3" args="(const TlenBuddy &amp;b, const QString &amp;display)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TlenRoster::renameBuddy           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>display</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zmienia nazwę kontaktu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td>kontakt </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>display</em>&nbsp;</td><td>nazwa wyświetlana </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>czy się udało </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5b2f857f11a4b77a2a72e32d3c59efb7"></a><!-- doxytag: member="TlenRoster::getGroupsNames" ref="5b2f857f11a4b77a2a72e32d3c59efb7" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList TlenRoster::getGroupsNames           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca listę grup. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>lista grup </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9ed2f64918038cfe38941b5cb2fcdf78"></a><!-- doxytag: member="TlenRoster::changeGroup" ref="9ed2f64918038cfe38941b5cb2fcdf78" args="(const TlenBuddy &amp;buddy, const QString &amp;group)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::changeGroup           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>buddy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>group</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zmienia grupę dla kontaktu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>buddy</em>&nbsp;</td><td>kontakt </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>group</em>&nbsp;</td><td>nowa grupa </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6374d00747f28f812aa510447ebc544e"></a><!-- doxytag: member="TlenRoster::upGroup" ref="6374d00747f28f812aa510447ebc544e" args="(const TlenBuddyGroup &amp;group)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::upGroup           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyGroup.html">TlenBuddyGroup</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>group</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Przesuwa grupę wyżej. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>group</em>&nbsp;</td><td>grupa </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="14a0b072df1cbeb24bae4a7db3a95d15"></a><!-- doxytag: member="TlenRoster::downGroup" ref="14a0b072df1cbeb24bae4a7db3a95d15" args="(const TlenBuddyGroup &amp;group)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenRoster::downGroup           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyGroup.html">TlenBuddyGroup</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>group</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Przesuwa grupę niżej. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>group</em>&nbsp;</td><td>grupa </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<hr>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>include/roster/<a class="el" href="TlenRoster_8h-source.html">TlenRoster.h</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Dokumentacja klasy TlenBuddy</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li class="current"><a href="classes.html"><span>Klasy</span></a></li>
+    <li><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabetyczna</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;klas</span></a></li>
+    <li><a href="hierarchy.html"><span>Hierarchia&nbsp;klas</span></a></li>
+    <li><a href="functions.html"><span>Składowe&nbsp;klas</span></a></li>
+  </ul>
+</div>
+<h1>Dokumentacja klasy TlenBuddy</h1><!-- doxytag: class="TlenBuddy" -->Reprezentuje kontakt.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="TlenBuddy_8h-source.html">TlenBuddy.h</a>&gt;</code>
+<p>
+Dziedziczona przez <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a>, <a class="el" href="classTlenBuddyCustom.html">TlenBuddyCustom</a>, <a class="el" href="classTlenBuddyGroup.html">TlenBuddyGroup</a>, TlenBuddyMeta i <a class="el" href="classTlenBuddyTemporary.html">TlenBuddyTemporary</a>.
+<p>
+<a href="classTlenBuddy-members.html">Lista wszystkich składowych.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Typy publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <br>
+&nbsp;&nbsp;<b>Invalid</b> =  0, 
+<b>Group</b>, 
+<b>Meta</b>, 
+<b>Contact</b>, 
+<br>
+&nbsp;&nbsp;<b>Temporary</b>, 
+<b>Custom</b>
+<br>
+ }</td></tr>
+
+<tr><td colspan="2"><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a771c54b4f845fe72defb260549fb2ea"></a><!-- doxytag: member="TlenBuddy::TlenBuddy" ref="a771c54b4f845fe72defb260549fb2ea" args="(const TlenBuddy &amp;other)" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>TlenBuddy</b> (const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;other)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="26e8eb8a1c9a518bd7146794f3f11810"></a><!-- doxytag: member="TlenBuddy::isValid" ref="26e8eb8a1c9a518bd7146794f3f11810" args="() const" -->
+virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>isValid</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4efe3ffcd687a250afc7524615a5dac2"></a><!-- doxytag: member="TlenBuddy::unreadMessages" ref="4efe3ffcd687a250afc7524615a5dac2" args="() const" -->
+int&nbsp;</td><td class="memItemRight" valign="bottom"><b>unreadMessages</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7570878a5f675846508b5faf4e61f4b2"></a><!-- doxytag: member="TlenBuddy::setUnreadMessages" ref="7570878a5f675846508b5faf4e61f4b2" args="(int)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>setUnreadMessages</b> (int)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7e7f65187de2374b0e68c488ad404d21"></a><!-- doxytag: member="TlenBuddy::getDisplay" ref="7e7f65187de2374b0e68c488ad404d21" args="() const" -->
+virtual QString&nbsp;</td><td class="memItemRight" valign="bottom"><b>getDisplay</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3dc2e701c852b2a319bfc55129ed53ea"></a><!-- doxytag: member="TlenBuddy::getType" ref="3dc2e701c852b2a319bfc55129ed53ea" args="() const" -->
+Type&nbsp;</td><td class="memItemRight" valign="bottom"><b>getType</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="fe991ca29d146440307e613efd16720a"></a><!-- doxytag: member="TlenBuddy::operator==" ref="fe991ca29d146440307e613efd16720a" args="(const TlenBuddy &amp;other) const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;other) const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="82bfbc377e8bf3c2475487ee9a53088a"></a><!-- doxytag: member="TlenBuddy::operator!=" ref="82bfbc377e8bf3c2475487ee9a53088a" args="(const TlenBuddy &amp;other) const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;other) const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="254450d91cdfcd58c19f1f3c0d68e73f"></a><!-- doxytag: member="TlenBuddy::operator=" ref="254450d91cdfcd58c19f1f3c0d68e73f" args="(const TlenBuddy &amp;other)" -->
+<a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;other)</td></tr>
+
+<tr><td colspan="2"><br><h2>Metody chronione</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="379fa7cbebe6b915df2fbed23ab3e9fb"></a><!-- doxytag: member="TlenBuddy::TlenBuddy" ref="379fa7cbebe6b915df2fbed23ab3e9fb" args="(const QString &amp;display, Type type)" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>TlenBuddy</b> (const QString &amp;display, Type type)</td></tr>
+
+<tr><td colspan="2"><br><h2>Przyjaciele</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d5c0763756d1e9862206e45fc6ef5bd8"></a><!-- doxytag: member="TlenBuddy::qHash" ref="d5c0763756d1e9862206e45fc6ef5bd8" args="(const TlenBuddy &amp;)" -->
+uint __tlen_data__&nbsp;</td><td class="memItemRight" valign="bottom"><b>qHash</b> (const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;)</td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Reprezentuje kontakt. 
+<p>
+<hr>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>include/data/<a class="el" href="TlenBuddy_8h-source.html">TlenBuddy.h</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

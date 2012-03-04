@@ -1,0 +1,23 @@
+#!/bin/bash
+
+BDIR=`pwd`
+
+PLUGINDIR=
+
+
+cd Frameworks
+
+FMDIR=`pwd`
+
+for X in *.framework/Versions/4/*
+do
+	cd ../bin
+	for Y in *.o2x
+	do
+		install_name_tool -change $X @executable_path/../Frameworks/$X $Y
+	done
+	
+	cd $FMDIR;
+done
+
+cd $BDIR

@@ -1,0 +1,1776 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Dokumentacja klasy TlenArg</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li class="current"><a href="classes.html"><span>Klasy</span></a></li>
+    <li><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabetyczna</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;klas</span></a></li>
+    <li><a href="hierarchy.html"><span>Hierarchia&nbsp;klas</span></a></li>
+    <li><a href="functions.html"><span>Składowe&nbsp;klas</span></a></li>
+  </ul>
+</div>
+<h1>Dokumentacja klasy TlenArg</h1><!-- doxytag: class="TlenArg" -->Służy do przechowywania danych różnego typu.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="TlenArg_8h-source.html">TlenArg.h</a>&gt;</code>
+<p>
+<a href="classTlenArg-members.html">Lista wszystkich składowych.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Typy publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a">Type</a> { <br>
+&nbsp;&nbsp;<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9af97a8a3ee84c7c105ec8f74c49aa8fd6">None</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a0ce60f0887d4cf92ce2ae53ffa0a7d9d">Char</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a8620b21177194608e29d45f1463e1ba9">UChar</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a0b8b688d71d14800bcc1dcf5e77bd575">Int</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a852bfb633b88380c5b42b32057e9b5bc">UInt</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ab8c39c2ddca17b0204da8f33316189be">Int64</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a32a8cebf1fbe38e5d5e06ca2f8ab295c">UInt64</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a6312a88a0152819a3c70c3df0cf454e7">Float</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a3ae15a919593d1f39e93bb9d780e3637">Double</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aca7083d952423c05e0fa520ea37dd4bd">String</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a4d9f39f9d5145f51138e54fdae4ee0a1">ByteArray</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa318c4de9930a6562ce8e1ff4ba66977">StringList</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ae450b45345701da81da5d8d24c6951bc">Bool</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a488c1a9c26e607db6e05908456a807fc">Pointer</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a106e09485d797649ef967e32e45436ac">PointerList</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a2d3db3f4bb6c1673a2e7053e7eeb9eb7">Plugin</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a3e8b8386c993c71fb87e42d92cb9bbb2">Field</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aaf1b4c7760d17247d18d6000b0423810">FieldList</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a235cb345e0c9b6305885be5a530cfed2">XmlNode</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a67d3b07b253851f45ae0cd148874db9f">Buddy</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ac28481818ee710c557cb2c82a635ada1">BuddyResource</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ad9813e64d619690514a56dee513c0d8c">Account</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ad195ced3e94c2707d77b224197c5bbbc">PluginAction</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa769d4ab4e23f85ebc9c0f0d8a72af92">Presence</a>, 
+<br>
+&nbsp;&nbsp;<b>ArgList</b>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aeea58c264e211487547fdf459d4ca7ce">Service</a>, 
+<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa0c3a7125ce5e16fa2b4e218a96feaa8">ServiceList</a>, 
+<b>TextFormatList</b>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ab7cdb8e4047a717a0358ae5b23fd956b">Undefined</a>
+<br>
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">określa typ <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>  <a href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a">Więcej...</a><br></td></tr>
+<tr><td colspan="2"><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f6ba3483d4ee8255372eb4fe78a62ca6"></a><!-- doxytag: member="TlenArg::TlenArg" ref="f6ba3483d4ee8255372eb4fe78a62ca6" args="()" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#f6ba3483d4ee8255372eb4fe78a62ca6">TlenArg</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9af97a8a3ee84c7c105ec8f74c49aa8fd6" title="Nie przechowuje żadnych danych.">TlenArg::None</a>. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7b066372a8e479896d3fc4b4482cbc9a"></a><!-- doxytag: member="TlenArg::TlenArg" ref="7b066372a8e479896d3fc4b4482cbc9a" args="(const TlenArg &amp;)" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>TlenArg</b> (const <a class="el" href="classTlenArg.html">TlenArg</a> &amp;)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#5fa0fa3f466ea0ef43c294a4c3c815a0">TlenArg</a> (const char &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a0ce60f0887d4cf92ce2ae53ffa0a7d9d" title="Przechowywany typ: char.">TlenArg::Char</a>.  <a href="#5fa0fa3f466ea0ef43c294a4c3c815a0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#b1afc518316f01aeac9b85059c4b377d">TlenArg</a> (const unsigned char &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a8620b21177194608e29d45f1463e1ba9" title="Przechowywany typ: unsigned char.">TlenArg::UChar</a>.  <a href="#b1afc518316f01aeac9b85059c4b377d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#2b4ad5e8a33346b60001c48012596289">TlenArg</a> (const QByteArray &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a4d9f39f9d5145f51138e54fdae4ee0a1" title="Przechowywany typ: QByteArray.">TlenArg::ByteArray</a>.  <a href="#2b4ad5e8a33346b60001c48012596289"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#189685b9a873a7308af59f96bc966250">TlenArg</a> (const int &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a0b8b688d71d14800bcc1dcf5e77bd575" title="Przechowywany typ: int.">TlenArg::Int</a>.  <a href="#189685b9a873a7308af59f96bc966250"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f8271df525ed3060dd8ca9796cb2069a"></a><!-- doxytag: member="TlenArg::TlenArg" ref="f8271df525ed3060dd8ca9796cb2069a" args="(const QList&lt; TlenArg &gt; &amp;argsList)" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>TlenArg</b> (const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;argsList)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#d60d02cc19e21c39045d25e6baf585ae">TlenArg</a> (const unsigned int &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a852bfb633b88380c5b42b32057e9b5bc" title="Przechowywany typ: unsigned int.">TlenArg::UInt</a>.  <a href="#d60d02cc19e21c39045d25e6baf585ae"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#aeafe30587d7fdd403204026f5d6909e">TlenArg</a> (const qint64 &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu TlenArg::LongLong.  <a href="#aeafe30587d7fdd403204026f5d6909e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#742b341598810ddbfa6097b8c71c1b36">TlenArg</a> (const quint64 &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu TlenArg::ULongLong.  <a href="#742b341598810ddbfa6097b8c71c1b36"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#b163c36caf7897e1642588abb48d88a3">TlenArg</a> (const double &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a3ae15a919593d1f39e93bb9d780e3637" title="Przechowywany typ: double.">TlenArg::Double</a>.  <a href="#b163c36caf7897e1642588abb48d88a3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#419000e7b84ef283f346ef45fc2aab07">TlenArg</a> (const float &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a6312a88a0152819a3c70c3df0cf454e7" title="Przechowywany typ: float.">TlenArg::Float</a>.  <a href="#419000e7b84ef283f346ef45fc2aab07"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#9f2646a7b78533c5c1f13ca007efc148">TlenArg</a> (const QString &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aca7083d952423c05e0fa520ea37dd4bd" title="Przechowywany typ: QString.">TlenArg::String</a>.  <a href="#9f2646a7b78533c5c1f13ca007efc148"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#9896dbcb6b1487eef61ebff733b24873">TlenArg</a> (const QStringList &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa318c4de9930a6562ce8e1ff4ba66977" title="Przechowywany typ: QStringList.">TlenArg::StringList</a>.  <a href="#9896dbcb6b1487eef61ebff733b24873"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#677b0a4766c575c6d1fd7377f183ebef">TlenArg</a> (const bool &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ae450b45345701da81da5d8d24c6951bc" title="Przechowywany typ: bool.">TlenArg::Bool</a>.  <a href="#677b0a4766c575c6d1fd7377f183ebef"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#d8378a3f1dc61b64187e0d2dca5dc7b6">TlenArg</a> (void *data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a488c1a9c26e607db6e05908456a807fc" title="Przechowywany typ: void *.">TlenArg::Pointer</a>.  <a href="#d8378a3f1dc61b64187e0d2dca5dc7b6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#1ee343f2711b8dd3b3c8b8c0f578307a">TlenArg</a> (const QList&lt; void * &gt; &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a106e09485d797649ef967e32e45436ac" title="Przechowywany typ: QList<void *>.">TlenArg::PointerList</a>.  <a href="#1ee343f2711b8dd3b3c8b8c0f578307a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#c4d7385cb3e0343dcb37286874fdff02">TlenArg</a> (const <a class="el" href="classTlenField.html">TlenField</a> &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a3e8b8386c993c71fb87e42d92cb9bbb2" title="Przechowywany typ: TlenField.">TlenArg::Field</a>.  <a href="#c4d7385cb3e0343dcb37286874fdff02"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#941d9246b60f7a9a316eb2449c8c7aee">TlenArg</a> (const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aaf1b4c7760d17247d18d6000b0423810" title="Przechowywany typ: QList<TlenField>.">TlenArg::FieldList</a>.  <a href="#941d9246b60f7a9a316eb2449c8c7aee"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#cccdd9fe579b281c6bd52ec870bba63f">TlenArg</a> (const <a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a235cb345e0c9b6305885be5a530cfed2" title="Przechowywany typ: TlenXmlNode.">TlenArg::XmlNode</a>.  <a href="#cccdd9fe579b281c6bd52ec870bba63f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#bbdbebb178a547fa76d74cab388ac822">TlenArg</a> (const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a67d3b07b253851f45ae0cd148874db9f" title="Przechowywany typ: TlenBuddy.">TlenArg::Buddy</a>.  <a href="#bbdbebb178a547fa76d74cab388ac822"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#cc0d7544a83a9fd00377db29c718d5e6">TlenArg</a> (const TlenBuddyResource &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ac28481818ee710c557cb2c82a635ada1" title="Przechowywany typ: TlenBuddyResrouce.">TlenArg::BuddyResource</a>.  <a href="#cc0d7544a83a9fd00377db29c718d5e6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#732d067aa9fb84321432738a07d8721e">TlenArg</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ad9813e64d619690514a56dee513c0d8c" title="Przechowywany typ: TlenAccountConnection.">TlenArg::Account</a>.  <a href="#732d067aa9fb84321432738a07d8721e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#62a0baa05a3ff3549a9d0f2686d18741">TlenArg</a> (const <a class="el" href="classTlenPluginAction.html">TlenPluginAction</a> &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ad195ced3e94c2707d77b224197c5bbbc" title="Przechowywany typ: TlenPluginAction.">TlenArg::PluginAction</a>.  <a href="#62a0baa05a3ff3549a9d0f2686d18741"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#2ee0c9c8154e95ad5f4fa4e2e77d3671">TlenArg</a> (<a class="el" href="classTlenPlugin.html">TlenPlugin</a> *data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a2d3db3f4bb6c1673a2e7053e7eeb9eb7" title="Przechowywany typ: TlenPlugin *.">TlenArg::Plugin</a>.  <a href="#2ee0c9c8154e95ad5f4fa4e2e77d3671"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#278dc7799d3102078324f5c16db0b405">TlenArg</a> (const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa769d4ab4e23f85ebc9c0f0d8a72af92" title="Przechowywany typ: TlenPresence.">TlenArg::Presence</a>.  <a href="#278dc7799d3102078324f5c16db0b405"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#b2283fc67896572631e866cf7f50e146">TlenArg</a> (const <a class="el" href="classTlenService.html">TlenService</a> &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aeea58c264e211487547fdf459d4ca7ce" title="Przechowywany typ: TlenService.">TlenArg::Service</a>.  <a href="#b2283fc67896572631e866cf7f50e146"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#8f3c3aed2b19e8551875a9637640808b">TlenArg</a> (const QList&lt; <a class="el" href="classTlenService.html">TlenService</a> &gt; &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa0c3a7125ce5e16fa2b4e218a96feaa8" title="Przechowywany typ: QList<TlenService>.">TlenArg::ServiceList</a>.  <a href="#8f3c3aed2b19e8551875a9637640808b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#e4134becaa6d0effb52b48d37577514f">TlenArg</a> (const QList&lt; TlenTextFormat &gt; &amp;data)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu TlenArg::TextFormatList.  <a href="#e4134becaa6d0effb52b48d37577514f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a">TlenArg::Type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#0c685f8fad9935ebcc313e1880674aa0">getType</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>typ <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> </dd></dl>
+ <a href="#0c685f8fad9935ebcc313e1880674aa0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3258ffec0d7f585235d4d80534a02288"></a><!-- doxytag: member="TlenArg::getTypeName" ref="3258ffec0d7f585235d4d80534a02288" args="() const" -->
+QString&nbsp;</td><td class="memItemRight" valign="bottom"><b>getTypeName</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#17577780db14ef30b3d2e8a180876419">toChar</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a0ce60f0887d4cf92ce2ae53ffa0a7d9d" title="Przechowywany typ: char.">TlenArg::Char</a>, metoda ta asertuje.  <a href="#17577780db14ef30b3d2e8a180876419"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#2852dcf9a533bc2ef1782af9485ba8b8">toUChar</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a8620b21177194608e29d45f1463e1ba9" title="Przechowywany typ: unsigned char.">TlenArg::UChar</a>, metoda ta asertuje.  <a href="#2852dcf9a533bc2ef1782af9485ba8b8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#cb8ddca159ad926b2dcb8da4298e453e">toInt</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a0b8b688d71d14800bcc1dcf5e77bd575" title="Przechowywany typ: int.">TlenArg::Int</a>, metoda ta asertuje.  <a href="#cb8ddca159ad926b2dcb8da4298e453e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#d2fdbaf9f70357198cf045e7b0bd609f">toUInt</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a852bfb633b88380c5b42b32057e9b5bc" title="Przechowywany typ: unsigned int.">TlenArg::UInt</a>, metoda ta asertuje.  <a href="#d2fdbaf9f70357198cf045e7b0bd609f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">qint64&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#38c9ba7bc9ecb02b0c76e2d950f79d83">toInt64</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż TlenArg::LongLong, metoda ta asertuje.  <a href="#38c9ba7bc9ecb02b0c76e2d950f79d83"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">quint64&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#555b6f10a2a309ffcc407618f8dbb398">toUInt64</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż TlenArg::ULongLong, metoda ta asertuje.  <a href="#555b6f10a2a309ffcc407618f8dbb398"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#c0f61fed84fbe2441220d1f1121d7979">toDouble</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a3ae15a919593d1f39e93bb9d780e3637" title="Przechowywany typ: double.">TlenArg::Double</a>, metoda ta asertuje.  <a href="#c0f61fed84fbe2441220d1f1121d7979"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#cf12e67088a80ca56188db91731c7313">toFloat</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a6312a88a0152819a3c70c3df0cf454e7" title="Przechowywany typ: float.">TlenArg::Float</a>, metoda ta asertuje.  <a href="#cf12e67088a80ca56188db91731c7313"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#174639d734263e483756aaf5f4442276">toString</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aca7083d952423c05e0fa520ea37dd4bd" title="Przechowywany typ: QString.">TlenArg::String</a>, metoda ta asertuje.  <a href="#174639d734263e483756aaf5f4442276"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QByteArray&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#54121b42310663471eb686d893830250">toByteArray</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a4d9f39f9d5145f51138e54fdae4ee0a1" title="Przechowywany typ: QByteArray.">TlenArg::ByteArray</a>, dzialanie programu zostaje przerwane.  <a href="#54121b42310663471eb686d893830250"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QStringList&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#14de3ac06c4d625fff3eec08020868a0">toStringList</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa318c4de9930a6562ce8e1ff4ba66977" title="Przechowywany typ: QStringList.">TlenArg::StringList</a>, metoda ta asertuje.  <a href="#14de3ac06c4d625fff3eec08020868a0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#87b432e5a03ec89c2635e461ebdc9d63">toBool</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ae450b45345701da81da5d8d24c6951bc" title="Przechowywany typ: bool.">TlenArg::Bool</a>, metoda ta asertuje.  <a href="#87b432e5a03ec89c2635e461ebdc9d63"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#67f9414744e15a91ae2c98447327293c">toPointer</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a488c1a9c26e607db6e05908456a807fc" title="Przechowywany typ: void *.">TlenArg::Pointer</a>, metoda ta asertuje.  <a href="#67f9414744e15a91ae2c98447327293c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; void * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#79eb79d083a57fc41d6d3c8c4565d71e">toPointerList</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a106e09485d797649ef967e32e45436ac" title="Przechowywany typ: QList<void *>.">TlenArg::PointerList</a>, metoda ta asertuje.  <a href="#79eb79d083a57fc41d6d3c8c4565d71e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="8ac7e30d86ecfb327f08ca5d97cf8976"></a><!-- doxytag: member="TlenArg::toArgList" ref="8ac7e30d86ecfb327f08ca5d97cf8976" args="() const" -->
+QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>toArgList</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenField.html">TlenField</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#595ee8800062ccf63620cbac6c0fd527">toField</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a3e8b8386c993c71fb87e42d92cb9bbb2" title="Przechowywany typ: TlenField.">TlenArg::Field</a>, metoda ta asertuje.  <a href="#595ee8800062ccf63620cbac6c0fd527"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#d241de8c146687a642101880e4fdb7af">toFieldList</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aaf1b4c7760d17247d18d6000b0423810" title="Przechowywany typ: QList<TlenField>.">TlenArg::FieldList</a>, metoda ta asertuje.  <a href="#d241de8c146687a642101880e4fdb7af"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenXmlNode.html">TlenXmlNode</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#98b45bb2458eb9ff7cf50a320ec344d3">toXmlNode</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a235cb345e0c9b6305885be5a530cfed2" title="Przechowywany typ: TlenXmlNode.">TlenArg::XmlNode</a>, program zostaje przerwany.  <a href="#98b45bb2458eb9ff7cf50a320ec344d3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenBuddy.html">TlenBuddy</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#3f31b8024aa1fdd71171fe90c55b61a9">toBuddy</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a67d3b07b253851f45ae0cd148874db9f" title="Przechowywany typ: TlenBuddy.">TlenArg::Buddy</a>, program zostaje przerwany.  <a href="#3f31b8024aa1fdd71171fe90c55b61a9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">TlenBuddyResource&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#8cbb1a4d10126cff41cad228b582b3e2">toBuddyResource</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ac28481818ee710c557cb2c82a635ada1" title="Przechowywany typ: TlenBuddyResrouce.">TlenArg::BuddyResource</a>, program zostaje przerwany.  <a href="#8cbb1a4d10126cff41cad228b582b3e2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#82c10e89cf57c81183ee2dd9b3dfe79f">toAccount</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ad9813e64d619690514a56dee513c0d8c" title="Przechowywany typ: TlenAccountConnection.">TlenArg::Account</a>, program zostaje przerwany.  <a href="#82c10e89cf57c81183ee2dd9b3dfe79f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenPluginAction.html">TlenPluginAction</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#90cbae8a9b0795f1637dc8ea9739540b">toPluginAction</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma innt typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ad195ced3e94c2707d77b224197c5bbbc" title="Przechowywany typ: TlenPluginAction.">TlenArg::PluginAction</a>, program zostaje przerwany.  <a href="#90cbae8a9b0795f1637dc8ea9739540b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenPlugin.html">TlenPlugin</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#86e1dc6d16772caa8754305d73ef61f5">toPlugin</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma innt typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a2d3db3f4bb6c1673a2e7053e7eeb9eb7" title="Przechowywany typ: TlenPlugin *.">TlenArg::Plugin</a>, program zostaje przerwany.  <a href="#86e1dc6d16772caa8754305d73ef61f5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenPresence.html">TlenPresence</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#104c9d5a98987b41100bb7701fdb81f9">toPresence</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma innt typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa769d4ab4e23f85ebc9c0f0d8a72af92" title="Przechowywany typ: TlenPresence.">TlenArg::Presence</a>, program zostaje przerwany.  <a href="#104c9d5a98987b41100bb7701fdb81f9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenService.html">TlenService</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#abda0e6f16bc8e326d3dc4ece4c0bb85">toService</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma innt typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aeea58c264e211487547fdf459d4ca7ce" title="Przechowywany typ: TlenService.">TlenArg::Service</a>, program zostaje przerwany.  <a href="#abda0e6f16bc8e326d3dc4ece4c0bb85"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenService.html">TlenService</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#49603cdf4ef71d84c9bdb83a8d7c0cc8">toServiceList</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma innt typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa0c3a7125ce5e16fa2b4e218a96feaa8" title="Przechowywany typ: QList<TlenService>.">TlenArg::ServiceList</a>, program zostaje przerwany.  <a href="#49603cdf4ef71d84c9bdb83a8d7c0cc8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; TlenTextFormat &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#2c97b122976815bf91b958780a36598a">toTextFormatList</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma innt typ niż TlenArg::TextFormatList, program zostaje przerwany.  <a href="#2c97b122976815bf91b958780a36598a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#25974d8e57d290e4fdda549eadbe35de">operator==</a> (const <a class="el" href="classTlenArg.html">TlenArg</a> &amp;arg) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Porównuje dwa <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>.  <a href="#25974d8e57d290e4fdda549eadbe35de"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="17da570df202e5d1cbadf18b9908431a"></a><!-- doxytag: member="TlenArg::operator!=" ref="17da570df202e5d1cbadf18b9908431a" args="(const TlenArg &amp;arg) const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classTlenArg.html">TlenArg</a> &amp;arg) const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="bb4b7d051bb4c1009a3aa36ad2320425"></a><!-- doxytag: member="TlenArg::operator=" ref="bb4b7d051bb4c1009a3aa36ad2320425" args="(const TlenArg &amp;other)" -->
+<a class="el" href="classTlenArg.html">TlenArg</a>&nbsp;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classTlenArg.html">TlenArg</a> &amp;other)</td></tr>
+
+<tr><td colspan="2"><br><h2>Statyczne metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenArg.html#acbf97641cc8edf60db4713435ce2f25">setFieldValue</a> (<a class="el" href="classTlenField.html">TlenField</a> &amp;field, const <a class="el" href="classTlenArg.html">TlenArg</a> &amp;val)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Przypisuje wartość <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> do pola<br>
+ Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> przechowuje typ wartości inny niż obsługuje <a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a>, metoda asertuje.  <a href="#acbf97641cc8edf60db4713435ce2f25"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Służy do przechowywania danych różnego typu. 
+<p>
+Za pomocą <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> w programie przekazywane sa dane różnego typu. Jest to podstawowy typ używany m.in. w systemie sygnalów i slotów. 
+<p>
+<hr><h2>Dokumentacja składowych wyliczanych</h2>
+<a class="anchor" name="261a59948cc52c485dbc43fbad39fb9a"></a><!-- doxytag: member="TlenArg::Type" ref="261a59948cc52c485dbc43fbad39fb9a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a">TlenArg::Type</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+określa typ <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> 
+<p>
+Do <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> danego typu test można przypisać tylko <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> tego samego typu. Wyjątkiem jest <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9af97a8a3ee84c7c105ec8f74c49aa8fd6" title="Nie przechowuje żadnych danych.">TlenArg::None</a>, do którego można przypisać dowolny <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>.<br>
+ Próba wyciągnięcia wartości innego typu niż określa to <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a" title="określa typ TlenArg">TlenArg::Type</a> program zostaje przerwany. <dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#0c685f8fad9935ebcc313e1880674aa0" title="typ TlenArg">getType()</a> </dd></dl>
+<dl compact><dt><b>Wartości wyliczeń: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9af97a8a3ee84c7c105ec8f74c49aa8fd6"></a><!-- doxytag: member="None" ref="261a59948cc52c485dbc43fbad39fb9af97a8a3ee84c7c105ec8f74c49aa8fd6" args="" -->None</em>&nbsp;</td><td>
+Nie przechowuje żadnych danych. 
+<p>
+Do <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu None mozna przypisać <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> dowolnego typu. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9a0ce60f0887d4cf92ce2ae53ffa0a7d9d"></a><!-- doxytag: member="Char" ref="261a59948cc52c485dbc43fbad39fb9a0ce60f0887d4cf92ce2ae53ffa0a7d9d" args="" -->Char</em>&nbsp;</td><td>
+Przechowywany typ: char. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9a8620b21177194608e29d45f1463e1ba9"></a><!-- doxytag: member="UChar" ref="261a59948cc52c485dbc43fbad39fb9a8620b21177194608e29d45f1463e1ba9" args="" -->UChar</em>&nbsp;</td><td>
+Przechowywany typ: unsigned char. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9a0b8b688d71d14800bcc1dcf5e77bd575"></a><!-- doxytag: member="Int" ref="261a59948cc52c485dbc43fbad39fb9a0b8b688d71d14800bcc1dcf5e77bd575" args="" -->Int</em>&nbsp;</td><td>
+Przechowywany typ: int. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9a852bfb633b88380c5b42b32057e9b5bc"></a><!-- doxytag: member="UInt" ref="261a59948cc52c485dbc43fbad39fb9a852bfb633b88380c5b42b32057e9b5bc" args="" -->UInt</em>&nbsp;</td><td>
+Przechowywany typ: unsigned int. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9ab8c39c2ddca17b0204da8f33316189be"></a><!-- doxytag: member="Int64" ref="261a59948cc52c485dbc43fbad39fb9ab8c39c2ddca17b0204da8f33316189be" args="" -->Int64</em>&nbsp;</td><td>
+Przechowywany typ: long long. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9a32a8cebf1fbe38e5d5e06ca2f8ab295c"></a><!-- doxytag: member="UInt64" ref="261a59948cc52c485dbc43fbad39fb9a32a8cebf1fbe38e5d5e06ca2f8ab295c" args="" -->UInt64</em>&nbsp;</td><td>
+Przechowywany typ: unsigned long long. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9a6312a88a0152819a3c70c3df0cf454e7"></a><!-- doxytag: member="Float" ref="261a59948cc52c485dbc43fbad39fb9a6312a88a0152819a3c70c3df0cf454e7" args="" -->Float</em>&nbsp;</td><td>
+Przechowywany typ: float. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9a3ae15a919593d1f39e93bb9d780e3637"></a><!-- doxytag: member="Double" ref="261a59948cc52c485dbc43fbad39fb9a3ae15a919593d1f39e93bb9d780e3637" args="" -->Double</em>&nbsp;</td><td>
+Przechowywany typ: double. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9aca7083d952423c05e0fa520ea37dd4bd"></a><!-- doxytag: member="String" ref="261a59948cc52c485dbc43fbad39fb9aca7083d952423c05e0fa520ea37dd4bd" args="" -->String</em>&nbsp;</td><td>
+Przechowywany typ: QString. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9a4d9f39f9d5145f51138e54fdae4ee0a1"></a><!-- doxytag: member="ByteArray" ref="261a59948cc52c485dbc43fbad39fb9a4d9f39f9d5145f51138e54fdae4ee0a1" args="" -->ByteArray</em>&nbsp;</td><td>
+Przechowywany typ: QByteArray. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9aa318c4de9930a6562ce8e1ff4ba66977"></a><!-- doxytag: member="StringList" ref="261a59948cc52c485dbc43fbad39fb9aa318c4de9930a6562ce8e1ff4ba66977" args="" -->StringList</em>&nbsp;</td><td>
+Przechowywany typ: QStringList. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9ae450b45345701da81da5d8d24c6951bc"></a><!-- doxytag: member="Bool" ref="261a59948cc52c485dbc43fbad39fb9ae450b45345701da81da5d8d24c6951bc" args="" -->Bool</em>&nbsp;</td><td>
+Przechowywany typ: bool. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9a488c1a9c26e607db6e05908456a807fc"></a><!-- doxytag: member="Pointer" ref="261a59948cc52c485dbc43fbad39fb9a488c1a9c26e607db6e05908456a807fc" args="" -->Pointer</em>&nbsp;</td><td>
+Przechowywany typ: void *. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9a106e09485d797649ef967e32e45436ac"></a><!-- doxytag: member="PointerList" ref="261a59948cc52c485dbc43fbad39fb9a106e09485d797649ef967e32e45436ac" args="" -->PointerList</em>&nbsp;</td><td>
+Przechowywany typ: QList&lt;void *&gt;. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9a2d3db3f4bb6c1673a2e7053e7eeb9eb7"></a><!-- doxytag: member="Plugin" ref="261a59948cc52c485dbc43fbad39fb9a2d3db3f4bb6c1673a2e7053e7eeb9eb7" args="" -->Plugin</em>&nbsp;</td><td>
+Przechowywany typ: <a class="el" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a> *. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9a3e8b8386c993c71fb87e42d92cb9bbb2"></a><!-- doxytag: member="Field" ref="261a59948cc52c485dbc43fbad39fb9a3e8b8386c993c71fb87e42d92cb9bbb2" args="" -->Field</em>&nbsp;</td><td>
+Przechowywany typ: <a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a>. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9aaf1b4c7760d17247d18d6000b0423810"></a><!-- doxytag: member="FieldList" ref="261a59948cc52c485dbc43fbad39fb9aaf1b4c7760d17247d18d6000b0423810" args="" -->FieldList</em>&nbsp;</td><td>
+Przechowywany typ: QList&lt;TlenField&gt;. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9a235cb345e0c9b6305885be5a530cfed2"></a><!-- doxytag: member="XmlNode" ref="261a59948cc52c485dbc43fbad39fb9a235cb345e0c9b6305885be5a530cfed2" args="" -->XmlNode</em>&nbsp;</td><td>
+Przechowywany typ: <a class="el" href="classTlenXmlNode.html" title="Klasa do obsługi XML.">TlenXmlNode</a>. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9a67d3b07b253851f45ae0cd148874db9f"></a><!-- doxytag: member="Buddy" ref="261a59948cc52c485dbc43fbad39fb9a67d3b07b253851f45ae0cd148874db9f" args="" -->Buddy</em>&nbsp;</td><td>
+Przechowywany typ: <a class="el" href="classTlenBuddy.html" title="Reprezentuje kontakt.">TlenBuddy</a>. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9ac28481818ee710c557cb2c82a635ada1"></a><!-- doxytag: member="BuddyResource" ref="261a59948cc52c485dbc43fbad39fb9ac28481818ee710c557cb2c82a635ada1" args="" -->BuddyResource</em>&nbsp;</td><td>
+Przechowywany typ: TlenBuddyResrouce. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9ad9813e64d619690514a56dee513c0d8c"></a><!-- doxytag: member="Account" ref="261a59948cc52c485dbc43fbad39fb9ad9813e64d619690514a56dee513c0d8c" args="" -->Account</em>&nbsp;</td><td>
+Przechowywany typ: <a class="el" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a>. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9ad195ced3e94c2707d77b224197c5bbbc"></a><!-- doxytag: member="PluginAction" ref="261a59948cc52c485dbc43fbad39fb9ad195ced3e94c2707d77b224197c5bbbc" args="" -->PluginAction</em>&nbsp;</td><td>
+Przechowywany typ: <a class="el" href="classTlenPluginAction.html" title="Reprezentuje akcję w pluginie.">TlenPluginAction</a>. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9aa769d4ab4e23f85ebc9c0f0d8a72af92"></a><!-- doxytag: member="Presence" ref="261a59948cc52c485dbc43fbad39fb9aa769d4ab4e23f85ebc9c0f0d8a72af92" args="" -->Presence</em>&nbsp;</td><td>
+Przechowywany typ: <a class="el" href="classTlenPresence.html" title="Opisuje prezencję.">TlenPresence</a>. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9aeea58c264e211487547fdf459d4ca7ce"></a><!-- doxytag: member="Service" ref="261a59948cc52c485dbc43fbad39fb9aeea58c264e211487547fdf459d4ca7ce" args="" -->Service</em>&nbsp;</td><td>
+Przechowywany typ: <a class="el" href="classTlenService.html" title="Klasa opisująca usługę jaką realizuje plugin.">TlenService</a>. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9aa0c3a7125ce5e16fa2b4e218a96feaa8"></a><!-- doxytag: member="ServiceList" ref="261a59948cc52c485dbc43fbad39fb9aa0c3a7125ce5e16fa2b4e218a96feaa8" args="" -->ServiceList</em>&nbsp;</td><td>
+Przechowywany typ: QList&lt;TlenService&gt;. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="261a59948cc52c485dbc43fbad39fb9ab7cdb8e4047a717a0358ae5b23fd956b"></a><!-- doxytag: member="Undefined" ref="261a59948cc52c485dbc43fbad39fb9ab7cdb8e4047a717a0358ae5b23fd956b" args="" -->Undefined</em>&nbsp;</td><td>
+Wykorzystywane przy rejestrowaniu sygnalow do okreslenia typu, ktore moze przechowywac rozne typy. </td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<hr><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" name="5fa0fa3f466ea0ef43c294a4c3c815a0"></a><!-- doxytag: member="TlenArg::TlenArg" ref="5fa0fa3f466ea0ef43c294a4c3c815a0" args="(const char &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const char &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a0ce60f0887d4cf92ce2ae53ffa0a7d9d" title="Przechowywany typ: char.">TlenArg::Char</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#17577780db14ef30b3d2e8a180876419" title="Jeśli TlenArg ma inny typ niż TlenArg::Char, metoda ta asertuje.">toChar()</a>, operator=(const char &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b1afc518316f01aeac9b85059c4b377d"></a><!-- doxytag: member="TlenArg::TlenArg" ref="b1afc518316f01aeac9b85059c4b377d" args="(const unsigned char &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a8620b21177194608e29d45f1463e1ba9" title="Przechowywany typ: unsigned char.">TlenArg::UChar</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#2852dcf9a533bc2ef1782af9485ba8b8" title="Jeśli TlenArg ma inny typ niż TlenArg::UChar, metoda ta asertuje.">toUChar()</a>, operator=(const unsigned char &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2b4ad5e8a33346b60001c48012596289"></a><!-- doxytag: member="TlenArg::TlenArg" ref="2b4ad5e8a33346b60001c48012596289" args="(const QByteArray &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a4d9f39f9d5145f51138e54fdae4ee0a1" title="Przechowywany typ: QByteArray.">TlenArg::ByteArray</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#54121b42310663471eb686d893830250" title="Jeśli TlenArg ma inny typ niż TlenArg::ByteArray, dzialanie programu zostaje przerwane...">toByteArray()</a>, operator=(const QByteArray &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="189685b9a873a7308af59f96bc966250"></a><!-- doxytag: member="TlenArg::TlenArg" ref="189685b9a873a7308af59f96bc966250" args="(const int &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a0b8b688d71d14800bcc1dcf5e77bd575" title="Przechowywany typ: int.">TlenArg::Int</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#cb8ddca159ad926b2dcb8da4298e453e" title="Jeśli TlenArg ma inny typ niż TlenArg::Int, metoda ta asertuje.">toInt()</a>, operator=(const int &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d60d02cc19e21c39045d25e6baf585ae"></a><!-- doxytag: member="TlenArg::TlenArg" ref="d60d02cc19e21c39045d25e6baf585ae" args="(const unsigned int &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a852bfb633b88380c5b42b32057e9b5bc" title="Przechowywany typ: unsigned int.">TlenArg::UInt</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#d2fdbaf9f70357198cf045e7b0bd609f" title="Jeśli TlenArg ma inny typ niż TlenArg::UInt, metoda ta asertuje.">toUInt()</a>, operator=(const unsigned int &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="aeafe30587d7fdd403204026f5d6909e"></a><!-- doxytag: member="TlenArg::TlenArg" ref="aeafe30587d7fdd403204026f5d6909e" args="(const qint64 &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const qint64 &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu TlenArg::LongLong. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd>toLongLong(), operator=(const long long &amp;); </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="742b341598810ddbfa6097b8c71c1b36"></a><!-- doxytag: member="TlenArg::TlenArg" ref="742b341598810ddbfa6097b8c71c1b36" args="(const quint64 &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const quint64 &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu TlenArg::ULongLong. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd>toULongLong(), operator=(const unsigned long long &amp;); </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b163c36caf7897e1642588abb48d88a3"></a><!-- doxytag: member="TlenArg::TlenArg" ref="b163c36caf7897e1642588abb48d88a3" args="(const double &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a3ae15a919593d1f39e93bb9d780e3637" title="Przechowywany typ: double.">TlenArg::Double</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#c0f61fed84fbe2441220d1f1121d7979" title="Jeśli TlenArg ma inny typ niż TlenArg::Double, metoda ta asertuje.">toDouble()</a>, operator=(const double &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="419000e7b84ef283f346ef45fc2aab07"></a><!-- doxytag: member="TlenArg::TlenArg" ref="419000e7b84ef283f346ef45fc2aab07" args="(const float &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a6312a88a0152819a3c70c3df0cf454e7" title="Przechowywany typ: float.">TlenArg::Float</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#cf12e67088a80ca56188db91731c7313" title="Jeśli TlenArg ma inny typ niż TlenArg::Float, metoda ta asertuje.">toFloat()</a>, operator=(const float &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9f2646a7b78533c5c1f13ca007efc148"></a><!-- doxytag: member="TlenArg::TlenArg" ref="9f2646a7b78533c5c1f13ca007efc148" args="(const QString &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aca7083d952423c05e0fa520ea37dd4bd" title="Przechowywany typ: QString.">TlenArg::String</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#174639d734263e483756aaf5f4442276" title="Jeśli TlenArg ma inny typ niż TlenArg::String, metoda ta asertuje.">toString()</a>, operator=(const QString &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9896dbcb6b1487eef61ebff733b24873"></a><!-- doxytag: member="TlenArg::TlenArg" ref="9896dbcb6b1487eef61ebff733b24873" args="(const QStringList &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa318c4de9930a6562ce8e1ff4ba66977" title="Przechowywany typ: QStringList.">TlenArg::StringList</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#14de3ac06c4d625fff3eec08020868a0" title="Jeśli TlenArg ma inny typ niż TlenArg::StringList, metoda ta asertuje.">toStringList()</a>, oprator=(const QStringList &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="677b0a4766c575c6d1fd7377f183ebef"></a><!-- doxytag: member="TlenArg::TlenArg" ref="677b0a4766c575c6d1fd7377f183ebef" args="(const bool &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const bool &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ae450b45345701da81da5d8d24c6951bc" title="Przechowywany typ: bool.">TlenArg::Bool</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#87b432e5a03ec89c2635e461ebdc9d63" title="Jeśli TlenArg ma inny typ niż TlenArg::Bool, metoda ta asertuje.">toBool()</a>, operator=(const bool &amp;); </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d8378a3f1dc61b64187e0d2dca5dc7b6"></a><!-- doxytag: member="TlenArg::TlenArg" ref="d8378a3f1dc61b64187e0d2dca5dc7b6" args="(void *data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a488c1a9c26e607db6e05908456a807fc" title="Przechowywany typ: void *.">TlenArg::Pointer</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#67f9414744e15a91ae2c98447327293c" title="Jeśli TlenArg ma inny typ niż TlenArg::Pointer, metoda ta asertuje.">toPointer()</a>, operator=(void *) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1ee343f2711b8dd3b3c8b8c0f578307a"></a><!-- doxytag: member="TlenArg::TlenArg" ref="1ee343f2711b8dd3b3c8b8c0f578307a" args="(const QList&lt; void * &gt; &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; void * &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a106e09485d797649ef967e32e45436ac" title="Przechowywany typ: QList<void *>.">TlenArg::PointerList</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#79eb79d083a57fc41d6d3c8c4565d71e" title="Jeśli TlenArg ma inny typ niż TlenArg::PointerList, metoda ta asertuje.">toPointerList()</a>, operator=(const QList&lt;void *&gt; &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c4d7385cb3e0343dcb37286874fdff02"></a><!-- doxytag: member="TlenArg::TlenArg" ref="c4d7385cb3e0343dcb37286874fdff02" args="(const TlenField &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenField.html">TlenField</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a3e8b8386c993c71fb87e42d92cb9bbb2" title="Przechowywany typ: TlenField.">TlenArg::Field</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#595ee8800062ccf63620cbac6c0fd527" title="Jeśli TlenArg ma inny typ niż TlenArg::Field, metoda ta asertuje.">toField()</a>, operator=(const TlenField &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="941d9246b60f7a9a316eb2449c8c7aee"></a><!-- doxytag: member="TlenArg::TlenArg" ref="941d9246b60f7a9a316eb2449c8c7aee" args="(const QList&lt; TlenField &gt; &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aaf1b4c7760d17247d18d6000b0423810" title="Przechowywany typ: QList<TlenField>.">TlenArg::FieldList</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#d241de8c146687a642101880e4fdb7af" title="Jeśli TlenArg ma inny typ niż TlenArg::FieldList, metoda ta asertuje.">toFieldList()</a>, operator=(const QList&lt;TlenField&gt; &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="cccdd9fe579b281c6bd52ec870bba63f"></a><!-- doxytag: member="TlenArg::TlenArg" ref="cccdd9fe579b281c6bd52ec870bba63f" args="(const TlenXmlNode &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a235cb345e0c9b6305885be5a530cfed2" title="Przechowywany typ: TlenXmlNode.">TlenArg::XmlNode</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#98b45bb2458eb9ff7cf50a320ec344d3" title="Jeśli TlenArg ma inny typ niż TlenArg::XmlNode, program zostaje przerwany.">toXmlNode()</a>, operator=(const TlenXmlNode &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="bbdbebb178a547fa76d74cab388ac822"></a><!-- doxytag: member="TlenArg::TlenArg" ref="bbdbebb178a547fa76d74cab388ac822" args="(const TlenBuddy &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddy.html">TlenBuddy</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a67d3b07b253851f45ae0cd148874db9f" title="Przechowywany typ: TlenBuddy.">TlenArg::Buddy</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#3f31b8024aa1fdd71171fe90c55b61a9" title="Jeśli TlenArg ma inny typ niż TlenArg::Buddy, program zostaje przerwany.">toBuddy()</a>, operator=(const TlenBuddy &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="cc0d7544a83a9fd00377db29c718d5e6"></a><!-- doxytag: member="TlenArg::TlenArg" ref="cc0d7544a83a9fd00377db29c718d5e6" args="(const TlenBuddyResource &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const TlenBuddyResource &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ac28481818ee710c557cb2c82a635ada1" title="Przechowywany typ: TlenBuddyResrouce.">TlenArg::BuddyResource</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#8cbb1a4d10126cff41cad228b582b3e2" title="Jeśli TlenArg ma inny typ niż TlenArg::BuddyResource, program zostaje przerwany...">toBuddyResource()</a>, operator=(const TlenBuddyResource &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="732d067aa9fb84321432738a07d8721e"></a><!-- doxytag: member="TlenArg::TlenArg" ref="732d067aa9fb84321432738a07d8721e" args="(TlenAccountConnection *data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ad9813e64d619690514a56dee513c0d8c" title="Przechowywany typ: TlenAccountConnection.">TlenArg::Account</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#82c10e89cf57c81183ee2dd9b3dfe79f" title="Jeśli TlenArg ma inny typ niż TlenArg::Account, program zostaje przerwany.">toAccount()</a>, operator=(TlenAccountConnection *) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="62a0baa05a3ff3549a9d0f2686d18741"></a><!-- doxytag: member="TlenArg::TlenArg" ref="62a0baa05a3ff3549a9d0f2686d18741" args="(const TlenPluginAction &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenPluginAction.html">TlenPluginAction</a> &amp;&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ad195ced3e94c2707d77b224197c5bbbc" title="Przechowywany typ: TlenPluginAction.">TlenArg::PluginAction</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#90cbae8a9b0795f1637dc8ea9739540b" title="Jeśli TlenArg ma innt typ niż TlenArg::PluginAction, program zostaje przerwany...">toPluginAction()</a>, operator=(const TlenPluginAction &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2ee0c9c8154e95ad5f4fa4e2e77d3671"></a><!-- doxytag: member="TlenArg::TlenArg" ref="2ee0c9c8154e95ad5f4fa4e2e77d3671" args="(TlenPlugin *data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenPlugin.html">TlenPlugin</a> *&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a2d3db3f4bb6c1673a2e7053e7eeb9eb7" title="Przechowywany typ: TlenPlugin *.">TlenArg::Plugin</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#86e1dc6d16772caa8754305d73ef61f5" title="Jeśli TlenArg ma innt typ niż TlenArg::Plugin, program zostaje przerwany.">toPlugin()</a>, operator=(TlenPlugin *) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="278dc7799d3102078324f5c16db0b405"></a><!-- doxytag: member="TlenArg::TlenArg" ref="278dc7799d3102078324f5c16db0b405" args="(const TlenPresence &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa769d4ab4e23f85ebc9c0f0d8a72af92" title="Przechowywany typ: TlenPresence.">TlenArg::Presence</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#104c9d5a98987b41100bb7701fdb81f9" title="Jeśli TlenArg ma innt typ niż TlenArg::Presence, program zostaje przerwany.">toPresence()</a>, operator=(const TlenPresence &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b2283fc67896572631e866cf7f50e146"></a><!-- doxytag: member="TlenArg::TlenArg" ref="b2283fc67896572631e866cf7f50e146" args="(const TlenService &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenService.html">TlenService</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aeea58c264e211487547fdf459d4ca7ce" title="Przechowywany typ: TlenService.">TlenArg::Service</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#abda0e6f16bc8e326d3dc4ece4c0bb85" title="Jeśli TlenArg ma innt typ niż TlenArg::Service, program zostaje przerwany.">toService()</a>, operator=(const QList&lt;void *&gt; &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="8f3c3aed2b19e8551875a9637640808b"></a><!-- doxytag: member="TlenArg::TlenArg" ref="8f3c3aed2b19e8551875a9637640808b" args="(const QList&lt; TlenService &gt; &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; <a class="el" href="classTlenService.html">TlenService</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa0c3a7125ce5e16fa2b4e218a96feaa8" title="Przechowywany typ: QList<TlenService>.">TlenArg::ServiceList</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#49603cdf4ef71d84c9bdb83a8d7c0cc8" title="Jeśli TlenArg ma innt typ niż TlenArg::ServiceList, program zostaje przerwany.">toServiceList()</a>, operator=(const QList&lt;void *&gt; &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e4134becaa6d0effb52b48d37577514f"></a><!-- doxytag: member="TlenArg::TlenArg" ref="e4134becaa6d0effb52b48d37577514f" args="(const QList&lt; TlenTextFormat &gt; &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenArg::TlenArg           </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; TlenTextFormat &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> typu TlenArg::TextFormatList. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- przechowywane dane </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#2c97b122976815bf91b958780a36598a" title="Jeśli TlenArg ma innt typ niż TlenArg::TextFormatList, program zostaje przerwany...">toTextFormatList()</a>, operator=(const QList&lt;void *&gt; &amp;) </dd></dl>
+
+</div>
+</div><p>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="0c685f8fad9935ebcc313e1880674aa0"></a><!-- doxytag: member="TlenArg::getType" ref="0c685f8fad9935ebcc313e1880674aa0" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a">TlenArg::Type</a> TlenArg::getType           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>typ <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> </dd></dl>
+
+<p>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a" title="określa typ TlenArg">TlenArg::Type</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="17577780db14ef30b3d2e8a180876419"></a><!-- doxytag: member="TlenArg::toChar" ref="17577780db14ef30b3d2e8a180876419" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char TlenArg::toChar           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a0ce60f0887d4cf92ce2ae53ffa0a7d9d" title="Przechowywany typ: char.">TlenArg::Char</a>, metoda ta asertuje. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#5fa0fa3f466ea0ef43c294a4c3c815a0" title="Tworzy TlenArg typu TlenArg::Char.">TlenArg(const char &amp;)</a>, operator=(const char &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2852dcf9a533bc2ef1782af9485ba8b8"></a><!-- doxytag: member="TlenArg::toUChar" ref="2852dcf9a533bc2ef1782af9485ba8b8" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char TlenArg::toUChar           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a8620b21177194608e29d45f1463e1ba9" title="Przechowywany typ: unsigned char.">TlenArg::UChar</a>, metoda ta asertuje. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#b1afc518316f01aeac9b85059c4b377d" title="Tworzy TlenArg typu TlenArg::UChar.">TlenArg(const unsigned char &amp;)</a>, operator=(const unsigned char &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="cb8ddca159ad926b2dcb8da4298e453e"></a><!-- doxytag: member="TlenArg::toInt" ref="cb8ddca159ad926b2dcb8da4298e453e" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TlenArg::toInt           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a0b8b688d71d14800bcc1dcf5e77bd575" title="Przechowywany typ: int.">TlenArg::Int</a>, metoda ta asertuje. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#189685b9a873a7308af59f96bc966250" title="Tworzy TlenArg typu TlenArg::Int.">TlenArg(const int &amp;)</a>, operator=(const int &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d2fdbaf9f70357198cf045e7b0bd609f"></a><!-- doxytag: member="TlenArg::toUInt" ref="d2fdbaf9f70357198cf045e7b0bd609f" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int TlenArg::toUInt           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a852bfb633b88380c5b42b32057e9b5bc" title="Przechowywany typ: unsigned int.">TlenArg::UInt</a>, metoda ta asertuje. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#d60d02cc19e21c39045d25e6baf585ae" title="Tworzy TlenArg typu TlenArg::UInt.">TlenArg(const unsigned int &amp;)</a>, operator=(const unsigned int &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="38c9ba7bc9ecb02b0c76e2d950f79d83"></a><!-- doxytag: member="TlenArg::toInt64" ref="38c9ba7bc9ecb02b0c76e2d950f79d83" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">qint64 TlenArg::toInt64           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż TlenArg::LongLong, metoda ta asertuje. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd>TlenArg(const long long &amp;), operator=(const long long &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="555b6f10a2a309ffcc407618f8dbb398"></a><!-- doxytag: member="TlenArg::toUInt64" ref="555b6f10a2a309ffcc407618f8dbb398" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 TlenArg::toUInt64           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż TlenArg::ULongLong, metoda ta asertuje. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd>TlenArg(const unsigned long long &amp;), operator=(const unsigned long long &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c0f61fed84fbe2441220d1f1121d7979"></a><!-- doxytag: member="TlenArg::toDouble" ref="c0f61fed84fbe2441220d1f1121d7979" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double TlenArg::toDouble           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a3ae15a919593d1f39e93bb9d780e3637" title="Przechowywany typ: double.">TlenArg::Double</a>, metoda ta asertuje. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#b163c36caf7897e1642588abb48d88a3" title="Tworzy TlenArg typu TlenArg::Double.">TlenArg(const double &amp;)</a>, operator=(const double &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="cf12e67088a80ca56188db91731c7313"></a><!-- doxytag: member="TlenArg::toFloat" ref="cf12e67088a80ca56188db91731c7313" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TlenArg::toFloat           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a6312a88a0152819a3c70c3df0cf454e7" title="Przechowywany typ: float.">TlenArg::Float</a>, metoda ta asertuje. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#419000e7b84ef283f346ef45fc2aab07" title="Tworzy TlenArg typu TlenArg::Float.">TlenArg(const float &amp;)</a>, operator=(const float &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="174639d734263e483756aaf5f4442276"></a><!-- doxytag: member="TlenArg::toString" ref="174639d734263e483756aaf5f4442276" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString TlenArg::toString           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aca7083d952423c05e0fa520ea37dd4bd" title="Przechowywany typ: QString.">TlenArg::String</a>, metoda ta asertuje. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#9f2646a7b78533c5c1f13ca007efc148" title="Tworzy TlenArg typu TlenArg::String.">TlenArg(const QString &amp;)</a>, operator=(const QString &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="54121b42310663471eb686d893830250"></a><!-- doxytag: member="TlenArg::toByteArray" ref="54121b42310663471eb686d893830250" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray TlenArg::toByteArray           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a4d9f39f9d5145f51138e54fdae4ee0a1" title="Przechowywany typ: QByteArray.">TlenArg::ByteArray</a>, dzialanie programu zostaje przerwane. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#2b4ad5e8a33346b60001c48012596289" title="Tworzy TlenArg typu TlenArg::ByteArray.">TlenArg(const QByteArray &amp;)</a>, operator=(const QByteArray &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="14de3ac06c4d625fff3eec08020868a0"></a><!-- doxytag: member="TlenArg::toStringList" ref="14de3ac06c4d625fff3eec08020868a0" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList TlenArg::toStringList           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa318c4de9930a6562ce8e1ff4ba66977" title="Przechowywany typ: QStringList.">TlenArg::StringList</a>, metoda ta asertuje. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#9896dbcb6b1487eef61ebff733b24873" title="Tworzy TlenArg typu TlenArg::StringList.">TlenArg(const QStringList &amp;)</a>, operator=(const QStringList &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="87b432e5a03ec89c2635e461ebdc9d63"></a><!-- doxytag: member="TlenArg::toBool" ref="87b432e5a03ec89c2635e461ebdc9d63" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TlenArg::toBool           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ae450b45345701da81da5d8d24c6951bc" title="Przechowywany typ: bool.">TlenArg::Bool</a>, metoda ta asertuje. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#677b0a4766c575c6d1fd7377f183ebef" title="Tworzy TlenArg typu TlenArg::Bool.">TlenArg(const bool &amp;)</a>, operator=(const bool &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="67f9414744e15a91ae2c98447327293c"></a><!-- doxytag: member="TlenArg::toPointer" ref="67f9414744e15a91ae2c98447327293c" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* TlenArg::toPointer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a488c1a9c26e607db6e05908456a807fc" title="Przechowywany typ: void *.">TlenArg::Pointer</a>, metoda ta asertuje. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#d8378a3f1dc61b64187e0d2dca5dc7b6" title="Tworzy TlenArg typu TlenArg::Pointer.">TlenArg(void *)</a>, operator=(void *) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="79eb79d083a57fc41d6d3c8c4565d71e"></a><!-- doxytag: member="TlenArg::toPointerList" ref="79eb79d083a57fc41d6d3c8c4565d71e" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;void *&gt; TlenArg::toPointerList           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a106e09485d797649ef967e32e45436ac" title="Przechowywany typ: QList<void *>.">TlenArg::PointerList</a>, metoda ta asertuje. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#1ee343f2711b8dd3b3c8b8c0f578307a" title="Tworzy TlenArg typu TlenArg::PointerList.">TlenArg(const QList&lt;void *&gt; &amp;)</a>, operator=(const QList&lt;void *&gt; &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="595ee8800062ccf63620cbac6c0fd527"></a><!-- doxytag: member="TlenArg::toField" ref="595ee8800062ccf63620cbac6c0fd527" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenField.html">TlenField</a> TlenArg::toField           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a3e8b8386c993c71fb87e42d92cb9bbb2" title="Przechowywany typ: TlenField.">TlenArg::Field</a>, metoda ta asertuje. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#c4d7385cb3e0343dcb37286874fdff02" title="Tworzy TlenArg typu TlenArg::Field.">TlenArg(const TlenField &amp;)</a>, operator=(const TlenField &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d241de8c146687a642101880e4fdb7af"></a><!-- doxytag: member="TlenArg::toFieldList" ref="d241de8c146687a642101880e4fdb7af" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenField.html">TlenField</a>&gt; TlenArg::toFieldList           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aaf1b4c7760d17247d18d6000b0423810" title="Przechowywany typ: QList<TlenField>.">TlenArg::FieldList</a>, metoda ta asertuje. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#941d9246b60f7a9a316eb2449c8c7aee" title="Tworzy TlenArg typu TlenArg::FieldList.">TlenArg(const QList&lt;TlenField&gt; &amp;)</a>, operator=(const QList&lt;TlenField&gt; &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="98b45bb2458eb9ff7cf50a320ec344d3"></a><!-- doxytag: member="TlenArg::toXmlNode" ref="98b45bb2458eb9ff7cf50a320ec344d3" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> TlenArg::toXmlNode           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a235cb345e0c9b6305885be5a530cfed2" title="Przechowywany typ: TlenXmlNode.">TlenArg::XmlNode</a>, program zostaje przerwany. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#cccdd9fe579b281c6bd52ec870bba63f" title="Tworzy TlenArg typu TlenArg::XmlNode.">TlenArg(const TlenXmlNode &amp;)</a>, operator=(const TlenXmlNode &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3f31b8024aa1fdd71171fe90c55b61a9"></a><!-- doxytag: member="TlenArg::toBuddy" ref="3f31b8024aa1fdd71171fe90c55b61a9" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenBuddy.html">TlenBuddy</a> TlenArg::toBuddy           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a67d3b07b253851f45ae0cd148874db9f" title="Przechowywany typ: TlenBuddy.">TlenArg::Buddy</a>, program zostaje przerwany. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#bbdbebb178a547fa76d74cab388ac822" title="Tworzy TlenArg typu TlenArg::Buddy.">TlenArg(const TlenBuddy &amp;)</a>, operator=(const TlenBuddy &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="8cbb1a4d10126cff41cad228b582b3e2"></a><!-- doxytag: member="TlenArg::toBuddyResource" ref="8cbb1a4d10126cff41cad228b582b3e2" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenBuddyResource TlenArg::toBuddyResource           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ac28481818ee710c557cb2c82a635ada1" title="Przechowywany typ: TlenBuddyResrouce.">TlenArg::BuddyResource</a>, program zostaje przerwany. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#cc0d7544a83a9fd00377db29c718d5e6" title="Tworzy TlenArg typu TlenArg::BuddyResource.">TlenArg(const TlenBuddyResource &amp;)</a>, operator=(const TlenBuddyResource &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="82c10e89cf57c81183ee2dd9b3dfe79f"></a><!-- doxytag: member="TlenArg::toAccount" ref="82c10e89cf57c81183ee2dd9b3dfe79f" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a>* TlenArg::toAccount           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma inny typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ad9813e64d619690514a56dee513c0d8c" title="Przechowywany typ: TlenAccountConnection.">TlenArg::Account</a>, program zostaje przerwany. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#732d067aa9fb84321432738a07d8721e" title="Tworzy TlenArg typu TlenArg::Account.">TlenArg(TlenAccountConnection *)</a>, operator=(TlenAccountConnection *) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="90cbae8a9b0795f1637dc8ea9739540b"></a><!-- doxytag: member="TlenArg::toPluginAction" ref="90cbae8a9b0795f1637dc8ea9739540b" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenPluginAction.html">TlenPluginAction</a> TlenArg::toPluginAction           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma innt typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9ad195ced3e94c2707d77b224197c5bbbc" title="Przechowywany typ: TlenPluginAction.">TlenArg::PluginAction</a>, program zostaje przerwany. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#62a0baa05a3ff3549a9d0f2686d18741" title="Tworzy TlenArg typu TlenArg::PluginAction.">TlenArg(const TlenPluginAction &amp;)</a>, operator=(const TlenPluginAction &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="86e1dc6d16772caa8754305d73ef61f5"></a><!-- doxytag: member="TlenArg::toPlugin" ref="86e1dc6d16772caa8754305d73ef61f5" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenPlugin.html">TlenPlugin</a>* TlenArg::toPlugin           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma innt typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a2d3db3f4bb6c1673a2e7053e7eeb9eb7" title="Przechowywany typ: TlenPlugin *.">TlenArg::Plugin</a>, program zostaje przerwany. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#2ee0c9c8154e95ad5f4fa4e2e77d3671" title="Tworzy TlenArg typu TlenArg::Plugin.">TlenArg(TlenPlugin *)</a>, operator=(TlenPlugin *) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="104c9d5a98987b41100bb7701fdb81f9"></a><!-- doxytag: member="TlenArg::toPresence" ref="104c9d5a98987b41100bb7701fdb81f9" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenPresence.html">TlenPresence</a> TlenArg::toPresence           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma innt typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa769d4ab4e23f85ebc9c0f0d8a72af92" title="Przechowywany typ: TlenPresence.">TlenArg::Presence</a>, program zostaje przerwany. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#278dc7799d3102078324f5c16db0b405" title="Tworzy TlenArg typu TlenArg::Presence.">TlenArg(const TlenPresence &amp;)</a>, operator=(const TlenPresence &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="abda0e6f16bc8e326d3dc4ece4c0bb85"></a><!-- doxytag: member="TlenArg::toService" ref="abda0e6f16bc8e326d3dc4ece4c0bb85" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenService.html">TlenService</a> TlenArg::toService           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma innt typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aeea58c264e211487547fdf459d4ca7ce" title="Przechowywany typ: TlenService.">TlenArg::Service</a>, program zostaje przerwany. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#b2283fc67896572631e866cf7f50e146" title="Tworzy TlenArg typu TlenArg::Service.">TlenArg(const TlenService &amp;)</a>, operator=(const TlenService &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="49603cdf4ef71d84c9bdb83a8d7c0cc8"></a><!-- doxytag: member="TlenArg::toServiceList" ref="49603cdf4ef71d84c9bdb83a8d7c0cc8" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenService.html">TlenService</a>&gt; TlenArg::toServiceList           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma innt typ niż <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aa0c3a7125ce5e16fa2b4e218a96feaa8" title="Przechowywany typ: QList<TlenService>.">TlenArg::ServiceList</a>, program zostaje przerwany. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#8f3c3aed2b19e8551875a9637640808b" title="Tworzy TlenArg typu TlenArg::ServiceList.">TlenArg(const QList&lt;TlenService&gt; &amp;)</a>, operator=(const QList&lt;TlenService&gt; &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2c97b122976815bf91b958780a36598a"></a><!-- doxytag: member="TlenArg::toTextFormatList" ref="2c97b122976815bf91b958780a36598a" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;TlenTextFormat&gt; TlenArg::toTextFormatList           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> ma innt typ niż TlenArg::TextFormatList, program zostaje przerwany. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>przechowywane dane </dd></dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenArg.html#e4134becaa6d0effb52b48d37577514f" title="Tworzy TlenArg typu TlenArg::TextFormatList.">TlenArg(const QList&lt;TlenTextFormat&gt; &amp;)</a>, operator=(const QList&lt;TlenTextFormat&gt; &amp;) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="25974d8e57d290e4fdda549eadbe35de"></a><!-- doxytag: member="TlenArg::operator==" ref="25974d8e57d290e4fdda549eadbe35de" args="(const TlenArg &amp;arg) const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TlenArg::operator==           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenArg.html">TlenArg</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>arg</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Porównuje dwa <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a>. 
+<p>
+<br>
+ Dwa <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> są identyczne jeśli:<ul>
+<li>mają ten sam typ</li><li>przechowują tą samą wartość <dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>arg</em>&nbsp;</td><td>- <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> z którym porównujemy </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>true jeśli są identyczne. Inaczej false </dd></dl>
+</li></ul>
+
+</div>
+</div><p>
+<a class="anchor" name="acbf97641cc8edf60db4713435ce2f25"></a><!-- doxytag: member="TlenArg::setFieldValue" ref="acbf97641cc8edf60db4713435ce2f25" args="(TlenField &amp;field, const TlenArg &amp;val)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool TlenArg::setFieldValue           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenField.html">TlenField</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenArg.html">TlenArg</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>val</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Przypisuje wartość <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> do pola<br>
+ Jeśli <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> przechowuje typ wartości inny niż obsługuje <a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a>, metoda asertuje. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>field</em>&nbsp;</td><td>- pole do którego przypisujemy </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>val</em>&nbsp;</td><td>- wartość którą przypisujemy </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>true jesli wartosc pola zostala zmieniona, false jesli wartosci sa identyczne </dd></dl>
+
+</div>
+</div><p>
+<hr>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>include/data/<a class="el" href="TlenArg_8h-source.html">TlenArg.h</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

@@ -1,0 +1,2799 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Dokumentacja klasy TlenProtocol</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li class="current"><a href="classes.html"><span>Klasy</span></a></li>
+    <li><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabetyczna</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;klas</span></a></li>
+    <li><a href="hierarchy.html"><span>Hierarchia&nbsp;klas</span></a></li>
+    <li><a href="functions.html"><span>Składowe&nbsp;klas</span></a></li>
+  </ul>
+</div>
+<h1>Dokumentacja klasy TlenProtocol</h1><!-- doxytag: class="TlenProtocol" --><!-- doxytag: inherits="TlenPlugin" -->Bazowa klasa wszystkich wtyczek dostarczających usługę protokołu.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="TlenProtocol_8h-source.html">TlenProtocol.h</a>&gt;</code>
+<p>
+Dziedziczy <a class="el" href="classTlenPlugin.html">TlenPlugin</a>.
+<p>
+Dziedziczona przez <a class="el" href="classTlenXmlProtocol.html">TlenXmlProtocol</a>.
+<p>
+<a href="classTlenProtocol-members.html">Lista wszystkich składowych.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Typy publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#72007f4640b08775b6048c1efb9fa3de">TypingNotify</a> { <a class="el" href="classTlenProtocol.html#72007f4640b08775b6048c1efb9fa3de7f9689d9a824415ad16964d8f13c6c54">TypingStarted</a>, 
+<a class="el" href="classTlenProtocol.html#72007f4640b08775b6048c1efb9fa3de1acc0f3232acf80ea7d4e9bab97be972">TypingPaused</a>, 
+<a class="el" href="classTlenProtocol.html#72007f4640b08775b6048c1efb9fa3def1bbef3178d4b264d4e4f89eced4b85a">TypingStoped</a>
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">enum ten opisuje czy użytkownik zaczął pisać do innego użytkownika  <a href="classTlenProtocol.html#72007f4640b08775b6048c1efb9fa3de">Więcej...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><b>InfoType</b> { <br>
+&nbsp;&nbsp;<b>Meta</b>, 
+<b>Tags</b>, 
+<b>ExtraInfo</b>, 
+<b>Reserved1</b>, 
+<br>
+&nbsp;&nbsp;<b>Reserved2</b>, 
+<b>Reserved3</b>
+<br>
+ }</td></tr>
+
+<tr><td colspan="2"><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="da7ac1878e51038493786e3ceb8ef53c"></a><!-- doxytag: member="TlenProtocol::getSettingsTags" ref="da7ac1878e51038493786e3ceb8ef53c" args="() const" -->
+QStringList&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#da7ac1878e51038493786e3ceb8ef53c">getSettingsTags</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca z jakimi ustawieniami jest powiazana wtyczka w celu umieszczania odpowiednich powiazan miedzy wtyczkami w oknie ustawien programu. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a2ef6d0755cc791fd64e572d6342f83a"></a><!-- doxytag: member="TlenProtocol::updateProtocolPresenceIcons" ref="a2ef6d0755cc791fd64e572d6342f83a" args="()" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>updateProtocolPresenceIcons</b> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="5fe963783e9dff53572b461eee146cbf"></a><!-- doxytag: member="TlenProtocol::protocolFeatures" ref="5fe963783e9dff53572b461eee146cbf" args="() const" -->
+virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><b>protocolFeatures</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="499f4d1e35084ddd4ae5affafb9230ff"></a><!-- doxytag: member="TlenProtocol::conferencePrivileges" ref="499f4d1e35084ddd4ae5affafb9230ff" args="(const QString &amp;confId) const" -->
+virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferencePrivileges</b> (const QString &amp;confId) const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c326413ad46401b1b6f228a50949ee9c"></a><!-- doxytag: member="TlenProtocol::predefinedConfigurations" ref="c326413ad46401b1b6f228a50949ee9c" args="() const" -->
+virtual QStringList&nbsp;</td><td class="memItemRight" valign="bottom"><b>predefinedConfigurations</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a4893a2b97d106a988d61a22af6aa7b7"></a><!-- doxytag: member="TlenProtocol::predefinedConfiguration" ref="a4893a2b97d106a988d61a22af6aa7b7" args="(const QString &amp;name) const" -->
+virtual QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>predefinedConfiguration</b> (const QString &amp;name) const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="66ab4b3809a5b9cd560606c834037088"></a><!-- doxytag: member="TlenProtocol::roomConfiguration" ref="66ab4b3809a5b9cd560606c834037088" args="() const" -->
+virtual QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>roomConfiguration</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="795177106a88252e448b9c7b081f4ff5"></a><!-- doxytag: member="TlenProtocol::getProtocolUrl" ref="795177106a88252e448b9c7b081f4ff5" args="() const" -->
+virtual QString&nbsp;</td><td class="memItemRight" valign="bottom"><b>getProtocolUrl</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#1443600a416a907b3979ceab496b1977">loginAccount</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda ta jest wywolywana gdy uzytkownik zechce zalogowoac konto protokolu lub przy samym starcie programu jesli opcja automatycznego logowania jest wlaczona.  <a href="#1443600a416a907b3979ceab496b1977"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#0952f56e77b01939ab7dd9ebca9476c3">changePresence</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;presence)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienia prezencje konta.  <a href="#0952f56e77b01939ab7dd9ebca9476c3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#59a59e6e15c06ed8446350f405c6d16d">sendMessage</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;bid, const QString &amp;msg, const QString &amp;resource, const QString &amp;subject=QString())=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wysyla wiadomosc do uzytkownika (wskaznik na <a class="el" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> nie jest podawany gdyz zawiera go <a class="el" href="classTlenBuddy.html" title="Reprezentuje kontakt.">TlenBuddy</a>).  <a href="#59a59e6e15c06ed8446350f405c6d16d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="8602e682e5af3f72f6661ee4b5585e81"></a><!-- doxytag: member="TlenProtocol::sendConferenceMessage" ref="8602e682e5af3f72f6661ee4b5585e81" args="(TlenAccountConnection *acc, const QString &amp;confId, const QString &amp;msg, const QList&lt; TlenTextFormat &gt; &amp;params)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>sendConferenceMessage</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;confId, const QString &amp;msg, const QList&lt; TlenTextFormat &gt; &amp;params)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="145eeca1d4a686564d4caabee509af37"></a><!-- doxytag: member="TlenProtocol::sendPrivateConferenceMessage" ref="145eeca1d4a686564d4caabee509af37" args="(TlenAccountConnection *acc, const QString &amp;confId, const QString &amp;buddyId, const QString &amp;msg, const QList&lt; TlenTextFormat &gt; &amp;params)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>sendPrivateConferenceMessage</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;confId, const QString &amp;buddyId, const QString &amp;msg, const QList&lt; TlenTextFormat &gt; &amp;params)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="5b7aa20d456c3c47f6a4c4aeebe463ab"></a><!-- doxytag: member="TlenProtocol::setConferenceTopic" ref="5b7aa20d456c3c47f6a4c4aeebe463ab" args="(TlenAccountConnection *acc, const QString &amp;confId, const QString &amp;topic)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>setConferenceTopic</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;confId, const QString &amp;topic)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#62a73db5ca0c14e0ae1c438151d79be5">sendTypingNotify</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;bid, <a class="el" href="classTlenProtocol.html#72007f4640b08775b6048c1efb9fa3de">TlenProtocol::TypingNotify</a> type, const QString &amp;resource)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wysyla powiadomienie o tym ze uzytkownik zaczal pisac w oknie rozmowy.  <a href="#62a73db5ca0c14e0ae1c438151d79be5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#23d29287a8a8cea266229761fc2a3127">sendAlert</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;bid, const QString &amp;resource)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wysyla alert do rozmowcy.  <a href="#23d29287a8a8cea266229761fc2a3127"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b380c20c8c55a5b9ed260bf64789cd3d"></a><!-- doxytag: member="TlenProtocol::requestUserVersion" ref="b380c20c8c55a5b9ed260bf64789cd3d" args="(TlenAccountConnection *acc, const QString &amp;bid, const QString &amp;resource)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>requestUserVersion</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;bid, const QString &amp;resource)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#b32a241c22e9503f75cb761b3342fb34">setAccountAvatar</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;avatarpath)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ustawia avatar konta.  <a href="#b32a241c22e9503f75cb761b3342fb34"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#6d9532eb08c82fc9282d5623f218f703">getAccountAvatar</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pobiera avatar konta.  <a href="#6d9532eb08c82fc9282d5623f218f703"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#7e28409ae77720018817c6c34303af02">removeAccountAvatar</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa avatar konta.  <a href="#7e28409ae77720018817c6c34303af02"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#2704282b6eaaf1b014ca0995c1b21991">updateAccountPubdirInfo</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;fields)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Aktualziuje dane publiczne konta.  <a href="#2704282b6eaaf1b014ca0995c1b21991"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#1e55a575bc5809d55f884f1ec075cb3b">getAccountPubdirInfo</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pobiera dane publiczne konta.  <a href="#1e55a575bc5809d55f884f1ec075cb3b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#4616f81c125b92f73d947182ede5420f">removeAccountPubdirInfo</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa dane publiczne konta.  <a href="#4616f81c125b92f73d947182ede5420f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#0820aeb020861964bd192cc404136dc7">searchPubdir</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;data, int page=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wyszukuje w katalogu publicznym wg podanych danych.  <a href="#0820aeb020861964bd192cc404136dc7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#5cfd9810ed42d6bdd648b95cb4dc3d16">searchPubdir</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;uid)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wyszukuje w katalogu publicznym wg identyfikatora użytkownika.  <a href="#5cfd9810ed42d6bdd648b95cb4dc3d16"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7bb8fdac14677072c7e62818594e01a4"></a><!-- doxytag: member="TlenProtocol::getLastActivity" ref="7bb8fdac14677072c7e62818594e01a4" args="(TlenAccountConnection *acc, const QString &amp;uid)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>getLastActivity</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;uid)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#d046758a91539718694bf0d449cb94cc">socketConnected</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">metoda reagujaca na nawizanie polaczenia z serwerem  <a href="#d046758a91539718694bf0d449cb94cc"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#72ab63cd84188f556caede2605490623">socketDisconnected</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">metoda reagujaca na rozlaczenie sie z serwerem  <a href="#72ab63cd84188f556caede2605490623"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#395d0846d91d10163793a6dc184ae3df">socketError</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, <a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26f">TlenSocket::Error</a> errtype)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">metoda reagujaca na wystapienie bledu w probie nawiazania polaczenia z serwerm lub w trkacie jego trwania  <a href="#395d0846d91d10163793a6dc184ae3df"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ac9c96e6356991ac0b887e20dd945a8e"></a><!-- doxytag: member="TlenProtocol::peerVerifyError" ref="ac9c96e6356991ac0b887e20dd945a8e" args="(TlenAccountConnection *acc, const QList&lt; TlenSocket::SslError &gt; &amp;er)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>peerVerifyError</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QList&lt; TlenSocket::SslError &gt; &amp;er)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d8c335f83aea6ea49dfbccfd5cc4b679"></a><!-- doxytag: member="TlenProtocol::accountConnectionEncrypted" ref="d8c335f83aea6ea49dfbccfd5cc4b679" args="(TlenAccountConnection *acc)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>accountConnectionEncrypted</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#427636616bab8c717ae291ec47555e09">socketReadyRead</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">metoda reagujace na dane dostepne w sockecie  <a href="#427636616bab8c717ae291ec47555e09"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="65f04f537519d99a6eb5cb519ce5936a"></a><!-- doxytag: member="TlenProtocol::socketReadyRead" ref="65f04f537519d99a6eb5cb519ce5936a" args="(TlenAccountConnection *acc, const QByteArray &amp;data)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>socketReadyRead</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QByteArray &amp;data)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#73d0816dff82c23b1f877253636f47e7">ping</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">utrzymywanie polaczenia z serwerem  <a href="#73d0816dff82c23b1f877253636f47e7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4eaf4c5cdd49cea7ddb86b59f79b395a"></a><!-- doxytag: member="TlenProtocol::pingInterval" ref="4eaf4c5cdd49cea7ddb86b59f79b395a" args="() const=0" -->
+virtual unsigned&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#4eaf4c5cdd49cea7ddb86b59f79b395a">pingInterval</a> () const=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Czas miedzy pingami w sekundach. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#a079ec177483ab9de53ba373b3f5b57b">contactActivated</a> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;contact)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda wywolywana gdy kontakt został aktywowany.  <a href="#a079ec177483ab9de53ba373b3f5b57b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#70fc40e6a0ab19fa3ff6abaa1119d28a">temporaryActivated</a> (const <a class="el" href="classTlenBuddyTemporary.html">TlenBuddyTemporary</a> &amp;contact)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda wywoływana gdy kontakt tymczasowy został aktywowany.  <a href="#70fc40e6a0ab19fa3ff6abaa1119d28a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c355f13906a836b6404d96c1cb5e16ce"></a><!-- doxytag: member="TlenProtocol::getProtocolSettings" ref="c355f13906a836b6404d96c1cb5e16ce" args="() const" -->
+QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#c355f13906a836b6404d96c1cb5e16ce">getProtocolSettings</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>Lista ustawień protokołu </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#9a5055ccdc729a3548a89311bdd5fe72">setProtocolPref</a> (const QString &amp;id, const <a class="el" href="classTlenArg.html">TlenArg</a> &amp;value)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienia ustawienie protokolu.  <a href="#9a5055ccdc729a3548a89311bdd5fe72"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#fc34e16864e71ba609ad1224098cabc3">setProtocolPrefs</a> (const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;fields)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienia ustawienia protokolu na podstawie listy.  <a href="#fc34e16864e71ba609ad1224098cabc3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#8697f237601754ad6dd8e1ab914eab7d">getAccountSettings</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pobiera strukture ustawien specyficznych dla konta.  <a href="#8697f237601754ad6dd8e1ab914eab7d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#64542b190ceaf57608de45114240e894">getBuddyExtraInfo</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pobiera strukture dodatkowych informacji o kontakcie.  <a href="#64542b190ceaf57608de45114240e894"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#e5609b0a2ce7193fe82e40947544fc79">getPubdirAccountFields</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pobiera strukture danych publicznych dla konta.  <a href="#e5609b0a2ce7193fe82e40947544fc79"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#7b3dd2366261598a689eb6dea0a4b7d5">getPubdirResultColumns</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca pola opisujace kolumny wynikow wyszukiwania w katalogu publicznym.  <a href="#7b3dd2366261598a689eb6dea0a4b7d5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="315fda4d482f87980917c0b6eef24c68"></a><!-- doxytag: member="TlenProtocol::getPubdirBaseSearchFields" ref="315fda4d482f87980917c0b6eef24c68" args="() const" -->
+QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#315fda4d482f87980917c0b6eef24c68">getPubdirBaseSearchFields</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wektor zawierający <a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a> opisujący strukturę podstawowych danych do wyszukiwania </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="0e9d72d0af1d6fed2228ecaa0a037a66"></a><!-- doxytag: member="TlenProtocol::getPubdirAdvancedSearchFields" ref="0e9d72d0af1d6fed2228ecaa0a037a66" args="() const" -->
+QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#0e9d72d0af1d6fed2228ecaa0a037a66">getPubdirAdvancedSearchFields</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wektor zawierajacy <a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a> opisujące strukturę zaawansowanych danych do wyszukiwania </dd></dl>
+<br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#1b6827d3ccaa625740a0eb50d7665769">hasRequiredPresenceTypes</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sprawdza czy typy prezencji z wymaganymi flagami istnieją.  <a href="#1b6827d3ccaa625740a0eb50d7665769"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="fb910c63333e7c059e18c2f790e7f427"></a><!-- doxytag: member="TlenProtocol::hasRequiredPresenceType" ref="fb910c63333e7c059e18c2f790e7f427" args="(TlenPresence::Flag) const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>hasRequiredPresenceType</b> (<a class="el" href="classTlenPresence.html#c45395627d27601813f288e1a17b06a9">TlenPresence::Flag</a>) const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f6fc50fbcb384e835983f5b222253ae7"></a><!-- doxytag: member="TlenProtocol::hasRequiredPresenceType" ref="f6fc50fbcb384e835983f5b222253ae7" args="(const QString &amp;id) const " -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>hasRequiredPresenceType</b> (const QString &amp;id) const </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="1008abfb1f6a21070ff0b19475376a5c"></a><!-- doxytag: member="TlenProtocol::writeData" ref="1008abfb1f6a21070ff0b19475376a5c" args="(TlenAccountConnection *acc, const QByteArray &amp;data, qint64 size=-1)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>writeData</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QByteArray &amp;data, qint64 size=-1)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e6fda27bb925868f854b960c880de645"></a><!-- doxytag: member="TlenProtocol::writeData" ref="e6fda27bb925868f854b960c880de645" args="(TlenAccountConnection *acc, const TlenXmlNode &amp;node)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>writeData</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const <a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> &amp;node)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4045b6978018197d9a0d55aad5bd1ca3"></a><!-- doxytag: member="TlenProtocol::isXmlProtocol" ref="4045b6978018197d9a0d55aad5bd1ca3" args="() const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>isXmlProtocol</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f779ee0a8548948d22dca6e168a1a79a"></a><!-- doxytag: member="TlenProtocol::toFullId" ref="f779ee0a8548948d22dca6e168a1a79a" args="(const QString &amp;id)" -->
+virtual QString&nbsp;</td><td class="memItemRight" valign="bottom"><b>toFullId</b> (const QString &amp;id)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f261e516f81ef3c8724d2d16c20d77ba"></a><!-- doxytag: member="TlenProtocol::toShortId" ref="f261e516f81ef3c8724d2d16c20d77ba" args="(const QString &amp;id)" -->
+virtual QString&nbsp;</td><td class="memItemRight" valign="bottom"><b>toShortId</b> (const QString &amp;id)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="fc55fd8c0b8bc79cfb98e6e8788366ab"></a><!-- doxytag: member="TlenProtocol::validIdMask" ref="fc55fd8c0b8bc79cfb98e6e8788366ab" args="()" -->
+virtual QString&nbsp;</td><td class="memItemRight" valign="bottom"><b>validIdMask</b> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ef05585c37459fdcd0be53b9b499d572"></a><!-- doxytag: member="TlenProtocol::maxDescriptionLength" ref="ef05585c37459fdcd0be53b9b499d572" args="()=0" -->
+virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><b>maxDescriptionLength</b> ()=0</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="99d45b34c4555fdf5d0ffc4f9f84b8d1"></a><!-- doxytag: member="TlenProtocol::launchMail" ref="99d45b34c4555fdf5d0ffc4f9f84b8d1" args="(TlenAccountConnection *acc, const QString &amp;url=QString())" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>launchMail</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;url=QString())</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenPresence.html">TlenPresence</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#e890715d877d4927553bd70ca090f8f0">createPresenceWithFlag</a> (<a class="el" href="classTlenPresence.html#c45395627d27601813f288e1a17b06a9">TlenPresence::Flag</a> flag, const QString &amp;descr=QString()) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy prezencje z podaną flagą, lub pustą prezencję, jeśli paramter flag ma wartość <a class="el" href="classTlenPresence.html#c45395627d27601813f288e1a17b06a9b85f0305b61c7d4bdef932f7fcd4ee71" title="Domyślna flaga pozostałych prezencji.">TlenPresence::NoFlag</a>.  <a href="#e890715d877d4927553bd70ca090f8f0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenPresence.html">TlenPresence</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#64b1d51feba413644559ed6b161d3486">createPresenceWithId</a> (const QString &amp;id, const QString &amp;descr=QString()) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy prezencję z podanym id i opisem, lub pustą prezencję, jeśli podany identyfikator nie został zarejestrowany przez protokół.  <a href="#64b1d51feba413644559ed6b161d3486"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c4c523663b5a179612d13aeb6b982a4d"></a><!-- doxytag: member="TlenProtocol::getAllPresences" ref="c4c523663b5a179612d13aeb6b982a4d" args="() const" -->
+QList&lt; <a class="el" href="classTlenPresence.html">TlenPresence</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>getAllPresences</b> () const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#08b6fe950da56398b2d68e863df00c9b">addService</a> (const <a class="el" href="classTlenService.html">TlenService</a> &amp;service)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dodaje service dla danego protokolu.  <a href="#08b6fe950da56398b2d68e863df00c9b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#22a8b1944d5d7e9542d5e6e05ef68ba9">removeService</a> (const <a class="el" href="classTlenService.html">TlenService</a> &amp;service)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa service z danego protokolu.  <a href="#22a8b1944d5d7e9542d5e6e05ef68ba9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenService.html">TlenService</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#59c7d12e9275be547a6c9519689072a5">getService</a> (const QString &amp;service)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca dany service dla protokolu.  <a href="#59c7d12e9275be547a6c9519689072a5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenService.html">TlenService</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#768c935232e770c4d6e60078699ae8a2">getServices</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca wszystkie service dla danego protokolu.  <a href="#768c935232e770c4d6e60078699ae8a2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3035aa042938bcc7399bd79452d7986c"></a><!-- doxytag: member="TlenProtocol::hasService" ref="3035aa042938bcc7399bd79452d7986c" args="(const QString &amp;service)" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>hasService</b> (const QString &amp;service)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="0e9a2132209cbf77242a3131025ed23f"></a><!-- doxytag: member="TlenProtocol::requestAuthorization" ref="0e9a2132209cbf77242a3131025ed23f" args="(const TlenBuddyContact &amp;buddy)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>requestAuthorization</b> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;buddy)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f5d9e7ee0af860de608c52644fa4829a"></a><!-- doxytag: member="TlenProtocol::imageReceived" ref="f5d9e7ee0af860de608c52644fa4829a" args="(TlenAccountConnection *acc, const QString &amp;bid, const QString &amp;image, const QString &amp;timestamp, const QString &amp;res)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>imageReceived</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;bid, const QString &amp;image, const QString &amp;timestamp, const QString &amp;res)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="5c2dbdad52b615d69844d637087d5b91"></a><!-- doxytag: member="TlenProtocol::imageSent" ref="5c2dbdad52b615d69844d637087d5b91" args="(TlenAccountConnection *acc, const QString &amp;bid, const QString &amp;image, const QString &amp;res)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>imageSent</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;bid, const QString &amp;image, const QString &amp;res)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="80a590e7a3e2f7e9ed2749fee80a9d5e"></a><!-- doxytag: member="TlenProtocol::startConference" ref="80a590e7a3e2f7e9ed2749fee80a9d5e" args="(TlenAccountConnection *acc, const QStringList &amp;buddies)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>startConference</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QStringList &amp;buddies)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="52f31600052ff52df0fe12fa669c4538"></a><!-- doxytag: member="TlenProtocol::enterConference" ref="52f31600052ff52df0fe12fa669c4538" args="(TlenAccountConnection *acc, const QString &amp;roomId, const QString &amp;anonymousId=QString())" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>enterConference</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;roomId, const QString &amp;anonymousId=QString())</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="8bf32135495ab6435142bf10824f7bc4"></a><!-- doxytag: member="TlenProtocol::leaveConference" ref="8bf32135495ab6435142bf10824f7bc4" args="(TlenAccountConnection *acc, const QString &amp;confId)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>leaveConference</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;confId)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a8b45e1674e90622fb968910bf4cbe1d"></a><!-- doxytag: member="TlenProtocol::inviteToConference" ref="a8b45e1674e90622fb968910bf4cbe1d" args="(TlenAccountConnection *acc, const QString &amp;confId, const QString &amp;buddyId)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>inviteToConference</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;confId, const QString &amp;buddyId)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="be57e3c90d46d4de98e18a24ee50b67e"></a><!-- doxytag: member="TlenProtocol::kickFromConference" ref="be57e3c90d46d4de98e18a24ee50b67e" args="(TlenAccountConnection *acc, const QString &amp;confId, const QString &amp;buddyId, const QString &amp;reason=QString(), int time=0)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>kickFromConference</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;confId, const QString &amp;buddyId, const QString &amp;reason=QString(), int time=0)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="cd256e56103f451b66e62b62a44825fe"></a><!-- doxytag: member="TlenProtocol::conferenceListGroups" ref="cd256e56103f451b66e62b62a44825fe" args="(TlenAccountConnection *acc, const QString &amp;parent)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferenceListGroups</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;parent)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="29e3689a1c4432f9150a35b6c773bd3e"></a><!-- doxytag: member="TlenProtocol::conferenceListRooms" ref="29e3689a1c4432f9150a35b6c773bd3e" args="(TlenAccountConnection *acc, const QString &amp;groups)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferenceListRooms</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;groups)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="59a4451f75033b68ca2d0f4635a7f813"></a><!-- doxytag: member="TlenProtocol::createConferenceRoom" ref="59a4451f75033b68ca2d0f4635a7f813" args="(TlenAccountConnection *acc, const QString &amp;roomId, const QString &amp;groupId, const QList&lt; TlenField &gt; &amp;conf, const QString &amp;anonymousId=QString())" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>createConferenceRoom</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;roomId, const QString &amp;groupId, const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;conf, const QString &amp;anonymousId=QString())</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="73c74dab2cd1323b11ab175348f091d0"></a><!-- doxytag: member="TlenProtocol::listMyRooms" ref="73c74dab2cd1323b11ab175348f091d0" args="(TlenAccountConnection *acc)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>listMyRooms</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f7349d1b4505e21eb88c46588bc8c48b"></a><!-- doxytag: member="TlenProtocol::listUsers" ref="f7349d1b4505e21eb88c46588bc8c48b" args="(TlenAccountConnection *acc, const QString &amp;roomId, TlenConferenceUserStatus::Status userType)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>listUsers</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;roomId, TlenConferenceUserStatus::Status userType)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="6e90076a36b1bca34e97d5310b6a6bce"></a><!-- doxytag: member="TlenProtocol::deleteMyRoom" ref="6e90076a36b1bca34e97d5310b6a6bce" args="(TlenAccountConnection *acc, const QString &amp;roomId)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>deleteMyRoom</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;roomId)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="daf3a372dfd0e338dbf4e3cd3f116dd0"></a><!-- doxytag: member="TlenProtocol::listUsers" ref="daf3a372dfd0e338dbf4e3cd3f116dd0" args="(TlenAccountConnection *acc, const QString &amp;roomId)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>listUsers</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;roomId)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="0b63781a4b2844e021725b9469bc4b34"></a><!-- doxytag: member="TlenProtocol::registerNick" ref="0b63781a4b2844e021725b9469bc4b34" args="(TlenAccountConnection *acc, const QString &amp;nick)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>registerNick</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;nick)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a3405d63fecfd5186f771452c67f7240"></a><!-- doxytag: member="TlenProtocol::unregisterNick" ref="a3405d63fecfd5186f771452c67f7240" args="(TlenAccountConnection *acc, const QString &amp;nick)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>unregisterNick</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;nick)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7e480054488c26db167ca197c7dd3bd9"></a><!-- doxytag: member="TlenProtocol::getRegisteredNicks" ref="7e480054488c26db167ca197c7dd3bd9" args="(TlenAccountConnection *acc)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>getRegisteredNicks</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e3f1644608a576e3c50735aefd87fdef"></a><!-- doxytag: member="TlenProtocol::grantBuddyConference" ref="e3f1644608a576e3c50735aefd87fdef" args="(TlenAccountConnection *acc, const QString &amp;confId, const QString &amp;buddyId, TlenConferenceUserStatus::Status status)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>grantBuddyConference</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;confId, const QString &amp;buddyId, TlenConferenceUserStatus::Status status)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f476896820880641819d7676c27405b7"></a><!-- doxytag: member="TlenProtocol::exportAdditionalContactsInfo" ref="f476896820880641819d7676c27405b7" args="(InfoType type, TlenAccountConnection *acc)" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><b>exportAdditionalContactsInfo</b> (InfoType type, <a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)</td></tr>
+
+<tr><td colspan="2"><br><h2>Metody chronione</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#db0b1dbfabce7fdae3f7c88f911b7e9f">addContact</a> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;buddy)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dodaje kontakt do listy (za pomocą protokołu).  <a href="#db0b1dbfabce7fdae3f7c88f911b7e9f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#bbf82befb503f27baba901950c5fb51e">removeContact</a> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;buddy)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa kontakt z listy (za pomocą protokołu).  <a href="#bbf82befb503f27baba901950c5fb51e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#c44ec5500e2bc83638dbd34ddf605be5">updateContact</a> (const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;buddy)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienia informacje o kontakcie (za pomocą protokołu).  <a href="#c44ec5500e2bc83638dbd34ddf605be5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#e6e1268719ca616b76f7e9674388c331">messageReceived</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;bid, const QString &amp;msg, const QString &amp;timestamp, const QString &amp;res, const QString &amp;subject=QString())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitujaca sygnal message_received.  <a href="#e6e1268719ca616b76f7e9674388c331"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#b54197949e3482654463277a01fdfaaf">messageSent</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;bid, const QString &amp;msg, const QString &amp;res)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitujaca sygnal message_sent.  <a href="#b54197949e3482654463277a01fdfaaf"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#9a093cd0ecada0303e8ec243b6b286f0">typingNotifyReceived</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;bid, <a class="el" href="classTlenProtocol.html#72007f4640b08775b6048c1efb9fa3de">TlenProtocol::TypingNotify</a> type, const QString &amp;res)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitujaca sygnal typing_notify_received.  <a href="#9a093cd0ecada0303e8ec243b6b286f0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#6a1e19944f4c83881ff29643df2d669f">alertReceived</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;bid, const QString &amp;res)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitujaca sygnal "alert_received".  <a href="#6a1e19944f4c83881ff29643df2d669f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="fa845937c51172df063a56a3eb1c7818"></a><!-- doxytag: member="TlenProtocol::emailReceived" ref="fa845937c51172df063a56a3eb1c7818" args="(TlenAccountConnection *acc, const QString &amp;from, const QString &amp;topic, const QString &amp;msg, const QString &amp;url)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>emailReceived</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;from, const QString &amp;topic, const QString &amp;msg, const QString &amp;url)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="97da50758cc0c666cc724f39c8afc303"></a><!-- doxytag: member="TlenProtocol::emailOpened" ref="97da50758cc0c666cc724f39c8afc303" args="(TlenAccountConnection *acc, const QString &amp;url, const QByteArray &amp;cookie)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>emailOpened</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;url, const QByteArray &amp;cookie)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#02e60dfa5e8fe107d44910fa78108e90">accountLoggedIn</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitujaca sygnal account_logged_in.  <a href="#02e60dfa5e8fe107d44910fa78108e90"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#7ba018be598b976b1dbbb3a1902d541d">accountResourceChanged</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *, const QString &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitujaca sygnal account_resource_changed.  <a href="#7ba018be598b976b1dbbb3a1902d541d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#d5d086cd379114b26a7296e4e2962162">accountLoggedOut</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitujaca sygnal account_logged_out.  <a href="#d5d086cd379114b26a7296e4e2962162"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#a4da7b23922b2c18004cffc76a7438cc">accountAuthorizationError</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitujaca sygnal account_authorization_error, komunikator moze zazadac ponownego wpisania nazwy uzytkownika i/lub hasla.  <a href="#a4da7b23922b2c18004cffc76a7438cc"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#0266741f6d0a870d2e8b7555077cfbbd">accountPresenceChanged</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *account)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitujaca sygnal account_presence_changed.  <a href="#0266741f6d0a870d2e8b7555077cfbbd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#67cf2540968356433063f0589688dd68">accountPubdirInfoReceived</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;pubinfo)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitujaca sygnal pubidr_account_data_received.  <a href="#67cf2540968356433063f0589688dd68"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#21d99e8527466b644a59fc515192cf2a">accountPubdirInfoEdited</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitujaca sygnal pubdir_account_data_edited.  <a href="#21d99e8527466b644a59fc515192cf2a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#8a028807d341d38748f0d85a8ce02c17">accountPubdirInfoRemoved</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitujaca sygnal pubdir_account_data_removed.  <a href="#8a028807d341d38748f0d85a8ce02c17"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#dddb8b9d96823e961f6457c8e7f01f04">accountAvatarSet</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *account, const QString &amp;avatarpath)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitująca sygnał account_avatar_set.  <a href="#dddb8b9d96823e961f6457c8e7f01f04"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#080bc82739e6659acbf12dafe4ddf345">accountAvatarSetError</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *account, const QString &amp;errorstring)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitująca sygnał account_avatar_set_error.  <a href="#080bc82739e6659acbf12dafe4ddf345"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#36ba0267990916babfe25c531035166d">accountAvatarRemoved</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *account)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitująca sygnał account_avatar_removed.  <a href="#36ba0267990916babfe25c531035166d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#4814c41ec8282eb18b5ebb105e3acaf8">accountAvatarReceived</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *account, const QString &amp;avatarpath)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza emitująca sygnał account_avatar_received.  <a href="#4814c41ec8282eb18b5ebb105e3acaf8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#0e0b878a4cf2bee70f3252543661271c">pubdirSearchResultReceived</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, int perPage, const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;result, bool more)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza.  <a href="#0e0b878a4cf2bee70f3252543661271c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="da3ddec280daba59d463453fd65da54b"></a><!-- doxytag: member="TlenProtocol::lastActivityReceived" ref="da3ddec280daba59d463453fd65da54b" args="(TlenAccountConnection *acc, const QString &amp;bid, int secs)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>lastActivityReceived</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;bid, int secs)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#b2b704e61df924965ccb65a4cc67df6a">addProtocolSettingsField</a> (const <a class="el" href="classTlenField.html">TlenField</a> &amp;f)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">dodaje pole ustawien protokolu  <a href="#b2b704e61df924965ccb65a4cc67df6a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#266911909469fd08f5727926b1d5f3c2">addAccountSettingsField</a> (const <a class="el" href="classTlenField.html">TlenField</a> &amp;f)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">dodaje pole ustawien konta  <a href="#266911909469fd08f5727926b1d5f3c2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#9750cb8a3594460804fc0c14ca179332">addBuddyExtraInfoField</a> (const <a class="el" href="classTlenField.html">TlenField</a> &amp;f)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">dodaje pole dodatkowych informacji o koncie  <a href="#9750cb8a3594460804fc0c14ca179332"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#c3185ed775a2c8dcf971cb0d0a840715">addPubdirAccountField</a> (const <a class="el" href="classTlenField.html">TlenField</a> &amp;field)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">dodaje pole informacji publicznych o koncie  <a href="#c3185ed775a2c8dcf971cb0d0a840715"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#87f10ecc6be1a51b4b90f26bd4fddec4">addPubdirBaseSearchField</a> (const <a class="el" href="classTlenField.html">TlenField</a> &amp;field)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">dodaje podstawowe pole do wyszukiwania informacji publicznych  <a href="#87f10ecc6be1a51b4b90f26bd4fddec4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#e96996ad635283922fa61aa6d9a5d6d3">addPubdirAdvancedSearchField</a> (const <a class="el" href="classTlenField.html">TlenField</a> &amp;field)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">dodajze zaawansowane pole do wyszukiwania informacji publicznych.  <a href="#e96996ad635283922fa61aa6d9a5d6d3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#b9d0ab4103aa1d856bb47d488cfe3058">addPubdirResultColumn</a> (const <a class="el" href="classTlenField.html">TlenField</a> &amp;field)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">dodaje kolumne wyniku wyszukiwania  <a href="#b9d0ab4103aa1d856bb47d488cfe3058"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#d9168a1a8b99d83967ff130f3a824395">addPresenceType</a> (const QString &amp;display, const QString &amp;id, const QString &amp;icon, unsigned priority)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy i przypisuje do protokolu oraz do danego typu <a class="el" href="classTlenBuddyContact.html" title="Kontakt dodany do listy kontaktów.">TlenBuddyContact</a> prezencje.  <a href="#d9168a1a8b99d83967ff130f3a824395"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#92da1d83ab15f4ec4b6d04fadc64e1bb">addPresenceType</a> (const QString &amp;icon, <a class="el" href="classTlenPresence.html#c45395627d27601813f288e1a17b06a9">TlenPresence::Flag</a> presflag)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy i przypisuje do protokołu typ prezencji z podaną flagą.  <a href="#92da1d83ab15f4ec4b6d04fadc64e1bb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#22b3d2da3de2bf6b16b4843b3f135374">addSubscriptionType</a> (const QString &amp;display, const QString &amp;id, unsigned priority, const QString &amp;icon=QString())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tworzy i przypisuje do protokolu typ subskrypcji.  <a href="#22b3d2da3de2bf6b16b4843b3f135374"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenSubscriptionType.html">TlenSubscriptionType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#31f0863ffe9e0a50390ca3022bf239c6">getSubscriptionWithId</a> (const QString &amp;id)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pobiera typ subskrypcji o podanym id.  <a href="#31f0863ffe9e0a50390ca3022bf239c6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#e4c198dafd5c878c3b0ab9799cde3a82">addResourceType</a> (const QString &amp;name, const QString &amp;ico=QString())</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dodaje resource.  <a href="#e4c198dafd5c878c3b0ab9799cde3a82"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">TlenBuddyResource&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#6980b3fa37394b3e9aafd745c9ac0f02">createResourceWithId</a> (const QString &amp;id, const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">pobiera resource z listy dodanych resource'ow.  <a href="#6980b3fa37394b3e9aafd745c9ac0f02"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#c33b8e1eebfdd895aeae3d044944e084">resourceTypeExists</a> (const QString &amp;name) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sprawdza czy dany resource zostal dodany.  <a href="#c33b8e1eebfdd895aeae3d044944e084"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="41cd438c615f4c4dc4149d8dc4539029"></a><!-- doxytag: member="TlenProtocol::checkPresence" ref="41cd438c615f4c4dc4149d8dc4539029" args="(const TlenPresence &amp;) const" -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>checkPresence</b> (const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;) const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="30b344335202863677a81188cd3ca337"></a><!-- doxytag: member="TlenProtocol::getProtocolPresenceIcon" ref="30b344335202863677a81188cd3ca337" args="(const QString &amp;icon) const" -->
+QString&nbsp;</td><td class="memItemRight" valign="bottom"><b>getProtocolPresenceIcon</b> (const QString &amp;icon) const</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenProtocol.html#db138e1b74c622622beac52f7bbdf02d">xmlNodeSent</a> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const <a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> &amp;node)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Emituje sygnal po wyslaniu xml node.  <a href="#db138e1b74c622622beac52f7bbdf02d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="68b4920c92993ad5b689f8063e6d5345"></a><!-- doxytag: member="TlenProtocol::conferenceStarted" ref="68b4920c92993ad5b689f8063e6d5345" args="(TlenAccountConnection *acc, const QString &amp;id, const QString &amp;chatNick, const QString &amp;chatName, const QString &amp;chatGroup, const QStringList &amp;buddies)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferenceStarted</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;id, const QString &amp;chatNick, const QString &amp;chatName, const QString &amp;chatGroup, const QStringList &amp;buddies)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7becd8beb19ce1afb1ccc178fb1f69ea"></a><!-- doxytag: member="TlenProtocol::conferenceMessageReceived" ref="7becd8beb19ce1afb1ccc178fb1f69ea" args="(TlenAccountConnection *acc, const QString &amp;id, const QString &amp;bid, const QString &amp;msg, const QString &amp;timestamp=QString(), const QList&lt; TlenTextFormat &gt; &amp;formats=QList&lt; TlenTextFormat &gt;())" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferenceMessageReceived</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;id, const QString &amp;bid, const QString &amp;msg, const QString &amp;timestamp=QString(), const QList&lt; TlenTextFormat &gt; &amp;formats=QList&lt; TlenTextFormat &gt;())</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="31706c86be2699234e2ed2693519518f"></a><!-- doxytag: member="TlenProtocol::conferenceMessageSent" ref="31706c86be2699234e2ed2693519518f" args="(TlenAccountConnection *acc, const QString &amp;confId, const QString &amp;msg)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferenceMessageSent</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;confId, const QString &amp;msg)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="49c47259a7d9b257ab008b9a9916365e"></a><!-- doxytag: member="TlenProtocol::conferenceTopicChanged" ref="49c47259a7d9b257ab008b9a9916365e" args="(TlenAccountConnection *acc, const QString &amp;confId, const QString &amp;topic)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferenceTopicChanged</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;confId, const QString &amp;topic)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="53a39a92b83a22c572d29840ea2a1e66"></a><!-- doxytag: member="TlenProtocol::conferenceBuddyJoined" ref="53a39a92b83a22c572d29840ea2a1e66" args="(TlenAccountConnection *acc, const QString &amp;confId, const QString &amp;buddyId, TlenConferenceUserStatus::Status status=TlenConferenceUserStatus::Anonymous, const QString &amp;uid=&quot;&quot;)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferenceBuddyJoined</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;confId, const QString &amp;buddyId, TlenConferenceUserStatus::Status status=TlenConferenceUserStatus::Anonymous, const QString &amp;uid=&quot;&quot;)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f6eb6bde3a41c2944fdded0902fd6eb4"></a><!-- doxytag: member="TlenProtocol::conferenceBuddyLeft" ref="f6eb6bde3a41c2944fdded0902fd6eb4" args="(TlenAccountConnection *acc, const QString &amp;confId, const QString &amp;buddyId, const QString &amp;uid=&quot;&quot;)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferenceBuddyLeft</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;confId, const QString &amp;buddyId, const QString &amp;uid=&quot;&quot;)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="14b67afda9f01566f8568e178331a1fa"></a><!-- doxytag: member="TlenProtocol::conferenceBuddyChanged" ref="14b67afda9f01566f8568e178331a1fa" args="(TlenAccountConnection *acc, const QString &amp;confId, const QString &amp;buddyId, TlenConferenceUserStatus::Status status)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferenceBuddyChanged</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;confId, const QString &amp;buddyId, TlenConferenceUserStatus::Status status)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="5716e035c874d5c3053b3788966fa0ee"></a><!-- doxytag: member="TlenProtocol::conferencePrivilegesChanged" ref="5716e035c874d5c3053b3788966fa0ee" args="(TlenAccountConnection *acc, const QString &amp;confId, int privileges)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferencePrivilegesChanged</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;confId, int privileges)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d7f004f5b59f206deca94f8c77d7418f"></a><!-- doxytag: member="TlenProtocol::conferenceReceivedGroups" ref="d7f004f5b59f206deca94f8c77d7418f" args="(TlenAccountConnection *acc, const QString &amp;parent, const QList&lt; TlenArg &gt; &amp;groups)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferenceReceivedGroups</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;parent, const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;groups)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="909dc6185a6008ee086cfc2eb644208b"></a><!-- doxytag: member="TlenProtocol::conferenceReceivedRooms" ref="909dc6185a6008ee086cfc2eb644208b" args="(TlenAccountConnection *acc, const QString &amp;parent, const QList&lt; TlenArg &gt; &amp;rooms)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferenceReceivedRooms</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;parent, const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;rooms)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9af34018cb3372e38f8f9ba052b5f22c"></a><!-- doxytag: member="TlenProtocol::conferenceReceivedMyRooms" ref="9af34018cb3372e38f8f9ba052b5f22c" args="(TlenAccountConnection *acc, const QList&lt; TlenArg &gt; &amp;rooms)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferenceReceivedMyRooms</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;rooms)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e152d90f31186385f7b8d831993667de"></a><!-- doxytag: member="TlenProtocol::conferenceReceivedMyNicks" ref="e152d90f31186385f7b8d831993667de" args="(TlenAccountConnection *acc, const QStringList &amp;nicks)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferenceReceivedMyNicks</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QStringList &amp;nicks)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="0437fbe669d868e8b47af0688de299e7"></a><!-- doxytag: member="TlenProtocol::conferenceListedUsers" ref="0437fbe669d868e8b47af0688de299e7" args="(TlenAccountConnection *acc, const QString &amp;confId, TlenConferenceUserStatus::Status status, const QList&lt; TlenArg &gt; &amp;users)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferenceListedUsers</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;confId, TlenConferenceUserStatus::Status status, const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;users)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a9fcd178474969e87ff99e99d25a2721"></a><!-- doxytag: member="TlenProtocol::conferenceInvited" ref="a9fcd178474969e87ff99e99d25a2721" args="(TlenAccountConnection *acc, const QString &amp;confId)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>conferenceInvited</b> (<a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *acc, const QString &amp;confId)</td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Bazowa klasa wszystkich wtyczek dostarczających usługę protokołu. 
+<p>
+Aby utworzyć wtyczkę dostarczającą protokół należy zadeklarować klasę dziedziczącą z <a class="el" href="classTlenProtocol.html" title="Bazowa klasa wszystkich wtyczek dostarczających usługę protokołu.">TlenProtocol</a> i zaimplementować wszystkie wymagane metody, także te, które dostarcza <a class="el" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a> (ponieważ <a class="el" href="classTlenProtocol.html" title="Bazowa klasa wszystkich wtyczek dostarczających usługę protokołu.">TlenProtocol</a> dziedziczy z <a class="el" href="classTlenPlugin.html" title="Klasa bazowa wszystkich wtyczek w Tlenie.">TlenPlugin</a>) <div class="fragment"><pre class="fragment"> <span class="keyword">class </span>MojProtokol: <span class="keyword">public</span> <a class="code" href="classTlenProtocol.html" title="Bazowa klasa wszystkich wtyczek dostarczających usługę protokołu.">TlenProtocol</a>
+ {
+        <span class="keyword">public</span>:
+                MojProtokol();
+
+                <span class="keywordtype">bool</span> <a class="code" href="classTlenPlugin.html#69340681749bee612c3f26d22b63a269" title="Metoda uruchamiająca wtyczkę  UWAGA: wtyczka nie musi sama pobierać ustawien,...">load</a>();
+ };
+</pre></div><p>
+W konstruktorze rejestrujemy typy prezencji, subskrypcji oraz kontaktow. Kolejność dodania prezencji będzie odzwierciedlona w menu zmiany prezencji. Dodatkowo KAŻDY protokół musi dostarczyć po jednej prezencji z flagami TlenPresenceType::Available, TlenPresenceType::Away i TlenPresenceType::Unavailable. Próba dodania więcej niż jednej prezencji z jedną z zarezerwowanych flag przerwie program. <div class="fragment"><pre class="fragment"> MojProtokol::MojProtokol
+ {
+        <a class="code" href="classTlenProtocol.html#d9168a1a8b99d83967ff130f3a824395" title="Tworzy i przypisuje do protokolu oraz do danego typu TlenBuddyContact prezencje.">addPresenceType</a>(tlen_tr(<span class="stringliteral">"My presence"</span>), <span class="stringliteral">"my_presence_icon.png"</span>, 2, TlenPresenceType::Available);
+        <a class="code" href="classTlenProtocol.html#d9168a1a8b99d83967ff130f3a824395" title="Tworzy i przypisuje do protokolu oraz do danego typu TlenBuddyContact prezencje.">addPresenceType</a>(tlen_tr(<span class="stringliteral">"My away presence"</span>, <span class="stringliteral">"my_away_presence_icon.png"</span>, 2, TlenPresenceType::Away);
+        <a class="code" href="classTlenProtocol.html#d9168a1a8b99d83967ff130f3a824395" title="Tworzy i przypisuje do protokolu oraz do danego typu TlenBuddyContact prezencje.">addPresenceType</a>(tlen_tr(<span class="stringliteral">"My Other presence"</span>, <span class="stringliteral">"my_other_presence_icon.png"</span>, 1);
+        <a class="code" href="classTlenProtocol.html#d9168a1a8b99d83967ff130f3a824395" title="Tworzy i przypisuje do protokolu oraz do danego typu TlenBuddyContact prezencje.">addPresenceType</a>(tlen_tr(<span class="stringliteral">"Unavailable presence"</span>), <span class="stringliteral">"my_unavailable_presence_icon.png"</span>, 0, TlenPresenceType::Unavailable);
+
+        <a class="code" href="classTlenProtocol.html#22b3d2da3de2bf6b16b4843b3f135374" title="Tworzy i przypisuje do protokolu typ subskrypcji.">addSubscriptionType</a>(tlen_tr(<span class="stringliteral">"My subscription"</span>), <span class="stringliteral">"moja_subskrypcja_1"</span>, 1);
+        <a class="code" href="classTlenProtocol.html#22b3d2da3de2bf6b16b4843b3f135374" title="Tworzy i przypisuje do protokolu typ subskrypcji.">addSubscriptionType</a>(tlen_tr(<span class="stringliteral">"Other subscription"</span>), <span class="stringliteral">"moja_subskrypcja_2"</span>, 0);
+
+        ...
+ }
+</pre></div><p>
+Ważny też jest identyfikator protokołu. Jeśli w programie jest już zarejestrowany protokół o tym samym identyfikatorze, wtedy rejestracja nie uda się. 
+<p>
+<hr><h2>Dokumentacja składowych wyliczanych</h2>
+<a class="anchor" name="72007f4640b08775b6048c1efb9fa3de"></a><!-- doxytag: member="TlenProtocol::TypingNotify" ref="72007f4640b08775b6048c1efb9fa3de" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classTlenProtocol.html#72007f4640b08775b6048c1efb9fa3de">TlenProtocol::TypingNotify</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+enum ten opisuje czy użytkownik zaczął pisać do innego użytkownika 
+<p>
+<dl compact><dt><b>Wartości wyliczeń: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="72007f4640b08775b6048c1efb9fa3de7f9689d9a824415ad16964d8f13c6c54"></a><!-- doxytag: member="TypingStarted" ref="72007f4640b08775b6048c1efb9fa3de7f9689d9a824415ad16964d8f13c6c54" args="" -->TypingStarted</em>&nbsp;</td><td>
+Użytkownik zaczął pisać. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="72007f4640b08775b6048c1efb9fa3de1acc0f3232acf80ea7d4e9bab97be972"></a><!-- doxytag: member="TypingPaused" ref="72007f4640b08775b6048c1efb9fa3de1acc0f3232acf80ea7d4e9bab97be972" args="" -->TypingPaused</em>&nbsp;</td><td>
+Użytkownik przerwał na chwilę pisanie. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="72007f4640b08775b6048c1efb9fa3def1bbef3178d4b264d4e4f89eced4b85a"></a><!-- doxytag: member="TypingStoped" ref="72007f4640b08775b6048c1efb9fa3def1bbef3178d4b264d4e4f89eced4b85a" args="" -->TypingStoped</em>&nbsp;</td><td>
+Użytkownik przestał pisać. </td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="1443600a416a907b3979ceab496b1977"></a><!-- doxytag: member="TlenProtocol::loginAccount" ref="1443600a416a907b3979ceab496b1977" args="(TlenAccountConnection *acc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::loginAccount           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda ta jest wywolywana gdy uzytkownik zechce zalogowoac konto protokolu lub przy samym starcie programu jesli opcja automatycznego logowania jest wlaczona. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- wskaznik na <a class="el" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a>, zawierajace wszystkie informacje o koncie (w tym prezencje, ktora chcemy miec po zalogowaniu) </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0952f56e77b01939ab7dd9ebca9476c3"></a><!-- doxytag: member="TlenProtocol::changePresence" ref="0952f56e77b01939ab7dd9ebca9476c3" args="(TlenAccountConnection *acc, const TlenPresence &amp;presence)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::changePresence           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>presence</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zmienia prezencje konta. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- wskaznik na <a class="el" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a>, zawierajace wszystkie informacje o koncie </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>presence</em>&nbsp;</td><td>- nowa prezencja konta </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="59a59e6e15c06ed8446350f405c6d16d"></a><!-- doxytag: member="TlenProtocol::sendMessage" ref="59a59e6e15c06ed8446350f405c6d16d" args="(TlenAccountConnection *acc, const QString &amp;bid, const QString &amp;msg, const QString &amp;resource, const QString &amp;subject=QString())=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::sendMessage           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>bid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>resource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>subject</em> = <code>QString()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Wysyla wiadomosc do uzytkownika (wskaznik na <a class="el" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> nie jest podawany gdyz zawiera go <a class="el" href="classTlenBuddy.html" title="Reprezentuje kontakt.">TlenBuddy</a>). 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto, z którego wysyłamy wiadomość </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bid</em>&nbsp;</td><td>- identyfikator kontaktu do którego wysyłamy wiadomość </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>msg</em>&nbsp;</td><td>- wiadomosc sformatowana w postaci HTML </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>resource</em>&nbsp;</td><td>- zasób kontaktu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="62a73db5ca0c14e0ae1c438151d79be5"></a><!-- doxytag: member="TlenProtocol::sendTypingNotify" ref="62a73db5ca0c14e0ae1c438151d79be5" args="(TlenAccountConnection *acc, const QString &amp;bid, TlenProtocol::TypingNotify type, const QString &amp;resource)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::sendTypingNotify           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>bid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTlenProtocol.html#72007f4640b08775b6048c1efb9fa3de">TlenProtocol::TypingNotify</a>&nbsp;</td>
+          <td class="paramname"> <em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>resource</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Wysyla powiadomienie o tym ze uzytkownik zaczal pisac w oknie rozmowy. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto, z którego wysyłamy powiadomienie </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bid</em>&nbsp;</td><td>- identyfikator kontaktu do ktorego wysylamy powiadomienie </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>- typ powiadomienia </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>resource</em>&nbsp;</td><td>- zasób kontaktu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="23d29287a8a8cea266229761fc2a3127"></a><!-- doxytag: member="TlenProtocol::sendAlert" ref="23d29287a8a8cea266229761fc2a3127" args="(TlenAccountConnection *acc, const QString &amp;bid, const QString &amp;resource)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::sendAlert           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>bid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>resource</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Wysyla alert do rozmowcy. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto, z którego wysyłamy alert </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bid</em>&nbsp;</td><td>- identyfikator kontaktu do ktorego wysylamy powiadomienie </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>resource</em>&nbsp;</td><td>- zasób kontaktu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b32a241c22e9503f75cb761b3342fb34"></a><!-- doxytag: member="TlenProtocol::setAccountAvatar" ref="b32a241c22e9503f75cb761b3342fb34" args="(TlenAccountConnection *acc, const QString &amp;avatarpath)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::setAccountAvatar           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>avatarpath</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Ustawia avatar konta. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto któremu zmieniamy avatar </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>avatarpath</em>&nbsp;</td><td>- scieżka do pliku z avatarem </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6d9532eb08c82fc9282d5623f218f703"></a><!-- doxytag: member="TlenProtocol::getAccountAvatar" ref="6d9532eb08c82fc9282d5623f218f703" args="(TlenAccountConnection *acc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::getAccountAvatar           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Pobiera avatar konta. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto którego avatar chcemy pobrać </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7e28409ae77720018817c6c34303af02"></a><!-- doxytag: member="TlenProtocol::removeAccountAvatar" ref="7e28409ae77720018817c6c34303af02" args="(TlenAccountConnection *acc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::removeAccountAvatar           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Usuwa avatar konta. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto, któremu uswamy avatar </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2704282b6eaaf1b014ca0995c1b21991"></a><!-- doxytag: member="TlenProtocol::updateAccountPubdirInfo" ref="2704282b6eaaf1b014ca0995c1b21991" args="(TlenAccountConnection *acc, const QList&lt; TlenField &gt; &amp;fields)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::updateAccountPubdirInfo           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>fields</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Aktualziuje dane publiczne konta. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- wskaznik na <a class="el" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a>, zawierajace dane publiczne konta </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>fields</em>&nbsp;</td><td>- lista pol danych publicznych konta </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1e55a575bc5809d55f884f1ec075cb3b"></a><!-- doxytag: member="TlenProtocol::getAccountPubdirInfo" ref="1e55a575bc5809d55f884f1ec075cb3b" args="(TlenAccountConnection *acc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::getAccountPubdirInfo           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Pobiera dane publiczne konta. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- wskaznik na <a class="el" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> Dane publiczne zostana przekazane sygnalem account_pubdir_received </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4616f81c125b92f73d947182ede5420f"></a><!-- doxytag: member="TlenProtocol::removeAccountPubdirInfo" ref="4616f81c125b92f73d947182ede5420f" args="(TlenAccountConnection *acc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::removeAccountPubdirInfo           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Usuwa dane publiczne konta. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- wskaznik na <a class="el" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0820aeb020861964bd192cc404136dc7"></a><!-- doxytag: member="TlenProtocol::searchPubdir" ref="0820aeb020861964bd192cc404136dc7" args="(TlenAccountConnection *acc, const QList&lt; TlenField &gt; &amp;data, int page=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::searchPubdir           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>page</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Wyszukuje w katalogu publicznym wg podanych danych. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto, dla którego szukamy </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- dane wg kórych szukamy </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5cfd9810ed42d6bdd648b95cb4dc3d16"></a><!-- doxytag: member="TlenProtocol::searchPubdir" ref="5cfd9810ed42d6bdd648b95cb4dc3d16" args="(TlenAccountConnection *acc, const QString &amp;uid)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::searchPubdir           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>uid</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Wyszukuje w katalogu publicznym wg identyfikatora użytkownika. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto, dla którego szukamy </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- identyfikator którego szukamy </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d046758a91539718694bf0d449cb94cc"></a><!-- doxytag: member="TlenProtocol::socketConnected" ref="d046758a91539718694bf0d449cb94cc" args="(TlenAccountConnection *acc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::socketConnected           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+metoda reagujaca na nawizanie polaczenia z serwerem 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- wskaznik na <a class="el" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a>, zawierajace wszystkie informacje o koncie </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="72ab63cd84188f556caede2605490623"></a><!-- doxytag: member="TlenProtocol::socketDisconnected" ref="72ab63cd84188f556caede2605490623" args="(TlenAccountConnection *acc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::socketDisconnected           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+metoda reagujaca na rozlaczenie sie z serwerem 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- wskaznik na <a class="el" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a>, zawierajace wszystkie informacje o koncie </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="395d0846d91d10163793a6dc184ae3df"></a><!-- doxytag: member="TlenProtocol::socketError" ref="395d0846d91d10163793a6dc184ae3df" args="(TlenAccountConnection *acc, TlenSocket::Error errtype)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::socketError           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTlenSocket.html#88520eec74896ff5b7a746af707cc26f">TlenSocket::Error</a>&nbsp;</td>
+          <td class="paramname"> <em>errtype</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+metoda reagujaca na wystapienie bledu w probie nawiazania polaczenia z serwerm lub w trkacie jego trwania 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- wskaznik na <a class="el" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a>, zawierajace wszystkie informacje o koncie </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>errype</em>&nbsp;</td><td>- typ bledu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="427636616bab8c717ae291ec47555e09"></a><!-- doxytag: member="TlenProtocol::socketReadyRead" ref="427636616bab8c717ae291ec47555e09" args="(TlenAccountConnection *acc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::socketReadyRead           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+metoda reagujace na dane dostepne w sockecie 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- wskaznik na <a class="el" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a>, zawierajace wszystkie informacje o koncie </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>- dane wyczytane z socketu konta </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="73d0816dff82c23b1f877253636f47e7"></a><!-- doxytag: member="TlenProtocol::ping" ref="73d0816dff82c23b1f877253636f47e7" args="(TlenAccountConnection *acc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::ping           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+utrzymywanie polaczenia z serwerem 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- wskaznik na <a class="el" href="classTlenAccountConnection.html" title="Przechowuje wszelkie informacje o koncie i jednocześnie jest jego połączeniem...">TlenAccountConnection</a> </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a079ec177483ab9de53ba373b3f5b57b"></a><!-- doxytag: member="TlenProtocol::contactActivated" ref="a079ec177483ab9de53ba373b3f5b57b" args="(const TlenBuddyContact &amp;contact)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool TlenProtocol::contactActivated           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>contact</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda wywolywana gdy kontakt został aktywowany. 
+<p>
+<br>
+ Aktywowany kontakt to taki, ktory albo został kliknięty dwa razy, albo został wcisnięty enter w liscie kontaktów gdy był zaznaczony<br>
+ Domyślnie metoda zwraca false. Jeśli protokoł chce obsługiwać aktywowane kontakty na swój sposób, należy reimplementować tą metodę i zwrocic true. <dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>contact</em>&nbsp;</td><td>- aktywowany kontakt </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenProtocol.html#70fc40e6a0ab19fa3ff6abaa1119d28a" title="Metoda wywoływana gdy kontakt tymczasowy został aktywowany.">temporaryActivated(const TlenBuddyTemporary &amp;)</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="70fc40e6a0ab19fa3ff6abaa1119d28a"></a><!-- doxytag: member="TlenProtocol::temporaryActivated" ref="70fc40e6a0ab19fa3ff6abaa1119d28a" args="(const TlenBuddyTemporary &amp;contact)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool TlenProtocol::temporaryActivated           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyTemporary.html">TlenBuddyTemporary</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>contact</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda wywoływana gdy kontakt tymczasowy został aktywowany. 
+<p>
+<br>
+ Aktywowany kontakt to taki, ktory albo został kliknięty dwa razy, albo został wcisnięty enter w liscie kontaktów gdy był zaznaczony<br>
+ Domyślnie metoda zwraca false. Jeśli protokoł chce obsługiwać aktywowane kontakty na swój sposób, należy reimplementować tą metodę i zwrocic true. <dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>contact</em>&nbsp;</td><td>- aktywowany kontakt </td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>Zobacz również:</b></dt><dd><a class="el" href="classTlenProtocol.html#a079ec177483ab9de53ba373b3f5b57b" title="Metoda wywolywana gdy kontakt został aktywowany.">contactActivated(const TlenBuddyContact &amp;)</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9a5055ccdc729a3548a89311bdd5fe72"></a><!-- doxytag: member="TlenProtocol::setProtocolPref" ref="9a5055ccdc729a3548a89311bdd5fe72" args="(const QString &amp;id, const TlenArg &amp;value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TlenProtocol::setProtocolPref           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenArg.html">TlenArg</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>value</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zmienia ustawienie protokolu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>- nazwa pola w ustawieniach </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>- nowa wartosc pola </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>false jesli pole o nazwie label nie istnieje </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="fc34e16864e71ba609ad1224098cabc3"></a><!-- doxytag: member="TlenProtocol::setProtocolPrefs" ref="fc34e16864e71ba609ad1224098cabc3" args="(const QList&lt; TlenField &gt; &amp;fields)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::setProtocolPrefs           </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>fields</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zmienia ustawienia protokolu na podstawie listy. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fields</em>&nbsp;</td><td>- wektor zeminionych ustawien </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="8697f237601754ad6dd8e1ab914eab7d"></a><!-- doxytag: member="TlenProtocol::getAccountSettings" ref="8697f237601754ad6dd8e1ab914eab7d" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenField.html">TlenField</a>&gt; TlenProtocol::getAccountSettings           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Pobiera strukture ustawien specyficznych dla konta. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wektor zawierajacy <a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a> opisujacy strukture ustawien konta </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="64542b190ceaf57608de45114240e894"></a><!-- doxytag: member="TlenProtocol::getBuddyExtraInfo" ref="64542b190ceaf57608de45114240e894" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenField.html">TlenField</a>&gt; TlenProtocol::getBuddyExtraInfo           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Pobiera strukture dodatkowych informacji o kontakcie. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wektor zawierajacy <a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a> opisujacy strukture informacji o kontakcie </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e5609b0a2ce7193fe82e40947544fc79"></a><!-- doxytag: member="TlenProtocol::getPubdirAccountFields" ref="e5609b0a2ce7193fe82e40947544fc79" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenField.html">TlenField</a>&gt; TlenProtocol::getPubdirAccountFields           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Pobiera strukture danych publicznych dla konta. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wektor zawierajacy <a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a> opisujacy strukture danych publicznych konta </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7b3dd2366261598a689eb6dea0a4b7d5"></a><!-- doxytag: member="TlenProtocol::getPubdirResultColumns" ref="7b3dd2366261598a689eb6dea0a4b7d5" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenField.html">TlenField</a>&gt; TlenProtocol::getPubdirResultColumns           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca pola opisujace kolumny wynikow wyszukiwania w katalogu publicznym. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wektor zawierajacy <a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a> opisujace kolumny wynikow wyszukiwania </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1b6827d3ccaa625740a0eb50d7665769"></a><!-- doxytag: member="TlenProtocol::hasRequiredPresenceTypes" ref="1b6827d3ccaa625740a0eb50d7665769" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TlenProtocol::hasRequiredPresenceTypes           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Sprawdza czy typy prezencji z wymaganymi flagami istnieją. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>true jeśli istnieją, w przeciwnym przypadku false </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e890715d877d4927553bd70ca090f8f0"></a><!-- doxytag: member="TlenProtocol::createPresenceWithFlag" ref="e890715d877d4927553bd70ca090f8f0" args="(TlenPresence::Flag flag, const QString &amp;descr=QString()) const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenPresence.html">TlenPresence</a> TlenProtocol::createPresenceWithFlag           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenPresence.html#c45395627d27601813f288e1a17b06a9">TlenPresence::Flag</a>&nbsp;</td>
+          <td class="paramname"> <em>flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>descr</em> = <code>QString()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy prezencje z podaną flagą, lub pustą prezencję, jeśli paramter flag ma wartość <a class="el" href="classTlenPresence.html#c45395627d27601813f288e1a17b06a9b85f0305b61c7d4bdef932f7fcd4ee71" title="Domyślna flaga pozostałych prezencji.">TlenPresence::NoFlag</a>. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>flag</em>&nbsp;</td><td>- flaga prezencji </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>descr</em>&nbsp;</td><td>- stan opisowy prezencji</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>utworzona prezencja </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="64b1d51feba413644559ed6b161d3486"></a><!-- doxytag: member="TlenProtocol::createPresenceWithId" ref="64b1d51feba413644559ed6b161d3486" args="(const QString &amp;id, const QString &amp;descr=QString()) const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenPresence.html">TlenPresence</a> TlenProtocol::createPresenceWithId           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>descr</em> = <code>QString()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy prezencję z podanym id i opisem, lub pustą prezencję, jeśli podany identyfikator nie został zarejestrowany przez protokół. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>- identyfikator prezencji </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>descr</em>&nbsp;</td><td>- stan opisowy prezencji</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>utworzona prezencja </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="08b6fe950da56398b2d68e863df00c9b"></a><!-- doxytag: member="TlenProtocol::addService" ref="08b6fe950da56398b2d68e863df00c9b" args="(const TlenService &amp;service)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::addService           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenService.html">TlenService</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>service</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dodaje service dla danego protokolu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>service</em>&nbsp;</td><td>- service </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="22a8b1944d5d7e9542d5e6e05ef68ba9"></a><!-- doxytag: member="TlenProtocol::removeService" ref="22a8b1944d5d7e9542d5e6e05ef68ba9" args="(const TlenService &amp;service)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::removeService           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenService.html">TlenService</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>service</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Usuwa service z danego protokolu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>service</em>&nbsp;</td><td>- service </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="59c7d12e9275be547a6c9519689072a5"></a><!-- doxytag: member="TlenProtocol::getService" ref="59c7d12e9275be547a6c9519689072a5" args="(const QString &amp;service)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenService.html">TlenService</a> TlenProtocol::getService           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>service</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca dany service dla protokolu. 
+<p>
+Jeśli taki nie istnieje zwraca nieprawidłowy.<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>dany service </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="768c935232e770c4d6e60078699ae8a2"></a><!-- doxytag: member="TlenProtocol::getServices" ref="768c935232e770c4d6e60078699ae8a2" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenService.html">TlenService</a>&gt; TlenProtocol::getServices           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca wszystkie service dla danego protokolu. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>lista service </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="db0b1dbfabce7fdae3f7c88f911b7e9f"></a><!-- doxytag: member="TlenProtocol::addContact" ref="db0b1dbfabce7fdae3f7c88f911b7e9f" args="(const TlenBuddyContact &amp;buddy)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::addContact           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>buddy</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline, protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dodaje kontakt do listy (za pomocą protokołu). 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>buddy</em>&nbsp;</td><td>- dodawany kontakt </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="bbf82befb503f27baba901950c5fb51e"></a><!-- doxytag: member="TlenProtocol::removeContact" ref="bbf82befb503f27baba901950c5fb51e" args="(const TlenBuddyContact &amp;buddy)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::removeContact           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>buddy</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline, protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Usuwa kontakt z listy (za pomocą protokołu). 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>buddy</em>&nbsp;</td><td>- usuwany kontakt </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c44ec5500e2bc83638dbd34ddf605be5"></a><!-- doxytag: member="TlenProtocol::updateContact" ref="c44ec5500e2bc83638dbd34ddf605be5" args="(const TlenBuddyContact &amp;buddy)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TlenProtocol::updateContact           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenBuddyContact.html">TlenBuddyContact</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>buddy</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline, protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zmienia informacje o kontakcie (za pomocą protokołu). 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>buddy</em>&nbsp;</td><td>- aktualizowany kontakt </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e6e1268719ca616b76f7e9674388c331"></a><!-- doxytag: member="TlenProtocol::messageReceived" ref="e6e1268719ca616b76f7e9674388c331" args="(TlenAccountConnection *acc, const QString &amp;bid, const QString &amp;msg, const QString &amp;timestamp, const QString &amp;res, const QString &amp;subject=QString())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::messageReceived           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>bid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>timestamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>res</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>subject</em> = <code>QString()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitujaca sygnal message_received. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto, na które przyszła wiadomość </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bid</em>&nbsp;</td><td>- identyfikator kontaktu </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>msg</em>&nbsp;</td><td>- wiadomosc </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>timestamp</em>&nbsp;</td><td>- znacznik czasu. Moze byc pusty, wtedy wstawiona zostanie aktualna godzina.<br>
+ Znacznik czasu musi miec format DDMMYYYYhhmmss<br>
+ DD - dzien miesiaca (poprzedzony znakiem 0 jesli zajmuje 1 znak) od 01 do 31<br>
+ MM - miesiac (poprzedzony znakiem 0 jesli zajmuje 1 znak) od 01 do 12<br>
+ YYYY - rok<br>
+ hh - godzina od 00 do 23<br>
+ mm - minuty od 00 do 59<br>
+ ss - sekundy od 00 do 59<br>
+ </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>restype</em>&nbsp;</td><td>- typ zasobu z którego przyszła wiadomość </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b54197949e3482654463277a01fdfaaf"></a><!-- doxytag: member="TlenProtocol::messageSent" ref="b54197949e3482654463277a01fdfaaf" args="(TlenAccountConnection *acc, const QString &amp;bid, const QString &amp;msg, const QString &amp;res)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::messageSent           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>bid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>res</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitujaca sygnal message_sent. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto, z którego wiadomość została wysłana </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bid</em>&nbsp;</td><td>- identyfikator kontaktu </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>msg</em>&nbsp;</td><td>- wyslana wiadomosc </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>res</em>&nbsp;</td><td>- zasób kontaktu, do którego wiadomość została wysłana </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9a093cd0ecada0303e8ec243b6b286f0"></a><!-- doxytag: member="TlenProtocol::typingNotifyReceived" ref="9a093cd0ecada0303e8ec243b6b286f0" args="(TlenAccountConnection *acc, const QString &amp;bid, TlenProtocol::TypingNotify type, const QString &amp;res)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::typingNotifyReceived           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>bid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTlenProtocol.html#72007f4640b08775b6048c1efb9fa3de">TlenProtocol::TypingNotify</a>&nbsp;</td>
+          <td class="paramname"> <em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>res</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitujaca sygnal typing_notify_received. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto, na które przyszło powiadomienie </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bid</em>&nbsp;</td><td>- identyfikator kontaktu </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>- typ powiadomienia </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>res</em>&nbsp;</td><td>- zasób kontaktu, z którego przyszło powiadomienie </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6a1e19944f4c83881ff29643df2d669f"></a><!-- doxytag: member="TlenProtocol::alertReceived" ref="6a1e19944f4c83881ff29643df2d669f" args="(TlenAccountConnection *acc, const QString &amp;bid, const QString &amp;res)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::alertReceived           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>bid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>res</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitujaca sygnal "alert_received". 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto, na które przyszedł alert </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bid</em>&nbsp;</td><td>- identyfikator kontaktu </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>res</em>&nbsp;</td><td>- zasób kontaktu, z kórego przyszedł alert </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="02e60dfa5e8fe107d44910fa78108e90"></a><!-- doxytag: member="TlenProtocol::accountLoggedIn" ref="02e60dfa5e8fe107d44910fa78108e90" args="(TlenAccountConnection *acc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::accountLoggedIn           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitujaca sygnal account_logged_in. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>account</em>&nbsp;</td><td>- wskaznik na polaczenie konta </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7ba018be598b976b1dbbb3a1902d541d"></a><!-- doxytag: member="TlenProtocol::accountResourceChanged" ref="7ba018be598b976b1dbbb3a1902d541d" args="(TlenAccountConnection *, const QString &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::accountResourceChanged           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitujaca sygnal account_resource_changed. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>account</em>&nbsp;</td><td>- wskaznik na polaczenie konta </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>resource</em>&nbsp;</td><td>- nowy zasob konta </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d5d086cd379114b26a7296e4e2962162"></a><!-- doxytag: member="TlenProtocol::accountLoggedOut" ref="d5d086cd379114b26a7296e4e2962162" args="(TlenAccountConnection *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::accountLoggedOut           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitujaca sygnal account_logged_out. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>account</em>&nbsp;</td><td>- wskaznik na polaczenie konta </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a4da7b23922b2c18004cffc76a7438cc"></a><!-- doxytag: member="TlenProtocol::accountAuthorizationError" ref="a4da7b23922b2c18004cffc76a7438cc" args="(TlenAccountConnection *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::accountAuthorizationError           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitujaca sygnal account_authorization_error, komunikator moze zazadac ponownego wpisania nazwy uzytkownika i/lub hasla. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>account</em>&nbsp;</td><td>- wskaznik na polaczenie konta </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0266741f6d0a870d2e8b7555077cfbbd"></a><!-- doxytag: member="TlenProtocol::accountPresenceChanged" ref="0266741f6d0a870d2e8b7555077cfbbd" args="(TlenAccountConnection *account)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::accountPresenceChanged           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>account</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitujaca sygnal account_presence_changed. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>account</em>&nbsp;</td><td>- wskaznik na polaczenie konta (prezencja zawarta jest w tym wskazniku) </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="67cf2540968356433063f0589688dd68"></a><!-- doxytag: member="TlenProtocol::accountPubdirInfoReceived" ref="67cf2540968356433063f0589688dd68" args="(TlenAccountConnection *acc, const QList&lt; TlenField &gt; &amp;pubinfo)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::accountPubdirInfoReceived           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QList&lt; <a class="el" href="classTlenField.html">TlenField</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>pubinfo</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitujaca sygnal pubidr_account_data_received. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>account</em>&nbsp;</td><td>- wskaznik na polaczenie konta </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pubinfo</em>&nbsp;</td><td>- wektor informacji o koncie </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="21d99e8527466b644a59fc515192cf2a"></a><!-- doxytag: member="TlenProtocol::accountPubdirInfoEdited" ref="21d99e8527466b644a59fc515192cf2a" args="(TlenAccountConnection *acc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::accountPubdirInfoEdited           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitujaca sygnal pubdir_account_data_edited. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>account</em>&nbsp;</td><td>- wskaznik na polaczenie konta </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="8a028807d341d38748f0d85a8ce02c17"></a><!-- doxytag: member="TlenProtocol::accountPubdirInfoRemoved" ref="8a028807d341d38748f0d85a8ce02c17" args="(TlenAccountConnection *acc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::accountPubdirInfoRemoved           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitujaca sygnal pubdir_account_data_removed. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>account</em>&nbsp;</td><td>- wskaznik na polaczenie konta </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="dddb8b9d96823e961f6457c8e7f01f04"></a><!-- doxytag: member="TlenProtocol::accountAvatarSet" ref="dddb8b9d96823e961f6457c8e7f01f04" args="(TlenAccountConnection *account, const QString &amp;avatarpath)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::accountAvatarSet           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>account</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>avatarpath</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitująca sygnał account_avatar_set. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>account</em>&nbsp;</td><td>- konto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>avatarpath</em>&nbsp;</td><td>- scieżka do pliku z avatarem </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="080bc82739e6659acbf12dafe4ddf345"></a><!-- doxytag: member="TlenProtocol::accountAvatarSetError" ref="080bc82739e6659acbf12dafe4ddf345" args="(TlenAccountConnection *account, const QString &amp;errorstring)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::accountAvatarSetError           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>account</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>errorstring</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitująca sygnał account_avatar_set_error. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>account</em>&nbsp;</td><td>- konto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>errorstring</em>&nbsp;</td><td>- treść komunikatu o błędzie </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="36ba0267990916babfe25c531035166d"></a><!-- doxytag: member="TlenProtocol::accountAvatarRemoved" ref="36ba0267990916babfe25c531035166d" args="(TlenAccountConnection *account)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::accountAvatarRemoved           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>account</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitująca sygnał account_avatar_removed. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>account</em>&nbsp;</td><td>- konto </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4814c41ec8282eb18b5ebb105e3acaf8"></a><!-- doxytag: member="TlenProtocol::accountAvatarReceived" ref="4814c41ec8282eb18b5ebb105e3acaf8" args="(TlenAccountConnection *account, const QString &amp;avatarpath)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::accountAvatarReceived           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>account</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>avatarpath</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza emitująca sygnał account_avatar_received. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>account</em>&nbsp;</td><td>- konto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>avatarpath</em>&nbsp;</td><td>- sciezka do pobranego avataru </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0e0b878a4cf2bee70f3252543661271c"></a><!-- doxytag: member="TlenProtocol::pubdirSearchResultReceived" ref="0e0b878a4cf2bee70f3252543661271c" args="(TlenAccountConnection *acc, int perPage, const QList&lt; TlenArg &gt; &amp;result, bool more)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::pubdirSearchResultReceived           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>perPage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QList&lt; <a class="el" href="classTlenArg.html">TlenArg</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>more</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Metoda pomocnicza. 
+<p>
+Emituje sygnal pubdir_search_result_received. <dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- wskaznik na polaczenie konta </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>perPage</em>&nbsp;</td><td>- ilość rekordów na jedną stronę </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>result</em>&nbsp;</td><td>- wektor <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> zawierajacych opis wynikow. Kazdy <a class="el" href="classTlenArg.html" title="Służy do przechowywania danych różnego typu.">TlenArg</a> musi byc typu <a class="el" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9aaf1b4c7760d17247d18d6000b0423810" title="Przechowywany typ: QList<TlenField>.">TlenArg::FieldList</a> (za pomoca <a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a> opisane sa wyniki), oraz dodatkowo pierwszy element listy <a class="el" href="classTlenField.html" title="Klasa opisująca pola do interakcji z użytkownikiem.">TlenField</a> musi byc typu <a class="el" href="classTlenField.html#7a4ef50ad098ee6d02eba2173a7da2b123b27603c6b9f9f1cd16a12b68ccd8a7" title="Kontrolka pojedynczej linii edycji.">TlenField::LineEdit</a>, i miec identyfikator "id" </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>more</em>&nbsp;</td><td>- czy dostępne więcej wyników </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b2b704e61df924965ccb65a4cc67df6a"></a><!-- doxytag: member="TlenProtocol::addProtocolSettingsField" ref="b2b704e61df924965ccb65a4cc67df6a" args="(const TlenField &amp;f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::addProtocolSettingsField           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenField.html">TlenField</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>f</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+dodaje pole ustawien protokolu 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>- typ pola </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>label</em>&nbsp;</td><td>- nazwa pola (powinna byc umieszczona w tlen_tr jesli w przyszlosci mamy zamiar tlumaczyc na inne jezyki) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>- domyslna wartosc pola </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="266911909469fd08f5727926b1d5f3c2"></a><!-- doxytag: member="TlenProtocol::addAccountSettingsField" ref="266911909469fd08f5727926b1d5f3c2" args="(const TlenField &amp;f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::addAccountSettingsField           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenField.html">TlenField</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>f</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+dodaje pole ustawien konta 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>- typ pola </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>label</em>&nbsp;</td><td>- nazwa pola (powinna byc umieszczona w tlen_tr jesli w przyszlosci mamy zamiar tlumaczyc na inne jezyki) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>- domyslna wartosc pola </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9750cb8a3594460804fc0c14ca179332"></a><!-- doxytag: member="TlenProtocol::addBuddyExtraInfoField" ref="9750cb8a3594460804fc0c14ca179332" args="(const TlenField &amp;f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::addBuddyExtraInfoField           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenField.html">TlenField</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>f</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+dodaje pole dodatkowych informacji o koncie 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>f</em>&nbsp;</td><td>- dodawane pole </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c3185ed775a2c8dcf971cb0d0a840715"></a><!-- doxytag: member="TlenProtocol::addPubdirAccountField" ref="c3185ed775a2c8dcf971cb0d0a840715" args="(const TlenField &amp;field)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::addPubdirAccountField           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenField.html">TlenField</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>field</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+dodaje pole informacji publicznych o koncie 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>field</em>&nbsp;</td><td>- pole </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="87f10ecc6be1a51b4b90f26bd4fddec4"></a><!-- doxytag: member="TlenProtocol::addPubdirBaseSearchField" ref="87f10ecc6be1a51b4b90f26bd4fddec4" args="(const TlenField &amp;field)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::addPubdirBaseSearchField           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenField.html">TlenField</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>field</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+dodaje podstawowe pole do wyszukiwania informacji publicznych 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>field</em>&nbsp;</td><td>- pole </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e96996ad635283922fa61aa6d9a5d6d3"></a><!-- doxytag: member="TlenProtocol::addPubdirAdvancedSearchField" ref="e96996ad635283922fa61aa6d9a5d6d3" args="(const TlenField &amp;field)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::addPubdirAdvancedSearchField           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenField.html">TlenField</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>field</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+dodajze zaawansowane pole do wyszukiwania informacji publicznych. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>field</em>&nbsp;</td><td>- pole </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b9d0ab4103aa1d856bb47d488cfe3058"></a><!-- doxytag: member="TlenProtocol::addPubdirResultColumn" ref="b9d0ab4103aa1d856bb47d488cfe3058" args="(const TlenField &amp;field)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::addPubdirResultColumn           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenField.html">TlenField</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>field</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+dodaje kolumne wyniku wyszukiwania 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>field</em>&nbsp;</td><td>- pole opisujace kolumne. </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d9168a1a8b99d83967ff130f3a824395"></a><!-- doxytag: member="TlenProtocol::addPresenceType" ref="d9168a1a8b99d83967ff130f3a824395" args="(const QString &amp;display, const QString &amp;id, const QString &amp;icon, unsigned priority)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::addPresenceType           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>icon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&nbsp;</td>
+          <td class="paramname"> <em>priority</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy i przypisuje do protokolu oraz do danego typu <a class="el" href="classTlenBuddyContact.html" title="Kontakt dodany do listy kontaktów.">TlenBuddyContact</a> prezencje. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>display</em>&nbsp;</td><td>- nazwa wyswietlana prezencji (powinna zostac umieszczona w "tlen_tr()" dla tlumaczen) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>- identyfikator prezencji (pole do uzytku wewnetrznego protokolu, np przy zmianie prezencji) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>icon</em>&nbsp;</td><td>- nazwa pliku z ikona prezencji </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>priority</em>&nbsp;</td><td>- priorytet prezencji (uzywany przy sortowaniu listy kontaktow) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buddytype</em>&nbsp;</td><td>- typ buddiego </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="92da1d83ab15f4ec4b6d04fadc64e1bb"></a><!-- doxytag: member="TlenProtocol::addPresenceType" ref="92da1d83ab15f4ec4b6d04fadc64e1bb" args="(const QString &amp;icon, TlenPresence::Flag presflag)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::addPresenceType           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>icon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTlenPresence.html#c45395627d27601813f288e1a17b06a9">TlenPresence::Flag</a>&nbsp;</td>
+          <td class="paramname"> <em>presflag</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy i przypisuje do protokołu typ prezencji z podaną flagą. 
+<p>
+Prezencji zostaje przypisana nazwa wyświetlana, priorytet oraz identyfikator zgodny z flagą. Próba dodania prezencji z flagą TlenPresenceType::NoFlag przerywa program. Każdy protokól musi dodać po jednym typie prezencji z flagami: TlenPresenceType::Available, TlenPresenceType::Away, TlenPresenceType::Invisible i TlenPresenceType::Unavailable <dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>icon</em>&nbsp;</td><td>- nazwa pliku z ikoną prezencji </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>presflag</em>&nbsp;</td><td>- flaga prezencji </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="22b3d2da3de2bf6b16b4843b3f135374"></a><!-- doxytag: member="TlenProtocol::addSubscriptionType" ref="22b3d2da3de2bf6b16b4843b3f135374" args="(const QString &amp;display, const QString &amp;id, unsigned priority, const QString &amp;icon=QString())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::addSubscriptionType           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&nbsp;</td>
+          <td class="paramname"> <em>priority</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>icon</em> = <code>QString()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tworzy i przypisuje do protokolu typ subskrypcji. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>display</em>&nbsp;</td><td>- nazwa wyswietlana subskrypcji (powinna zostac umieszczona w "tlen_tr()" dla tlumaczen) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>- identyfikator subskrypcji (pole do uzytku wewnetrznego protokolu, np przy zmianie subskrypcji) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>priority</em>&nbsp;</td><td>- priorytet subskrypcji (uzywany do grupowania listy kontaktow po subskrypcji) </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="31f0863ffe9e0a50390ca3022bf239c6"></a><!-- doxytag: member="TlenProtocol::getSubscriptionWithId" ref="31f0863ffe9e0a50390ca3022bf239c6" args="(const QString &amp;id)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenSubscriptionType.html">TlenSubscriptionType</a> TlenProtocol::getSubscriptionWithId           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Pobiera typ subskrypcji o podanym id. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>- id subskrypcji ktora chcemy pobrac </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>- subskrypcja UWAGA: gdy podamy niepoprawny id metoda asertuje. Metoda ta jest tylko do uzytku wewnetrznego, tak wiec programista musi podac zawsze prawidlowy id </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e4c198dafd5c878c3b0ab9799cde3a82"></a><!-- doxytag: member="TlenProtocol::addResourceType" ref="e4c198dafd5c878c3b0ab9799cde3a82" args="(const QString &amp;name, const QString &amp;ico=QString())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::addResourceType           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>ico</em> = <code>QString()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dodaje resource. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>- nazwa resource </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>ico</em>&nbsp;</td><td>- ikona </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6980b3fa37394b3e9aafd745c9ac0f02"></a><!-- doxytag: member="TlenProtocol::createResourceWithId" ref="6980b3fa37394b3e9aafd745c9ac0f02" args="(const QString &amp;id, const TlenPresence &amp;) const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenBuddyResource TlenProtocol::createResourceWithId           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenPresence.html">TlenPresence</a> &amp;&nbsp;</td>
+          <td class="paramname"></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"> const<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+pobiera resource z listy dodanych resource'ow. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>- nazwa resource </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>wskaznik na typ resource, albo NULL jesli resource nie istnieje; </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c33b8e1eebfdd895aeae3d044944e084"></a><!-- doxytag: member="TlenProtocol::resourceTypeExists" ref="c33b8e1eebfdd895aeae3d044944e084" args="(const QString &amp;name) const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TlenProtocol::resourceTypeExists           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Sprawdza czy dany resource zostal dodany. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>- nazwa resource </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>true jesli istnieje, false gdy nie istnieje </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="db138e1b74c622622beac52f7bbdf02d"></a><!-- doxytag: member="TlenProtocol::xmlNodeSent" ref="db138e1b74c622622beac52f7bbdf02d" args="(TlenAccountConnection *acc, const TlenXmlNode &amp;node)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenProtocol::xmlNodeSent           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTlenAccountConnection.html">TlenAccountConnection</a> *&nbsp;</td>
+          <td class="paramname"> <em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTlenXmlNode.html">TlenXmlNode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>node</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Emituje sygnal po wyslaniu xml node. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>acc</em>&nbsp;</td><td>- konto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>node</em>&nbsp;</td><td>- xml node </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<hr>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>include/plugin/<a class="el" href="TlenProtocol_8h-source.html">TlenProtocol.h</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

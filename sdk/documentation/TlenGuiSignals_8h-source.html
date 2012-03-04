@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Plik źródłowy include/signals/TlenGuiSignals.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li><a href="classes.html"><span>Klasy</span></a></li>
+    <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<h1>include/signals/TlenGuiSignals.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//Sygnały emitowane przez TLEN_PLUGIN_GUI</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="comment">//Emitowany tuż przed pokazaniem menu kontekstowego.</span>
+<a name="l00004"></a>00004 <span class="comment">//Umożliwia dodanie własnych pozycji do menu.</span>
+<a name="l00005"></a>00005         signalRegister(CONTEXT_MENU_REQUESTED,
+<a name="l00006"></a>00006                         QList&lt;TlenArg::Type&gt;()
+<a name="l00007"></a>00007                         &lt;&lt; <a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a488c1a9c26e607db6e05908456a807fc" title="Przechowywany typ: void *.">TlenArg::Pointer</a> <span class="comment">//TlenContextMenu - menu ktore zostanie pokazane</span>
+<a name="l00008"></a>00008                         &lt;&lt; <a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a0b8b688d71d14800bcc1dcf5e77bd575" title="Przechowywany typ: int.">TlenArg::Int</a> <span class="comment">//globalna pozycja na osi X</span>
+<a name="l00009"></a>00009                         &lt;&lt; <a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a0b8b688d71d14800bcc1dcf5e77bd575" title="Przechowywany typ: int.">TlenArg::Int</a> <span class="comment">//glibalna pozycja na osi Y</span>
+<a name="l00010"></a>00010                         );
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 <span class="comment">//po utworzeniu nowego okna rozmowy</span>
+<a name="l00013"></a>00013         signalRegister(CHAT_WINDOW_CREATED,
+<a name="l00014"></a>00014                         QList&lt;TlenArg::Type&gt;()
+<a name="l00015"></a>00015                         &lt;&lt; <a class="code" href="classTlenArg.html#261a59948cc52c485dbc43fbad39fb9a488c1a9c26e607db6e05908456a807fc" title="Przechowywany typ: void *.">TlenArg::Pointer</a> <span class="comment">//TlenChatWindow - okno rozmowy ktore zostalo utworzone</span>
+<a name="l00016"></a>00016                         );
+</pre></div><hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

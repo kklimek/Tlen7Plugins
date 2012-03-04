@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Plik źródłowy include/plugin/TlenPluginDefines.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li><a href="classes.html"><span>Klasy</span></a></li>
+    <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<h1>include/plugin/TlenPluginDefines.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef __TLEN_PLUGIN_DEFINES_H__</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define __TLEN_PLUGIN_DEFINES_H__</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00007"></a>00007 <span class="preprocessor">#define ACC_REMOVED                     "account_removed"</span>
+<a name="l00008"></a>00008 <span class="preprocessor"></span><span class="preprocessor">#define ACC_DISABLED                    "account_disabled"</span>
+<a name="l00009"></a>00009 <span class="preprocessor"></span><span class="preprocessor">#define ACC_ENABLED                     "account_enabled"</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_LOADED                   "plugin_loaded"</span>
+<a name="l00011"></a>00011 <span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_UNLOADED                 "plugin_unloaded"</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span><span class="preprocessor">#define LOADED_PROTOCOL                 "protocol_loaded"</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define UNLOADED_PROTOCOL               "protocol_unloaded"</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span><span class="preprocessor">#define MSG_ABOUT_TO_SEND               "message_about_to_send"</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define CONFERENCE_MSG_ABOUT_TO_SEND    "conference_message_about_to_send"</span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span><span class="preprocessor">#define MSG_PRIVATE_ABOUT_TO_SEND       "conference_private_message_about_to_send"</span>
+<a name="l00017"></a>00017 <span class="preprocessor"></span><span class="preprocessor">#define CONFERENCE_LEAVE                "conference_leave"</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#define MSG_READ                        "message_read"</span>
+<a name="l00019"></a>00019 <span class="preprocessor"></span><span class="preprocessor">#define POST_NOTIFICATION               "post_notification"</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#define UPDATE_PLUGIN_GUI               "update_plugin_gui"</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span><span class="preprocessor">#define REGISTER_ACCOUNT                "register_account"</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#define APP_INITIALIZED                 "app_initialized"</span>
+<a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#define APP_QUITTING                    "app_quitting"</span>
+<a name="l00024"></a>00024 <span class="preprocessor"></span>
+<a name="l00025"></a>00025 
+<a name="l00029"></a>00029 <span class="preprocessor">#define CONTEXT_MENU_REQUESTED          "context_menu_requested"</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span><span class="preprocessor">#define CHAT_WINDOW_CREATED             "chat_window_created"</span>
+<a name="l00031"></a>00031 <span class="preprocessor"></span>
+<a name="l00036"></a>00036 <span class="preprocessor">#define MESSAGE_RECEIVED_NOTIFY         "message_received"</span>
+<a name="l00037"></a>00037 <span class="preprocessor"></span><span class="preprocessor">#define MESSAGE_RECEIVED_INIT_NOTIFY    "message_received_initial"</span>
+<a name="l00038"></a>00038 <span class="preprocessor"></span><span class="preprocessor">#define MESSAGE_RECEIVED_BG_NOTIFY      "message_received_background"</span>
+<a name="l00039"></a>00039 <span class="preprocessor"></span><span class="preprocessor">#define MESSAGE_SENT_NOTIFY             "message_sent"</span>
+<a name="l00040"></a>00040 <span class="preprocessor"></span>
+<a name="l00041"></a>00041 <span class="preprocessor">#define CONF_MESSAGE_RECEIVED_NOTIFY    "conf_message_received"</span>
+<a name="l00042"></a>00042 <span class="preprocessor"></span><span class="preprocessor">#define CONF_MESSAGE_RECEIVED_BG_NOTIFY "conf_message_bg_received"</span>
+<a name="l00043"></a>00043 <span class="preprocessor"></span>
+<a name="l00044"></a>00044 <span class="preprocessor">#define INFO_NOTIFY                     "info_notify"</span>
+<a name="l00045"></a>00045 <span class="preprocessor"></span><span class="preprocessor">#define ERROR_NOTIFY                    "error_notify"</span>
+<a name="l00046"></a>00046 <span class="preprocessor"></span><span class="preprocessor">#define EMAIL_NOTIFY                    "email_notify"</span>
+<a name="l00047"></a>00047 <span class="preprocessor"></span><span class="preprocessor">#define ALERT_SENT_NOTIFY               "alert_sent_notify"</span>
+<a name="l00048"></a>00048 <span class="preprocessor"></span><span class="preprocessor">#define ALERT_RECEIVED_NOTIFY           "alert_received_notify"</span>
+<a name="l00049"></a>00049 <span class="preprocessor"></span>
+<a name="l00050"></a>00050 <span class="preprocessor">#define TYPING_STARTED                  "typing_started_notify"</span>
+<a name="l00051"></a>00051 <span class="preprocessor"></span><span class="preprocessor">#define TYPING_STOPED                   "typing_stoped_notify"</span>
+<a name="l00052"></a>00052 <span class="preprocessor"></span>
+<a name="l00053"></a>00053 <span class="preprocessor">#define BUDDY_WENT_OFFLINE_NOTIFY       "buddy_went_offline"</span>
+<a name="l00054"></a>00054 <span class="preprocessor"></span><span class="preprocessor">#define BUDDY_WENT_AWAY_NOTIFY          "buddy_went_away"</span>
+<a name="l00055"></a>00055 <span class="preprocessor"></span><span class="preprocessor">#define BUDDY_CONNECTED_NOTIFY          "buddy_connected"</span>
+<a name="l00056"></a>00056 <span class="preprocessor"></span><span class="preprocessor">#define BUDDY_CHANGED_STATUS_NOTIFY     "buddy_changed_status"</span>
+<a name="l00057"></a>00057 <span class="preprocessor"></span>
+<a name="l00058"></a>00058 <span class="preprocessor">#define LOGGEDIN_NOTIFY                 "logged_in"</span>
+<a name="l00059"></a>00059 <span class="preprocessor"></span>
+<a name="l00060"></a>00060 <span class="preprocessor">#endif</span>
+<a name="l00061"></a>00061 <span class="preprocessor"></span>
+</pre></div><hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Dokumentacja klasy TlenPluginManager</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li class="current"><a href="classes.html"><span>Klasy</span></a></li>
+    <li><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabetyczna</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;klas</span></a></li>
+    <li><a href="hierarchy.html"><span>Hierarchia&nbsp;klas</span></a></li>
+    <li><a href="functions.html"><span>Składowe&nbsp;klas</span></a></li>
+  </ul>
+</div>
+<h1>Dokumentacja klasy TlenPluginManager</h1><!-- doxytag: class="TlenPluginManager" -->Służy do zarządzania pluginami.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="TlenPluginManager_8h-source.html">TlenPluginManager.h</a>&gt;</code>
+<p>
+<a href="classTlenPluginManager-members.html">Lista wszystkich składowych.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QStringList&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPluginManager.html#84559a0bf7326436dde187ece34d266e">getRegisteredProtocolNames</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca nazwy zarejstrowanych protokołów.  <a href="#84559a0bf7326436dde187ece34d266e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenProtocol.html">TlenProtocol</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPluginManager.html#4fe3585c10208b800379171d05a0ddfe">getRegisteredProtocols</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca zarejestrowane protokoły.  <a href="#4fe3585c10208b800379171d05a0ddfe"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QStringList&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPluginManager.html#24529f3f00d033611c9d313f562ebc33">getLoadedPluginNames</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca nazwy załadowanych pluginów.  <a href="#24529f3f00d033611c9d313f562ebc33"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenPlugin.html">TlenPlugin</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPluginManager.html#c84c3060b906edfcf2c4032a96b2b0d4">getLoadedPlugins</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca załadowane pluginy.  <a href="#c84c3060b906edfcf2c4032a96b2b0d4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; <a class="el" href="classTlenPlugin.html">TlenPlugin</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPluginManager.html#79577c6f4b63ee79e172fabbddad9ed4">getPluginsWithService</a> (const QString &amp;service) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca pluginy posiadające daną usługę.  <a href="#79577c6f4b63ee79e172fabbddad9ed4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; TlenPluginData * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPluginManager.html#2ec02a646219fcb936cd26ef811f7d8c">getPlugins</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca informacje o wszystkich pluginach, także tych niewłaczonych.  <a href="#2ec02a646219fcb936cd26ef811f7d8c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">QList&lt; TlenPluginData * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPluginManager.html#e08f441ba43f63f88a411e24017f50b7">getAvailableProtocols</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca informacje o dostępnych protokołach, także tych niewłaczonych.  <a href="#e08f441ba43f63f88a411e24017f50b7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">TlenPluginData *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPluginManager.html#80a81aa7dfb987ce5d35328f494ddd47">getPluginInfoById</a> (const QString &amp;pid) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca informacje o pluginie o podanym id.  <a href="#80a81aa7dfb987ce5d35328f494ddd47"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenPlugin.html">TlenPlugin</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPluginManager.html#436625a0afc024b38033eea5f10c0e7f">getPluginByName</a> (const QString &amp;name)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca plugin o podanej nazwie.  <a href="#436625a0afc024b38033eea5f10c0e7f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classTlenProtocol.html">TlenProtocol</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenPluginManager.html#e55e67242320b79e432cbf8d101ccc8c">getProtocolByName</a> (const QString &amp;name)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zwraca plugin protokołu o podanej nazwie.  <a href="#e55e67242320b79e432cbf8d101ccc8c"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Statyczne metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="aa949e072cd14e083357504c64a8243d"></a><!-- doxytag: member="TlenPluginManager::getInstance" ref="aa949e072cd14e083357504c64a8243d" args="()" -->
+static <a class="el" href="classTlenPluginManager.html">TlenPluginManager</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Służy do zarządzania pluginami. 
+<p>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="84559a0bf7326436dde187ece34d266e"></a><!-- doxytag: member="TlenPluginManager::getRegisteredProtocolNames" ref="84559a0bf7326436dde187ece34d266e" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList TlenPluginManager::getRegisteredProtocolNames           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca nazwy zarejstrowanych protokołów. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>nazwy protokołów </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4fe3585c10208b800379171d05a0ddfe"></a><!-- doxytag: member="TlenPluginManager::getRegisteredProtocols" ref="4fe3585c10208b800379171d05a0ddfe" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenProtocol.html">TlenProtocol</a> *&gt; TlenPluginManager::getRegisteredProtocols           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca zarejestrowane protokoły. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>zarejestrowane protokoły </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="24529f3f00d033611c9d313f562ebc33"></a><!-- doxytag: member="TlenPluginManager::getLoadedPluginNames" ref="24529f3f00d033611c9d313f562ebc33" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList TlenPluginManager::getLoadedPluginNames           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca nazwy załadowanych pluginów. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>nazwy załadowanych pluginów </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c84c3060b906edfcf2c4032a96b2b0d4"></a><!-- doxytag: member="TlenPluginManager::getLoadedPlugins" ref="c84c3060b906edfcf2c4032a96b2b0d4" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenPlugin.html">TlenPlugin</a> *&gt; TlenPluginManager::getLoadedPlugins           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca załadowane pluginy. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>pluginy </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="79577c6f4b63ee79e172fabbddad9ed4"></a><!-- doxytag: member="TlenPluginManager::getPluginsWithService" ref="79577c6f4b63ee79e172fabbddad9ed4" args="(const QString &amp;service) const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="classTlenPlugin.html">TlenPlugin</a> *&gt; TlenPluginManager::getPluginsWithService           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>service</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca pluginy posiadające daną usługę. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>service</em>&nbsp;</td><td>nazwa serwisu </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2ec02a646219fcb936cd26ef811f7d8c"></a><!-- doxytag: member="TlenPluginManager::getPlugins" ref="2ec02a646219fcb936cd26ef811f7d8c" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;TlenPluginData *&gt; TlenPluginManager::getPlugins           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca informacje o wszystkich pluginach, także tych niewłaczonych. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>informacje o pluginach </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e08f441ba43f63f88a411e24017f50b7"></a><!-- doxytag: member="TlenPluginManager::getAvailableProtocols" ref="e08f441ba43f63f88a411e24017f50b7" args="() const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;TlenPluginData *&gt; TlenPluginManager::getAvailableProtocols           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca informacje o dostępnych protokołach, także tych niewłaczonych. 
+<p>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="80a81aa7dfb987ce5d35328f494ddd47"></a><!-- doxytag: member="TlenPluginManager::getPluginInfoById" ref="80a81aa7dfb987ce5d35328f494ddd47" args="(const QString &amp;pid) const" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TlenPluginData* TlenPluginManager::getPluginInfoById           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>pid</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca informacje o pluginie o podanym id. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pid</em>&nbsp;</td><td>id </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>informacje o pluginie </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="436625a0afc024b38033eea5f10c0e7f"></a><!-- doxytag: member="TlenPluginManager::getPluginByName" ref="436625a0afc024b38033eea5f10c0e7f" args="(const QString &amp;name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenPlugin.html">TlenPlugin</a>* TlenPluginManager::getPluginByName           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca plugin o podanej nazwie. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>nazwa pluginu </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>plugin </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e55e67242320b79e432cbf8d101ccc8c"></a><!-- doxytag: member="TlenPluginManager::getProtocolByName" ref="e55e67242320b79e432cbf8d101ccc8c" args="(const QString &amp;name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTlenProtocol.html">TlenProtocol</a>* TlenPluginManager::getProtocolByName           </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Zwraca plugin protokołu o podanej nazwie. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>nazwa protokołu </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Zwraca:</b></dt><dd>plugin obsługujący dany protokół </dd></dl>
+
+</div>
+</div><p>
+<hr>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>include/plugin/<a class="el" href="TlenPluginManager_8h-source.html">TlenPluginManager.h</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

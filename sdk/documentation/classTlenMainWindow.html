@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Tlen.pl: Dokumentacja klasy TlenMainWindow</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+    <li class="current"><a href="classes.html"><span>Klasy</span></a></li>
+    <li><a href="files.html"><span>Pliki</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabetyczna</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;klas</span></a></li>
+    <li><a href="hierarchy.html"><span>Hierarchia&nbsp;klas</span></a></li>
+    <li><a href="functions.html"><span>Składowe&nbsp;klas</span></a></li>
+  </ul>
+</div>
+<h1>Dokumentacja klasy TlenMainWindow</h1><!-- doxytag: class="TlenMainWindow" -->Dodawanie akcji do okna glownego.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="TlenMainWindow_8h-source.html">TlenMainWindow.h</a>&gt;</code>
+<p>
+<a href="classTlenMainWindow-members.html">Lista wszystkich składowych.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenMainWindow.html#866717192124c9cc46d5ee87e77417c0">addMenuAction</a> (const <a class="el" href="classTlenAction.html">TlenAction</a> &amp;action, const QString &amp;menuId)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dodaje akcje do menu o okreslonej nazwie.  <a href="#866717192124c9cc46d5ee87e77417c0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenMainWindow.html#19006b3f7503e265cccd370fdb5ee270">removeMenuAction</a> (const <a class="el" href="classTlenAction.html">TlenAction</a> &amp;action)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa akcje z menu.  <a href="#19006b3f7503e265cccd370fdb5ee270"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenMainWindow.html#a3a09c1766382952ced0ce1c2ac9289e">addAction</a> (const <a class="el" href="classTlenAction.html">TlenAction</a> &amp;action)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dodaje akcje do toolbaru okna glownego.  <a href="#a3a09c1766382952ced0ce1c2ac9289e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTlenMainWindow.html#56b28cd557ed3866cb0c6070917af2ed">removeAction</a> (const <a class="el" href="classTlenAction.html">TlenAction</a> &amp;action)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Usuwa akcje z toolbara glownego.  <a href="#56b28cd557ed3866cb0c6070917af2ed"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Statyczne metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="eed7b62cdb27d78dde27af49138b42c7"></a><!-- doxytag: member="TlenMainWindow::getInstance" ref="eed7b62cdb27d78dde27af49138b42c7" args="()" -->
+static <a class="el" href="classTlenMainWindow.html">TlenMainWindow</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Dodawanie akcji do okna glownego. 
+<p>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="866717192124c9cc46d5ee87e77417c0"></a><!-- doxytag: member="TlenMainWindow::addMenuAction" ref="866717192124c9cc46d5ee87e77417c0" args="(const TlenAction &amp;action, const QString &amp;menuId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenMainWindow::addMenuAction           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenAction.html">TlenAction</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&nbsp;</td>
+          <td class="paramname"> <em>menuId</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dodaje akcje do menu o okreslonej nazwie. 
+<p>
+Nazwy dostepnych menu sa nazwami zdefiniowanymi w pliku MainWindow.ui <dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>action</em>&nbsp;</td><td>dodawana akcja </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>action</em>&nbsp;</td><td>nazwa menu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="19006b3f7503e265cccd370fdb5ee270"></a><!-- doxytag: member="TlenMainWindow::removeMenuAction" ref="19006b3f7503e265cccd370fdb5ee270" args="(const TlenAction &amp;action)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenMainWindow::removeMenuAction           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenAction.html">TlenAction</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>action</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Usuwa akcje z menu. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>action</em>&nbsp;</td><td>usuwana akcja &amp; </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>menuId</em>&nbsp;</td><td>nazwa menu </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a3a09c1766382952ced0ce1c2ac9289e"></a><!-- doxytag: member="TlenMainWindow::addAction" ref="a3a09c1766382952ced0ce1c2ac9289e" args="(const TlenAction &amp;action)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenMainWindow::addAction           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenAction.html">TlenAction</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>action</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dodaje akcje do toolbaru okna glownego. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>action</em>&nbsp;</td><td>dodawana akcja </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="56b28cd557ed3866cb0c6070917af2ed"></a><!-- doxytag: member="TlenMainWindow::removeAction" ref="56b28cd557ed3866cb0c6070917af2ed" args="(const TlenAction &amp;action)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TlenMainWindow::removeAction           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTlenAction.html">TlenAction</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>action</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Usuwa akcje z toolbara glownego. 
+<p>
+<dl compact><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>action</em>&nbsp;</td><td>usuwana akcja </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<hr>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>include/gui/<a class="el" href="TlenMainWindow_8h-source.html">TlenMainWindow.h</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Wygenerowano Tue Aug 24 16:41:56 2010 dla Tlen.pl programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>
