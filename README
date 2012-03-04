@@ -1,0 +1,18 @@
+Requirments:
+Qt 4.7.x
+* On Windows you need version for Visual Studio 2008
+Tlen 7 (tested with 7.0.2.1)
+
+Tlen 7 SDK included (dated 24.08.2010)
+
+Build instructions:
+Simply open Tlen7Plugins.pro with Qt Creator and compile plugins. If you don't want to use Qt Creator follow those steps:
+
+Windows:
+Launch Qt Command promt, go to Tlen7Plugins directory. Run qmake then nmake
+Mac OS X:
+Launch Terminal, go to Tlen7Plugins directory. Run qmake then make
+Linux:
+Launch your favorite console application, go to Tlen7Plugins directory. Run qmake and make
+
+Plugins will be in bin directory
