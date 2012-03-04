@@ -1,1 +1,11 @@
 Makefile
+*.pro.user
+*.o
+*.qm
+*.dylib
+*.so
+*.dll
+qrc_*.cpp
+moc_*.cpp
+moc_*.cxx
+bin
