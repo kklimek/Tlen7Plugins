@@ -7,6 +7,8 @@
 class TlenBuddyShare: public TlenPlugin
 {
 public:
+	TlenBuddyShare(): tlenProto(NULL) {}
+
 	QString name() const { return QString::fromLatin1("TlenBuddyShare"); }
 
 	QString friendlyName() const { return QObject::tr("Share buddies"); }
@@ -21,9 +23,21 @@ public:
 
 	int version() const { return TLEN_PLUGIN_VERSION(0,0,1); }
 
-	bool load() { return true; }
-	void unload() {}
 	QString getLicenseName() { return LICENSE; }
+
+	bool load();
+	void unload();
+
+	TLEN_DECLARE_SLOT(showContextMenu);
+	TLEN_DECLARE_SLOT(protocolLoaded);
+	TLEN_DECLARE_SLOT(protocolUnloaded);
+	TLEN_DECLARE_SLOT(onXmlNode);
+	TLEN_DECLARE_SLOT(chatWindowCreated);
+
+	TLEN_DECLARE_ACTION(sendContacts);
+
+private:
+	TlenXmlProtocol * tlenProto;
 };
 
 #endif // TLENBUDDYSHARE_H
