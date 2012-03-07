@@ -6,5 +6,6 @@ SOURCES += TlenBuddyShare.cpp
 
 HEADERS += TlenBuddyShare.h
 
-RESOURCES += resources.qrc
+RESOURCES += \
+	TlenBuddyShare.qrc
 TRANSLATIONS += TlenBuddyShare_pl_PL.ts
