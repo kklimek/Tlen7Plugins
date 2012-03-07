@@ -1,9 +1,11 @@
 TARGET=dummy
 TEMPLATE = lib
 
-mac {
-	postbuild.commands = cd ../ && ./tools/mac/deploy && cd ./postbuild
+include(../common.pri)
 
-	QMAKE_EXTRA_TARGETS += postbuild	
+mac {
+	postbuild.commands = cd ../ && ./tools/mac/deploy $${TLEN_LIBS_PATH} && cd ./postbuild
+
+	QMAKE_EXTRA_TARGETS += postbuild
 	PRE_TARGETDEPS += postbuild
 }
