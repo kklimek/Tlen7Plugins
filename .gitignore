@@ -5,6 +5,7 @@ Makefile
 *.dylib
 *.so
 *.dll
+*.swp
 qrc_*.cpp
 moc_*.cpp
 moc_*.cxx
