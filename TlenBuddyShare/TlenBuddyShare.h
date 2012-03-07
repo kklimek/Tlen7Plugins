@@ -20,6 +20,7 @@ public:
 
 	bool load() { return true; }
 	void unload() {}
+	QString getLicenseName() { return LICENSE; }
 };
 
 #endif // TLENBUDDYSHARE_H
