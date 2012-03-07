@@ -1,0 +1,18 @@
+#!/bin/bash
+
+case "$1" in
+	"" )
+		DEST=/Applications/Tlen.app/Contents/Resources/plugins/
+	;;
+	* )
+		DEST=$1
+	;;	
+esac
+
+if [ ! -f ./bin/*.o2x ]
+then
+	echo no plugins to install from bin subdir
+	exit 0
+fi
+
+cp ./bin/*.o2x $DEST/
