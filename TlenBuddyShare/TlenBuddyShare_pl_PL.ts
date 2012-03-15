@@ -4,7 +4,7 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="TlenBuddyShare.cpp" line="75"/>
+        <location filename="TlenBuddyShare.cpp" line="120"/>
         <source>Send contacts</source>
         <translation>Wyślij kontakty</translation>
     </message>
