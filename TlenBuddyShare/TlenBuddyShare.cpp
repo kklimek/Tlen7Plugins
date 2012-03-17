@@ -1,9 +1,6 @@
 #include <QDebug>
 #include <QThread>
 #include <QApplication>
-#include <QDialog>
-#include <QBoxLayout>
-#include <QTreeView>
 
 #include <data/TlenBuddy.h>
 
@@ -18,8 +15,7 @@
 
 #include <roster/TlenRoster.h>
 
-#include "RosterModel.h"
-
+#include "TlenBuddyShareSelect.h"
 #include "TlenBuddyShare.h"
 
 #define CWACTION QString::fromLatin1("send_contacts")
@@ -88,39 +84,27 @@ TLEN_DEFINE_ACTION(TlenBuddyShare, sendContacts)
 
 		TlenAccountConnection * acc = contact.getAccount();
 
-		// wyciągamy lisę kontaktów dla konta. Na razie wspieramy tylko wysyłanie ze swojego konta
+		if(acc->getProtocol() == tlenProto)
+		{
+			QList<TlenBuddy> buddies = TlenBuddyShareSelect::buddies();
 
-		// sprawdzamy czy druga strona potrafi odebrać kontakty?
+			// budujemy node xml
 
-		QDialog dlg;
+			//TlenXmlNode node(QString::fromLatin1("message"));
+			//node.setAttribute(QString::fromLatin1("to"), contact.getId());
+			//node.setAttribute(QString::fromLatin1("type"), QString::fromLatin1("buddyshare"));
+			//budujemy strukturę
 
-		QBoxLayout * lay = new QBoxLayout(QBoxLayout::TopToBottom, &dlg);
-		QTreeView * treeView = new QTreeView(&dlg);
-
-		RosterModel * model = new RosterModel(&dlg);
-
-		treeView->setModel(model);
-
-		lay->addWidget(treeView);
-
-		dlg.exec();
-
-		// otwieramy widget wyboru kontaktów
-
-		// budujemy node xml
-
-		//TlenXmlNode node(QString::fromLatin1("message"));
-		//node.setAttribute(QString::fromLatin1("to"), contact.getId());
-		//node.setAttribute(QString::fromLatin1("type"), QString::fromLatin1("buddyshare"));
-		//budujemy strukturę
-
-		//tlenProto->writeData(acc, node);
+			//tlenProto->writeData(acc, node);
+		}
 	}
 }
 
 // slot wołany po utworzeniu okna rozmowy
 TLEN_DEFINE_SLOT(TlenBuddyShare, chatWindowCreated)
 {
+	Q_UNUSED(senderId);
+
 	// nie ma tlenu, nie ma życia
 	if( ! tlenProto )
 		return;
@@ -157,6 +141,8 @@ void TlenBuddyShare::addChatWindowToolbarAction(TlenChatWindow * chatWindow)
 
 TLEN_DEFINE_SLOT(TlenBuddyShare, onXmlNode)
 {
+	Q_UNUSED(senderId);
+
 	TlenXmlNode xmlNode = args[1].toXmlNode();
 	TlenAccountConnection * acc = args[0].toAccount();
 	// node message dla protokołu tlen nas interesuje
@@ -171,6 +157,8 @@ TLEN_DEFINE_SLOT(TlenBuddyShare, onXmlNode)
 
 TLEN_DEFINE_SLOT(TlenBuddyShare, protocolLoaded)
 {
+	Q_UNUSED(senderId);
+
 	qDebug() << args.size();
 
 	foreach(const TlenArg &arg, args)
@@ -183,6 +171,8 @@ TLEN_DEFINE_SLOT(TlenBuddyShare, protocolLoaded)
 
 TLEN_DEFINE_SLOT(TlenBuddyShare, protocolUnloaded)
 {
+	Q_UNUSED(senderId);
+
 	qDebug() << args[0].toString() << args[1].toString();
 }
 

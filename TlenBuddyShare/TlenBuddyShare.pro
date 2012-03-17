@@ -4,8 +4,10 @@ include(../plugin_template.pri)
 include(../common/RosterModel.pri)
 
 SOURCES += TlenBuddyShare.cpp
+SOURCES += TlenBuddyShareSelect.cpp
 
 HEADERS += TlenBuddyShare.h
+HEADERS += TlenBuddyShareSelect.h
 
 QT += network gui
 
