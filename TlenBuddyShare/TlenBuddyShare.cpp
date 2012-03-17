@@ -1,6 +1,9 @@
 #include <QDebug>
 #include <QThread>
 #include <QApplication>
+#include <QDialog>
+#include <QBoxLayout>
+#include <QTreeView>
 
 #include <data/TlenBuddy.h>
 
@@ -14,6 +17,8 @@
 #include <gui/TlenChatWindow.h>
 
 #include <roster/TlenRoster.h>
+
+#include "RosterModel.h"
 
 #include "TlenBuddyShare.h"
 
@@ -43,6 +48,11 @@ bool TlenBuddyShare::load()
 
 	// do okien rozmowy też wstawiamy akcję
 	loaded &= slotConnect(TLEN_PLUGIN_GUI, CHAT_WINDOW_CREATED, TLEN_SLOT(TlenBuddyShare::chatWindowCreated));
+
+	foreach(TlenChatWindow *cw, TlenChatManager::getInstance()->getExistingChatWindows())
+	{
+		addChatWindowToolbarAction(cw);
+	}
 
 	return loaded;
 }
@@ -79,7 +89,21 @@ TLEN_DEFINE_ACTION(TlenBuddyShare, sendContacts)
 		TlenAccountConnection * acc = contact.getAccount();
 
 		// wyciągamy lisę kontaktów dla konta. Na razie wspieramy tylko wysyłanie ze swojego konta
-		QList<TlenBuddy> blist = TlenRoster::getInstance()->getBuddiesForAccount(acc);
+
+		// sprawdzamy czy druga strona potrafi odebrać kontakty?
+
+		QDialog dlg;
+
+		QBoxLayout * lay = new QBoxLayout(QBoxLayout::TopToBottom, &dlg);
+		QTreeView * treeView = new QTreeView(&dlg);
+
+		RosterModel * model = new RosterModel(&dlg);
+
+		treeView->setModel(model);
+
+		lay->addWidget(treeView);
+
+		dlg.exec();
 
 		// otwieramy widget wyboru kontaktów
 
@@ -104,21 +128,29 @@ TLEN_DEFINE_SLOT(TlenBuddyShare, chatWindowCreated)
 	// wyciągamy okno
 	TlenChatWindow *chatWindow = static_cast<TlenChatWindow *>(args[0].toPointer());
 
-	// kontakt
-	TlenBuddy b = chatWindow->getBuddy();
+	addChatWindowToolbarAction(chatWindow);
+}
 
-	if(b.getType() == TlenBuddy::Contact)
+void TlenBuddyShare::addChatWindowToolbarAction(TlenChatWindow * chatWindow)
+{
+	if(chatWindow)
 	{
-		TlenBuddyContact contact(b);
+		// kontakt
+		TlenBuddy b = chatWindow->getBuddy();
 
-		TlenAccountConnection * acc = contact.getAccount();
-
-		// tylko dla kont z protokołu tlen
-		if(acc->getProtocol() == tlenProto)
+		if(b.getType() == TlenBuddy::Contact)
 		{
-			// tworzymy i dodajemy akcję
-			TlenAction action(QObject::tr("Send contacts"), QString(), TlenPluginAction(this, TLEN_ACTION(TlenBuddyShare::sendContacts)));
-			chatWindow->addToolbarAction(action, CWMENU, CWACTION);
+			TlenBuddyContact contact(b);
+
+			TlenAccountConnection * acc = contact.getAccount();
+
+			// tylko dla kont z protokołu tlen
+			if(acc->getProtocol() == tlenProto)
+			{
+				// tworzymy i dodajemy akcję
+				TlenAction action(QObject::tr("Send contacts"), QString(), TlenPluginAction(this, TLEN_ACTION(TlenBuddyShare::sendContacts)));
+				chatWindow->addToolbarAction(action, CWMENU, CWACTION);
+			}
 		}
 	}
 }

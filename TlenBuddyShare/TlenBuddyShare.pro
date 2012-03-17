@@ -1,6 +1,7 @@
 TARGET = TlenBuddyShare
 
 include(../plugin_template.pri)
+include(../common/RosterModel.pri)
 
 SOURCES += TlenBuddyShare.cpp
 

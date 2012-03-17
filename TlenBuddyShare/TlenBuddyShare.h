@@ -36,6 +36,9 @@ public:
 
 	TLEN_DECLARE_ACTION(sendContacts);
 
+protected:
+	void addChatWindowToolbarAction(TlenChatWindow * chatWindow);
+
 private:
 	TlenXmlProtocol * tlenProto;
 };
