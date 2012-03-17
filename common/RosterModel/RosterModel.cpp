@@ -220,6 +220,10 @@ QVariant RosterModel::data(const QModelIndex &index, int role) const
 				case Qt::DisplayRole:
 					retval = b.getDisplay();
 					break;
+
+				case RosterModel::TypeRole:
+					retval = b.getType();
+					break;
 			}
 		}
 	}

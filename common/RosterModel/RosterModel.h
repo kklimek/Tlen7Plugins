@@ -13,6 +13,11 @@ class RosterModel: public QAbstractItemModel
 	Q_OBJECT
 
 public:
+	enum Role
+	{
+		TypeRole = Qt::UserRole + 1
+	};
+
 	RosterModel(QObject * parent = 0);
 
 	QModelIndex index(int row, int column, const QModelIndex &parent) const;
